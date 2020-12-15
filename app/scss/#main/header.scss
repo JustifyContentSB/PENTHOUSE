@@ -1,0 +1,37 @@
+.header {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		font-size: 0.792rem;
+		line-height: 1rem;
+		color: #AFAFAF;
+		font-weight: 350;
+		&-penthouse {
+			font-weight: bold;
+			font-size: 0.99rem;
+			line-height: 1.25rem;
+			color: #000;
+		}
+	}
+	&__search {
+		&-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 2.5rem;
+			height: 2.5rem;
+			cursor: pointer;
+		}
+		input {
+			display: none;
+		}
+	}
+	&__tel {
+		display: none;
+	}
+}
+
+

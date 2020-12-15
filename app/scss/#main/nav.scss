@@ -1,0 +1,25 @@
+.nav {
+	&__toggle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 2.5rem;
+		height: 2.5rem;
+		padding: 0 0.563rem 0 0.625rem;
+		span {
+			height: 1px;
+			background: #000;
+			&:nth-child(1) {
+				width: 100%;
+			}
+			&:nth-child(2) {
+				margin-top: 0.225rem;
+				width: 50%;
+			}
+		}
+	}
+	&__inner {
+		display: none;
+	}
+}

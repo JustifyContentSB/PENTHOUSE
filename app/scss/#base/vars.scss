@@ -1,0 +1,32 @@
+%title {
+	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.313rem;
+}
+
+%text {
+	font-weight: 300;
+	font-size: 0.688rem;
+	line-height: 0.813rem;
+}
+
+%catalogLink {
+	display: block;
+	text-align: center;
+	font-size: 0.813rem;
+	line-height: 1.063rem;
+	border: 1px solid #000000;
+	padding: 0.625rem;
+}
+
+$brown: #A79078;
+
+%brownLink {
+	display: block;
+	padding: 0.625rem;
+	font-size: 0.813rem;
+	line-height: 1.063rem;
+	text-align: center;
+	color: #fff;
+	background: $brown;
+}

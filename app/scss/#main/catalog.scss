@@ -1,0 +1,33 @@
+.catalog {
+	margin-top: 60px;
+	padding: 0 8px 0 12px;
+	&__img {
+		height: 150px;
+		background: #F2F2F2;
+		position: relative;
+		img {
+			position: absolute;
+			top: -15px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__title {
+		@extend %title;
+		margin-top: 22px;
+	}
+	&__text {
+		margin-top: 18px;
+		@extend %text;
+		p {
+			margin-bottom: 13px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__link {
+		@extend %catalogLink;
+		margin-top: 20px;
+	}
+}

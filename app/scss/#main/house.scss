@@ -1,0 +1,77 @@
+.house {
+	margin-top: 2.5rem;
+	padding-left: 0.625rem;
+	&__chapter {
+		font-weight: bold;
+		font-size: 1rem;
+		line-height: 1.313rem;
+	}
+	&__all {
+		margin-top: 0.625rem;
+		padding-right: 1.938rem;
+		display: inline-block;
+		font-weight: 300;
+		font-size: 0.75rem;
+		line-height: 0.938rem;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 1.938rem;
+			bottom: 0.125rem;
+			height: 0.063rem;
+			background: #000;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0.125rem;
+			background: url('../images/icons/slick-right.svg');
+			width: 1.063rem;
+			height: 0.688rem;
+			background-size: contain;
+		}
+	}
+	&__list {
+		margin-top: 1.25rem;
+		display: flex;
+	}
+	&__img {
+		display: flex;
+	}
+	&__item {
+		width: 13rem;
+		margin-right: 0.125rem;
+		outline: none;
+	}
+	&__info {
+		min-height: 6.219rem;
+		padding: 0.893rem 1.188rem 0.6rem 0.625rem;
+		background: #F1F1F1;
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+		text-transform: uppercase;
+	}
+	&__about {
+		margin-top: auto;
+	}
+	&__area {
+		font-weight: 350;
+		font-size: 0.625rem;
+		line-height: 0.813rem;
+		color: #4D4D4D;
+	}
+	&__price {
+		margin-top: 0.157rem;
+		font-weight: bold;
+		font-size: 0.75rem;
+		line-height: 0.938rem;
+	}
+}

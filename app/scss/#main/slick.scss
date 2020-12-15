@@ -1,0 +1,11 @@
+.slick {
+	&-list {
+		overflow: hidden;
+	}
+	&-track {
+		display: flex; 
+	}
+	&-arrow {
+		position: absolute;
+	}
+}
