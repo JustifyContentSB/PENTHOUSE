@@ -2,31 +2,46 @@
 	font-weight: bold;
 	font-size: 1rem;
 	line-height: 1.313rem;
-}
-
-%text {
-	font-weight: 300;
-	font-size: 0.688rem;
-	line-height: 0.813rem;
+	@media screen and(min-width: 1366px) {
+		font-size: 30px;  
+		line-height: 120%;
+	}
+	@media screen and(min-width: 1920px) {
+		font-size: 40px;
+		line-height: 52px;
+		letter-spacing: 0.25rem;
+	}
 }
 
 %catalogLink {
 	display: block;
+	min-width: 314px;
 	text-align: center;
 	font-size: 0.813rem;
 	line-height: 1.063rem;
-	border: 1px solid #000000;
+	border: 0.063rem solid #000000;
 	padding: 0.625rem;
+	@media screen and(min-width: 1366px) {
+		padding: 15px;
+		font-size: 15px;
+		line-height: 19px;
+	}
 }
 
 $brown: #A79078;
 
 %brownLink {
 	display: block;
-	padding: 0.625rem;
+	min-width: 320px;
+	padding: 0.725rem;
 	font-size: 0.813rem;
 	line-height: 1.063rem;
 	text-align: center;
 	color: #fff;
 	background: $brown;
+	@media screen and(min-width: 1366px) {
+		padding: 15px;
+		font-size: 15px;
+		line-height: 19px;
+	}
 }

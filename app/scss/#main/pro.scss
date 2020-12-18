@@ -1,0 +1,169 @@
+.pro {
+	&__profile {
+		display: flex;
+		justify-content: center;
+	}
+	&__img {
+		display: flex;
+		width: 50%;
+		max-width: 300px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__info {
+		padding: 0.875rem 0.625rem 1.188rem 0.813rem;
+		width: 50%;
+		max-width: 18.75rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background: #F1F1F1;
+		letter-spacing: 0.07rem;
+	}
+	&__name {
+		font-size: 0.688rem;
+		line-height: 0.875rem;
+		color: #5F5F5F;
+		span {
+			margin-bottom: 0.188rem;
+			display: block;
+			font-size: 0.875rem;
+			line-height: 1.125rem;
+			font-weight: 700;
+			color: #000;
+			text-transform: uppercase; 
+		}
+	}
+	&__tel {
+		font-weight: 300;
+		font-size: 0.86rem;
+		line-height: 1.125rem;
+		text-transform: uppercase;
+		letter-spacing: 0;  
+	}
+	&__email {
+		font-weight: 350;
+		font-size: 0.688rem;
+		line-height: 1.25rem;
+		a {
+			font-weight: bold;
+		}
+	}
+	&__about {
+		margin-top: 1.375rem;
+		letter-spacing: 0.1rem;
+	}
+	&__title {
+		@extend %title;
+	}
+	&__text {
+		margin-top: 1.125rem;
+	}
+	&__link {
+		@extend %brownLink;
+		margin-top: 1.413rem; 
+	}
+}
+
+@media screen and(min-width: 960px) {
+	.pro {
+		&__inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		&__profile {
+			width: 380px;
+		}
+		&__about {
+			margin-top: 0;
+			width: calc(100% - 400px);
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__text {
+			margin-bottom: auto;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.pro {
+		&__profile {
+			width: 500px;
+		}
+		&__about {
+			width: calc(100% - 540px);
+			min-height: 325px; 
+		}
+		&__info {
+			padding: 25px;  
+		}
+		&__name {
+			font-size: 14px;
+			line-height: 120%;
+			span {
+				font-size: 20px;
+				line-height: 120%;
+			}
+		}
+		&__tel {
+			font-size: 24px;
+			margin-bottom: 6px;
+		}
+		&__email {
+			font-size: 13px;
+			line-height: 20px;
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.pro {
+		&__profile {
+			width: 744px;
+		}
+		&__img {
+			max-width: 370px;
+		}
+		&__info {
+			max-width: 374px;
+			padding: 29px 40px 40px; 
+		}
+		&__about {
+			width: calc(100% - 814px);
+			min-height: 482px;
+		}
+		&__text {
+			margin-top: 47px;
+			letter-spacing: 0.1rem;
+			p {
+				margin-bottom: 20px;
+			}
+			p.attention {
+				margin-top: 45px;
+				font-weight: 350;
+			}
+		}
+		&__name {
+			font-size: 16px;
+			line-height: 21px;
+			span {
+				font-size: 26px;
+				line-height: 34px;
+				letter-spacing: 0.15rem;
+			}
+		}
+		&__tel {
+			font-size: 32px;
+			line-height: 41px;
+		}
+		&__email {
+
+		}
+	}
+}

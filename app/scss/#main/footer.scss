@@ -1,0 +1,166 @@
+.footer {
+	margin-top: 2.5rem;
+	padding: 2.313rem 0.625rem 0.938rem;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0.625rem;
+		right: 0.625rem;
+		height: 0.063rem;
+		background: #DEDEDE;
+	}
+	&__nav {
+		font-weight: 500;
+		font-size: 0.688rem;
+		line-height: 0.813rem; 
+		letter-spacing: 0.07rem;
+	}
+	&__list {
+		max-width: 280px;
+		height: 140px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column; 
+		li { 
+			margin-bottom: 0.938rem;
+			margin-right: 0.938rem; 
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+	&__menu { 
+		margin-top: 1.688rem; 
+		font-weight: 300;
+		font-size: 0.688rem;
+		line-height: 1.125rem;
+		color: #636363;
+		letter-spacing: 0.07rem;
+	}
+	&__slogan {
+		margin-top: 1.563rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #7E7E7E;
+		letter-spacing: 0;
+	}
+	&__tel {
+		margin-top: 1.563rem;
+		font-weight: 350;
+		font-size: 1.125rem;
+		line-height: 1.438rem;
+		text-transform: uppercase;
+	}
+	&__logo {
+		margin-top: 1.375rem;
+		a {
+			display: flex;
+		}
+	}
+	&__copy {
+		margin-top: 1.625rem;
+		font-size: 0.5rem;
+		line-height: 0.625rem;
+		color: #A6A6A6;
+		letter-spacing: 0;
+	}
+}
+
+@media screen and(min-width: 960px) {
+	.footer {
+		&__nav {
+			font-size: 12px;
+		}
+		&__list {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			li {
+				margin-right: 0;
+			}
+		}
+		&__menu {
+			font-size: 12px;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.footer {
+		margin-top: 62px;
+		padding-left: 0;
+		padding-right: 76px;
+		&::before {
+			left: 0;
+			right: 76px;
+		}
+		&__nav {
+			font-size: 14px;
+			line-height: 120%;
+		}
+		&__menu {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		&__slogan {
+			font-size: 24px;
+			line-height: 120%;
+		}
+		&__tel {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			flex-wrap: wrap;
+		}
+		&__logo {
+			img {
+				width: 300px;
+			}
+		}
+		&__copy {
+			font-size: 12px;
+			line-height: 16px;
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.footer {
+		padding-top: 70px;
+		&__nav {
+			font-size: 16px;
+			line-height: 30px;
+			letter-spacing: 0.1rem;
+		}
+		&__menu {
+			margin-top: 45px;  
+			font-size: 16px;
+			line-height: 30px;
+			letter-spacing: 0.1rem;
+		}
+		&__slogan {
+			margin-top: 70px;
+			font-size: 31px;
+			line-height: 40px;
+		}
+		&__tel {
+			margin-top: 65px;
+			font-size: 25px;
+			line-height: 32px;
+		}
+		&__logo {
+			img {
+				width: 385px;
+			}
+		}
+	}
+}

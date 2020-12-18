@@ -1,4 +1,13 @@
 .nav {
+	font-weight: 500;
+	font-size: 0.75rem;
+	line-height: 0.938rem;
+	background: #fff;
+	&__burger {
+		&-dekstop {
+			display: none;
+		}
+	}
 	&__toggle {
 		display: flex;
 		flex-direction: column;
@@ -7,19 +16,125 @@
 		width: 2.5rem;
 		height: 2.5rem;
 		padding: 0 0.563rem 0 0.625rem;
-		span {
-			height: 1px;
+		&-icon {
+			width: 100%;
+			height: 0.063rem;
 			background: #000;
-			&:nth-child(1) {
-				width: 100%;
-			}
-			&:nth-child(2) {
-				margin-top: 0.225rem;
+			position: relative;
+			transition: all .5s ease;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0.200rem;
 				width: 50%;
+				height: 0.063rem;
+				background: #000;
+				transition: all .5s ease;
+			}
+			&.open {
+			 	transform: rotate(135deg);
+				&::after {
+					width: 100%;
+				    top: 0;
+				    transform: translateX(0) rotate(90deg);
+			  	}
 			}
 		}
 	}
 	&__inner {
-		display: none;
+		width: 100%;
+		height: calc(100vh - 2.5rem);
+		overflow-y: scroll;
+		padding: 2.5rem 1.875rem 2.5rem 2.125rem;
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		z-index: 100;
+		top: 2.5rem;
+		left: -100%;
+		background: #fff;
+		transition: all .5s ease;
+		&.visible {
+			left: 0;
+		}
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
+		}
+	}
+	&__list {
+		margin-bottom: 2.938rem;
+		li {
+			margin-bottom: 1.188rem;
+		}
+	}
+	&__contact {
+		margin-top: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__catalog {
+		@extend %catalogLink;
+		width: 100%;
+	}
+	&__tel {
+		margin-top: 2.5rem;
+		font-weight: 300;
+		font-size: 1.438rem;
+		line-height: 1.875rem;
+		text-transform: uppercase;
+	}
+	&__order {
+		display: inline-block;
+		margin-top: 1.375rem;
+		font-size: 0.938rem;
+		line-height: 1.188rem;
+		text-decoration: underline;
+		font-weight: 500;
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.nav {
+		&__burger {
+			display: flex;
+			justify-content: center;
+			width: 90px;
+			height: 100vh;
+			position: fixed;
+			z-index: 110;
+			left: 0;
+			top: 0;
+			background: #fff;
+			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+			&-dekstop {
+				display: flex;
+			}
+			&-tel {
+				display: none;
+			}
+		}
+		&__toggle {
+			margin-top: 20px;
+			padding: 0;
+			width: 35px;
+			height: 15px;
+			&-icon {
+				height: 2px;
+				&::after {
+					height: 2px;
+					top: auto;
+					bottom: -7px;
+				}
+			}
+		}
+		&__inner {
+			top: 0;
+			left: calc(-100% + 90px);
+			height: 100vh;
+			width: 594px;
+			padding-left: 165px;
+		}
 	}
 }

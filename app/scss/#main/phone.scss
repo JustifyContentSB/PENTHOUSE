@@ -1,0 +1,16 @@
+.phone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3rem;
+	height: 3rem;
+	position: fixed;
+	z-index: 50;
+	right: 0.563rem;
+	bottom: 0.813rem;
+	border-radius: 50%;
+	background: $brown;
+	@media screen and(min-width: 1366px) {
+		display: none;
+	}
+}

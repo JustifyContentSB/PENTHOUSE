@@ -1,0 +1,35 @@
+.text {
+	font-weight: 350;
+	font-size: 0.688rem;
+	line-height: 0.813rem;
+	letter-spacing: 0.065rem;
+	p {
+		margin-bottom: 0.813rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.attention {
+		margin-top: 1.125rem;  
+		font-weight: 500;
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.text {
+		font-size: 14px;
+		line-height: 120%;
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.text {
+		font-size: 16px;
+		line-height: 22px;
+		.attention {
+			font-size: 20px;
+			line-height: 26px;
+			letter-spacing: 0.13rem;
+		}
+	}
+}

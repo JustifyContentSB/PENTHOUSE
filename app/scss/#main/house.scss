@@ -1,18 +1,21 @@
 .house {
-	margin-top: 2.5rem;
-	padding-left: 0.625rem;
+	&__header {
+		padding-left: 0.625rem;
+	}
 	&__chapter {
 		font-weight: bold;
 		font-size: 1rem;
-		line-height: 1.313rem;
+		line-height: 1.313rem; 
+		letter-spacing: 0.1rem; 
 	}
 	&__all {
-		margin-top: 0.625rem;
+		margin-top: 0.725rem;
 		padding-right: 1.938rem;
 		display: inline-block;
-		font-weight: 300;
+		font-weight: 350;
 		font-size: 0.75rem;
 		line-height: 0.938rem;
+		letter-spacing: 0.07rem;  
 		position: relative;
 		&::before {
 			content: '';
@@ -35,11 +38,17 @@
 		}
 	}
 	&__list {
-		margin-top: 1.25rem;
+		margin-top: 1.1rem;
+		padding-left: 0.625rem;
 		display: flex;
 	}
 	&__img {
 		display: flex;
+		img {
+			width: 100%;
+			height: auto;
+			max-height: 164.71px;
+		}
 	}
 	&__item {
 		width: 13rem;
@@ -47,17 +56,20 @@
 		outline: none;
 	}
 	&__info {
-		min-height: 6.219rem;
+		min-height: 4.9rem;
 		padding: 0.893rem 1.188rem 0.6rem 0.625rem;
+		letter-spacing: 0.06rem;
 		background: #F1F1F1;
 		display: flex;
 		flex-direction: column;
+		box-sizing: border-box; 
 	}
 	&__title {
 		font-weight: bold;
 		font-size: 0.625rem;
 		line-height: 0.75rem;
 		text-transform: uppercase;
+		margin-bottom: 1.25rem;
 	}
 	&__about {
 		margin-top: auto;
@@ -69,9 +81,110 @@
 		color: #4D4D4D;
 	}
 	&__price {
-		margin-top: 0.157rem;
+		margin-top: 0.1rem;
 		font-weight: bold;
 		font-size: 0.75rem;
 		line-height: 0.938rem;
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.house {
+		&__item {
+			width: 23.125rem;
+		}
+		&__img {
+			img {
+				max-height: 293px;
+			}
+		}
+		&__title {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 960px) {
+	.house {
+		&__header {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		&__all {
+			margin-top: 0;
+			margin-left: 50px;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.house {
+		&__chapter {
+			font-size: 24px;
+			line-height: 120%;
+		}
+		&__all {
+			font-size: 14px;
+		}
+		&__header {
+			padding: 0;
+		}
+		&__list {
+			padding: 0;
+		}
+		&__info {
+			min-height: 177px;
+			padding: 27px;
+		}
+		&__title {
+			font-size: 12px;
+			line-height: 17px;
+		}
+		&__area {
+			font-size: 14px;
+			line-height: 18px;
+			letter-spacing: 0.1rem;
+		}
+		&__price {
+			font-size: 20px;
+			line-height: 26px;
+			letter-spacing: 0.15rem;
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.house {
+		margin-top: 140px;
+		&__chapter {
+			font-size: 30px;
+			line-height: 39px; 
+			letter-spacing: 0.18rem;
+		}
+		&__all { 
+			font-size: 16px;
+			line-height: 21px; 
+			margin-left: 100px;
+			padding-right: 40px;
+			letter-spacing: 0.1rem;
+			&::before {
+				right: 40px;
+			}
+			&::after {
+				top: 5px;
+			}
+		}
+		&__list {
+			margin-top: 50px;
+		}
+		&.fireplace {
+			margin-top: 238px;
+		}
+		&.twostorey {
+			margin-top: 160px;
+		}
 	}
 }

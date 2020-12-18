@@ -1,11 +1,16 @@
 @import '../../../node_modules/normalize.css/normalize';
+@import '../../js/libs/swiper-bundle.min';
 
 @import '../#base/vars.scss';
 @import '../#base/base.scss';
 @import '../#base/fonts.scss';
 @import '../#base/body.scss';
 @import '../#main/wrapper.scss';
-@import '../#main/slick.scss';
+@import '../#main/container.scss';
+@import '../#main/sec.scss';
+@import '../#main/overlay.scss';
+@import '../#main/phone.scss';
+@import '../#main/text.scss';
 @import '../#main/header.scss';
 @import '../#main/nav.scss';
 @import '../#main/tel.scss';
@@ -14,3 +19,5 @@
 @import '../#main/house.scss';
 @import '../#main/catalog.scss';
 @import '../#main/explain.scss';
+@import '../#main/pro.scss';
+@import '../#main/footer.scss';
