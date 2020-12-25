@@ -1,0 +1,406 @@
+.mansion {
+	margin-top: 10px;
+	font-weight: 350;
+	&__page {
+		margin-top: 12px; 
+	}
+	&__choose {
+		margin-top: 16px;
+	}
+	&__chapter {
+		padding: 0 10px;
+	}
+	&__choose {
+		padding: 0 10px;
+	}
+	&__sort {
+		padding: 12px;
+		font-size: 11px;
+		line-height: 14.19px;
+		background: #F0F0F0;
+		font-weight: 400;
+		&-num {
+			font-weight: 500;
+			margin-bottom: 6px;
+		}
+		&-type {
+			&__btn {
+				padding-right: 19px;
+				text-decoration: underline;
+				position: relative;
+				&::after {
+					content: '';
+					position: absolute;
+					right: 0;
+					top: 1px;
+					width: 9px;
+					height: 13px;
+					background: url('../../images/icons/sort-arrow.svg');
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+	&__header {
+		padding: 0 10px;
+	}
+	&__kind {
+		padding: 12px 10px;
+		display: flex;
+		overflow-x: scroll;
+		white-space: nowrap;
+		font-size: 10px;
+		line-height: 11px;
+		&-item {
+			margin-right: 5px;
+			position: relative;
+			&:last-child {
+				&::after {
+					content: '';
+					position: absolute;
+					right: -10px;
+					top: 0;
+					width: 10px;
+					height: 100%;
+					background: transparent;
+				}
+			}
+		}
+		&-btn {
+			display: inline-block;
+			padding: 7px 21px;
+			border: 1px solid #E6E6E6;
+			&.active {
+				border-color: #000;
+			}
+		}
+	}
+	&__map {
+		width: calc(100% - 20px);
+		margin: 0 auto;
+		height: 350px;
+		display: none;
+		position: relative;
+		&.active {
+			display: block;
+		}
+		#map {
+			width: 100%;
+			height: 350px;
+		}
+	}
+	&__house {
+		&-wrapper {
+			&.none {
+				display: none;
+			}
+		}
+		padding: 0 10px;
+		margin-bottom: 10px;
+	}
+	&__img {
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+		display: flex;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__info {
+		padding: 17px 15px;
+		background: #F1F1F1;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+	}
+	&__street {
+		margin-top: 6px;
+		font-size: 11px;
+		line-height: 14px;
+		letter-spacing: 0.1rem;
+	}
+	&__content {
+		margin-top: 13px;
+		font-size: 11px;
+		line-height: 20px;
+		letter-spacing: 0.05rem;
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			margin-right: 10px;
+		}
+		span {
+			font-weight: 500;
+		}
+	}
+	&__features {
+		margin-top: 8px;
+		font-size: 8.27586px;
+		line-height: 11px;
+		letter-spacing: 0.03rem;
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			padding: 4.63px 14.68px;
+			background: #fff;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
+	}
+	&__size {
+		margin-top: 12px;
+		font-size: 11px;
+		line-height: 14px;
+		letter-spacing: 0.1rem;
+	}
+	&__price {
+		margin-top: 3px;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 28px;
+		letter-spacing: 0.1rem;
+	}
+	&__metre {
+		margin-top: 4px;
+		font-size: 11px;
+		line-height: 15px;
+		letter-spacing: 0.1rem;
+		color: #8D8D8D;
+	}
+	&__more {
+		margin-top: 10px;
+		font-size: 11px;
+		line-height: 14px;
+		letter-spacing: 0.1rem;
+		color: #000000;
+		a {
+			text-decoration-line: underline;
+		}
+	}
+	&__link {
+		@extend %brownLink;
+		margin-top: 16px;
+		font-weight: 500;
+		letter-spacing: 0.07rem;
+	}
+}
+
+@media screen and(min-width: 700px) {
+	.mansion {
+		&__inner {
+			margin-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__choose {
+			width: 314px;
+			margin-top: 0;
+			padding: 0;
+		}
+		&__page {
+			width: calc(100% - 334px);
+			margin-top: 0;
+		}
+	}
+}
+
+@media screen and(min-width: 1057px) {
+	.mansion {
+		&__house {
+			display: flex;
+			align-items: flex-start;
+		}
+		&__img {
+			margin: 0;
+			width: 430px;
+			height: auto;
+		}
+		&__info {
+			width: calc(100% - 430px);
+			min-height: 307.14px;
+			display: flex;
+			flex-direction: column;
+			&-bottom {
+				margin-top: auto;
+				order: 1;
+			}
+		}
+		&__more {
+			text-align: right;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.mansion {
+		margin-top: 15px;
+		padding-right: 75px;
+		&__header {
+			padding: 0;
+		}
+		&__chapter {
+			padding: 0;
+		}
+		&__inner {
+			margin-top: 89px;
+		}
+		&__page {
+			width: calc(100% - 354px);
+		}
+		&__house {
+			padding: 0;
+			&-wrapper {
+				margin-top: 34px;
+			}
+		}
+		&__sort {
+			padding: 14px 25px;
+			font-size: 14px;
+			line-height: 18px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			&-num {
+				margin-bottom: 0;
+			}
+		}
+		&__kind {
+			margin-top: 25px;
+			padding: 0;
+			overflow-x: visible;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0.1rem;
+			font-weight: 400;
+			&-item {
+				margin-right: 10px;
+			}
+			&-btn {
+				padding: 7px 21px;
+				&.active {
+					border-width: 2px;
+				}
+			}
+		}
+		&__img {
+			width: 350px;
+		}
+		&__info {
+			width: calc(100% - 350px);
+			height: 321.42px;
+			&-about {
+				margin-top: 17px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+		&__link {
+			min-width: 100%;
+		}
+		&__street {
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&__content {
+			font-size: 13px;
+			line-height: 20px;
+			letter-spacing: 0.1rem;
+		}
+		&__features {
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0.07rem;
+		}
+		&__size {
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&__metre {
+			margin-top: 0;
+			font-size: 14px;
+			line-height: 15px;
+		}
+		&__more {
+			margin-top: 0;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&__map {
+			width: 100%;
+			margin-top: 42px;
+			height: 670px;
+			#map {
+				height: 670px;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.mansion {
+		&__sort {
+			font-size: 16px;
+			line-height: 21px;
+			&-num {
+				letter-spacing: 0.1rem;
+			}
+		}
+		&__page {
+			width: calc(100% - 406px);
+		}
+		&__house {
+			margin-bottom: 20px;
+		}
+		&__img {
+			width: 700px;
+			height: 500px; 
+		}
+		&__link {
+			width: 314px;
+			min-width: 314px; 
+		}
+		&__info {
+			padding: 52px 62px 53px 67px;
+			width: calc(100% - 700px);
+			height: 500px;
+			&-about {
+
+			}
+		}
+		&__price {
+			margin-top: 18px;
+			font-size: 30px;
+			line-height: 39px;
+			letter-spacing: 0.19rem;
+		}
+		&__title {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&__street {
+			margin-top: 10px;
+		}
+		&__content {
+			flex-direction: column;
+		}
+		&__features {
+			margin-top: 18px;
+			li {
+				padding: 7px 21px;
+				margin-right: 10px;
+			}
+		}
+	}
+}

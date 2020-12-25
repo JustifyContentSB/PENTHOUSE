@@ -52,9 +52,19 @@
 
 @media screen and(min-width: 1366px) {
 	.header {
-		position: static;
+		padding: 40px 75px 55px 0;
 		box-shadow: none;
-		padding: 40px 58px 45px 0;
+		position: relative;
+		z-index: 0;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 75px;
+			left: 0;
+			height: 10px;
+			background: #EFEFEF;
+		}
 		&__logo {
 			font-size: 24px;
 			line-height: 39px;

@@ -1,0 +1,45 @@
+.checkbox {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	color: $formColor;
+	cursor: pointer;
+	&__check {
+		display: inline-block;
+		min-width: 23px;
+		height: 23px;
+		margin-right: 16px;
+	    border: 1px solid #DADADA;
+	    background: #fff;
+	    position: relative;
+	}
+	&__text {
+	    font-size: 11px;
+	    line-height: 13px;
+	}
+	input {
+		display: none;
+		&:checked ~ .checkbox__check {
+			background: $formColor;
+			&::after {
+			    content: '';
+			    position: absolute;
+			    top: 7px;
+			    left: 5px;
+			    width: 11px;
+			    height: 8px;
+			    background: url(../../images/icons/check.svg);
+			    background-repeat: no-repeat;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.checkbox {
+		&__text {
+			font-size: 13px;
+			line-height: 17px;
+		}
+	}
+}

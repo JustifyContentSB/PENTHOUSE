@@ -1178,7 +1178,7 @@ html .no-scroll, body .no-scroll {
 @media screen and (min-width: 1366px) {
   .container {
     padding: 0;
-    padding-right: 58px;
+    padding-right: 75px;
   }
 }
 
@@ -1372,7 +1372,7 @@ html .no-scroll, body .no-scroll {
     position: static;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 40px 58px 45px 0;
+    padding: 40px 75px 45px 0;
   }
   .header__logo {
     font-size: 24px;
@@ -1552,6 +1552,10 @@ html .no-scroll, body .no-scroll {
 }
 
 @media screen and (min-width: 1366px) {
+  .nav {
+    font-size: 15px;
+    line-height: 19px;
+  }
   .nav__burger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1596,7 +1600,18 @@ html .no-scroll, body .no-scroll {
     left: calc(-100% + 90px);
     height: 100vh;
     width: 594px;
+    padding-top: 73px;
     padding-left: 165px;
+  }
+  .nav__list {
+    margin-bottom: 60px;
+  }
+  .nav__catalog {
+    max-width: 314px;
+  }
+  .nav__tel {
+    font-size: 26px;
+    line-height: 34px;
   }
 }
 
@@ -1625,11 +1640,13 @@ html .no-scroll, body .no-scroll {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-height: 333px;
+  overflow: hidden;
 }
 
 .penthouse__img img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .penthouse__info {
@@ -1681,6 +1698,9 @@ html .no-scroll, body .no-scroll {
   .penthouse__item {
     width: 300px;
   }
+  .penthouse__img {
+    max-height: 354px;
+  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -1689,6 +1709,9 @@ html .no-scroll, body .no-scroll {
   }
   .penthouse__item {
     width: 400px;
+  }
+  .penthouse__img {
+    max-height: 473px;
   }
   .penthouse__info {
     min-height: 106px;
@@ -1712,7 +1735,7 @@ html .no-scroll, body .no-scroll {
   .penthouse__item {
     width: 550px;
   }
-  .penthouse__img img {
+  .penthouse__img {
     width: 550px;
     max-height: 650px;
   }
@@ -1784,6 +1807,9 @@ html .no-scroll, body .no-scroll {
 }
 
 @media screen and (min-width: 1366px) {
+  .features {
+    padding-right: 75px;
+  }
   .features__title {
     font-size: 14px;
     margin-bottom: 20px;
@@ -1883,12 +1909,19 @@ html .no-scroll, body .no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-height: 164.71px;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .house__img img {
   width: 100%;
-  height: auto;
-  max-height: 164.71px;
+  height: 100%;
 }
 
 .house__item {
@@ -1943,7 +1976,7 @@ html .no-scroll, body .no-scroll {
   .house__item {
     width: 23.125rem;
   }
-  .house__img img {
+  .house__img {
     max-height: 293px;
   }
   .house__title br {
@@ -2558,7 +2591,7 @@ html .no-scroll, body .no-scroll {
   .footer {
     margin-top: 62px;
     padding-left: 0;
-    padding-right: 76px;
+    padding-right: 75px;
   }
   .footer::before {
     left: 0;

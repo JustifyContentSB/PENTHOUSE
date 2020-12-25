@@ -1,3 +1,6 @@
+$brown: #A79078;
+$formColor: #636363;
+
 %title {
 	font-weight: bold;
 	font-size: 1rem;
@@ -15,7 +18,6 @@
 
 %catalogLink {
 	display: block;
-	min-width: 314px;
 	text-align: center;
 	font-size: 0.813rem;
 	line-height: 1.063rem;
@@ -23,16 +25,14 @@
 	padding: 0.625rem;
 	@media screen and(min-width: 1366px) {
 		padding: 15px;
+		min-width: 314px;
 		font-size: 15px;
 		line-height: 19px;
 	}
 }
 
-$brown: #A79078;
-
 %brownLink {
 	display: block;
-	min-width: 320px;
 	padding: 0.725rem;
 	font-size: 0.813rem;
 	line-height: 1.063rem;
@@ -43,5 +43,6 @@ $brown: #A79078;
 		padding: 15px;
 		font-size: 15px;
 		line-height: 19px;
+		min-width: 320px;
 	}
 }

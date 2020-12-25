@@ -44,10 +44,13 @@
 	}
 	&__img {
 		display: flex;
+		max-height: 164.71px;
+		overflow: hidden;
+		justify-content: center;
+		align-items: center;
 		img {
-			width: 100%;
-			height: auto;
-			max-height: 164.71px;
+			width: 100%;  
+			height: 100%;
 		}
 	}
 	&__item {
@@ -94,9 +97,7 @@
 			width: 23.125rem;
 		}
 		&__img {
-			img {
-				max-height: 293px;
-			}
+			max-height: 293px;
 		}
 		&__title {
 			br {

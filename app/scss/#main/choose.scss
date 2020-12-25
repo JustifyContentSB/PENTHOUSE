@@ -1,0 +1,349 @@
+.choose {
+	color: $formColor;
+	font-weight: 350;
+	&__manage {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		font-weight: 350;
+		font-size: 10px;
+		line-height: 13px;
+	}
+	&__listing-btn {
+		width: 50%;
+		padding: 9px 6px;
+		border: 2px solid #DADADA;
+		display: none;
+		&.active {
+			border: 2px solid #000;
+		}
+	}
+	&__map {
+		padding: 9px 6px 9px 27px;
+		margin-right: 7px;
+		border: 1px solid #E6E6E6;
+		letter-spacing: 0.1rem;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 6px;
+			top: 7px;
+			width: 15px;
+			height: 15px;
+			background: url('../../images/icons/choose-map.svg');
+			background-repeat: no-repeat;
+		}
+		&.active {
+			background: #000;
+			color: #fff;
+		}
+	}
+	&__parameter {
+		padding: 10px 11px 10px 34px;
+		margin-right: 7px;
+		font-weight: 400;
+		letter-spacing: 0.05rem;
+		color: #FFFFFF;
+		background: $brown;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			width: 15px;
+			height: 14px;
+			background: url('../../images/icons/choose-parameter.svg');
+			background-repeat: no-repeat;
+		}
+	}
+	&__reset {
+		width: 34px;
+		height: 33px;
+		border: 1px solid #E6E6E6;
+		position: relative;
+		display: none;
+		&.active {
+			display: block;
+		}
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 17px;
+			height: 1px;
+			background: #000;
+		}
+		&::before {
+			transform: rotate(45deg);
+			left: 8px;
+		}
+		&::after {
+			transform: rotate(-45deg);
+			left: 8px;
+		}
+	}
+	&__list {
+		max-height: 0;
+		overflow: hidden;
+		color: $formColor;
+		transition: max-height 0.3s ease;
+	}
+	&__title {
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: 0.1rem; 
+		color: $formColor;
+	}
+	&__price {
+		padding-top: 30px;  
+		&-header {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			font-size: 11px;
+			line-height: 13px;
+			letter-spacing: 0.1rem;
+		}
+		&-list {
+			margin-left: 35px;
+		}
+		&-currency {
+			margin-right: 10px;
+			&.active {
+				font-weight: 400;
+			}
+		}
+		&-range {
+			margin-top: 15px;
+		}
+	}
+	&__bedroom {
+		margin-top: 30px;
+		&-inner {
+			margin-top: 10px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		input {
+			display: none;
+			&:checked ~ .choose__bedroom-radio {
+				background: $formColor;
+				color: #fff;
+			}
+		}
+		label {
+			cursor: pointer;
+			margin-right: 7px;
+		}
+		&-radio {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			border: 1px solid #DADADA;
+			background: #fff;
+			font-weight: 350;
+			font-size: 11px;
+			line-height: 35px;
+			text-align: center;
+		}
+	}
+	&__style {
+		margin-top: 15px;
+		font-size: 11px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		input {
+			display: none;
+			&:checked ~ .choose__style-checkbox {
+				background: $formColor;
+				&::after {
+					content: '';
+					position: absolute;
+					top: 7px;
+					left: 5px;
+					width: 11px;
+					height: 8px;
+					background: url('../../images/icons/check.svg');
+					background-repeat: no-repeat;
+				}
+			}
+		}
+		&-label {
+			display: inline-flex;
+			flex-wrap: wrap;
+			align-items: center;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+		&-checkbox {
+			display: inline-block;
+			min-width: 23px;
+			margin-right: 10px;
+			height: 23px;
+			border: 1px solid #DADADA;
+			background: #fff;
+			position: relative;
+		}
+	}
+	&__size {
+		margin-top: 30px;
+		&-range {
+			margin-top: 15px;
+		}
+	}
+	&__terrace {
+		margin-top: 30px;
+		&-range {
+			margin-top: 15px;
+		}
+		&-without {
+			margin-top: 30px;
+		}
+	}
+	&__about {
+		margin-top: 30px;
+		&-btn {
+			display: block;
+			margin-bottom: 10px;
+			border: 1px solid #DADADA;
+			background: #fff;
+			padding: 17px 35px 16px 27px;
+			font-size: 11px;
+			line-height: 13px;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				width: 12px;
+				height: 17px;
+				top: 15px;
+				right: 20px;
+				background: url('../../images/icons/arrow-down.svg');
+			}
+		}
+	}
+	&__reset-btn {
+		margin-top: 27px;
+		font-size: 11px;
+		display: block;
+		padding: 16px 10px 16px;
+		width: 100%;
+		background: #FFFFFF;
+		border: 2px solid #636363;
+	}
+}
+
+@media screen and(min-width: 700px) {
+	.choose {
+		&__listing-btn {
+			display: block;
+			text-align: center;
+		}
+		&__map {
+			width: 50%;
+			padding: 9px 6px;
+			margin-right: 0;
+			text-align: center;
+			border-width: 2px;
+			&::after {
+				display: none;
+			}
+			&.active {
+				background: #fff;
+				color: inherit;
+				border: 2px solid #000;
+			}
+		}
+		&__parameter,
+		&__reset {
+			display: none;
+		}
+		&__list {
+			max-height: 100%;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.choose {
+		&__manage {
+			font-size: 14px;
+			line-height: 18px;
+		}
+		&__listing-btn,
+		&__map {
+			padding: 14px 6px;
+			letter-spacing: 0.09rem;
+		}
+		&__title {
+			font-size: 16px;
+			line-height: 21px;
+		}
+		&__price {
+			padding-top: 50px;
+			&-header {
+				font-size: 16px;
+				line-height: 21px;
+			}
+			&-range {
+				margin-top: 20px;
+			}
+		}
+		&__bedroom {
+			margin-top: 50px;
+			&-radio {
+				width: 48px;
+				height: 48px;
+				font-size: 14px;
+				line-height: 48px;
+			}
+			&-inner {
+				margin-top: 15px;
+			}
+		}
+		&__style {
+			margin-top: 50px;
+			font-size: 13px;
+			line-height: 17px;
+			&-checkbox {
+				margin-right: 20px;
+			}
+			p {
+				letter-spacing: 0.07rem;
+			}
+		}
+		&__size {
+			margin-top: 50px;
+		}
+		&__about {
+			margin-top: 40px;
+			letter-spacing: 0.07rem;
+			&-btn {
+				padding-top: 15px;
+				padding-bottom: 15px;
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+		&__reset-btn {
+			padding: 13px 10px;
+			margin-top: 20px;
+			letter-spacing: 0.07rem;
+			font-size: 15px;
+			line-height: 19px;
+		}
+		&__terrace {
+			&-range {
+				margin-top: 25px;
+			}
+			&-without {
+				margin-top: 40px;
+				letter-spacing: 0.07rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.breadcrumbs {
+	font-size: 10px;
+	line-height: 10px;
+	letter-spacing: 0.1rem;
+	color: #8D8D8D;
+	&-article {
+		margin-top: 57px;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		padding-right: 14px;
+		margin-right: 14px;
+		position: relative;
+		&::after {
+			content: '/';
+			position: absolute;
+			right: -1px;
+			font-size: 14px;
+		}
+		&:last-child::after {
+			display: none;
+		}
+	}
+	&__link {
+		&--active {
+			color: #000
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.breadcrumbs {
+		margin-top: 50px; 
+		font-size: 12px;
+		line-height: 15px;
+	}
+}

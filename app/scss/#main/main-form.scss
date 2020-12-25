@@ -1,0 +1,138 @@
+.main-form {
+	padding: 25px 20px;
+	background: #FFFFFF;
+	border: 1px solid #E2E2E2;
+	&__title {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: 0.1rem;
+	}
+	&__inner {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__input {
+		margin-bottom: 9px;
+		padding: 15px 12px 15px 18px;
+		background: #F7F7F7;
+		border: none;
+		outline: none;
+		letter-spacing: 0.1rem;
+		&::placeholder {
+			font-weight: 300;
+			font-size: 12px;
+			line-height: 15px;
+		}
+	}
+	&__textarea {
+		margin-top: 8px;
+		padding: 16px 14px 16px 18px;
+		height: 126px;
+		background: #F7F7F7;
+		outline: none;
+		border: none;
+		resize: none;
+		&::placeholder {
+			font-weight: 300;
+			font-size: 11px;
+			line-height: 14px;
+			letter-spacing: 0.1rem;
+			color: #898989;
+		}
+	}
+	&__btn {
+		@extend %brownLink;
+		min-width: auto;
+		margin-top: 16px;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 17px;
+		letter-spacing: 0.1rem;
+	}
+	&__agree {
+		margin-top: 16px;
+		&-label {
+			display: inline-flex;
+			flex-wrap: wrap;
+			align-items: center;
+			cursor: pointer;
+			input {
+				display: none;
+				&:checked ~ .main-form__agree-check {
+					background: $formColor;
+					&::after {
+						content: '';
+						position: absolute;
+						top: 7px;
+						left: 5px;
+						width: 11px;
+						height: 8px;
+						background: url('../../images/icons/check.svg');
+					}
+				}
+			}
+		}
+		&-check {
+			width: 23px;
+			height: 23px;
+			margin-right: 12px;
+			border: 1px solid #DADADA;
+			position: relative;
+		}
+		&-text {
+			width: calc(100% - 35px);
+			font-weight: 350;
+			font-size: 10px;
+			line-height: 13px;
+			letter-spacing: 0.1rem;
+			color: #000000;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.main-form {
+		width: 500px;
+		padding: 56px 44px 35px;
+		border: 1px solid #000000;
+		&__title {
+			display: none;
+		}
+		&__inner {
+			margin-top: 0;
+		}
+		&__input {
+			padding: 20px 23px 19px;
+			margin-bottom: 20px;
+			&::placeholder {
+				font-size: 16px;
+			}
+		}
+		&__textarea {
+			padding: 20px 23px;
+			margin-top: 0;
+			height: 160px;
+			&::placeholder {
+				font-size: 16px;
+				line-height: 21px;
+			}
+		}
+		&__btn {
+			padding: 18px;
+			margin-top: 42px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 21px;
+		}
+		&__agree {
+			margin-top: 30px;
+			&-text {
+				font-weight: 350;
+				font-size: 13px;
+				line-height: 17px;
+			}
+		}
+	}
+}

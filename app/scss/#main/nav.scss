@@ -97,6 +97,8 @@
 
 @media screen and(min-width: 1366px) {
 	.nav {
+		font-size: 15px;
+		line-height: 19px;
 		&__burger {
 			display: flex;
 			justify-content: center;
@@ -134,7 +136,33 @@
 			left: calc(-100% + 90px);
 			height: 100vh;
 			width: 594px;
+			padding-top: 35px;
 			padding-left: 165px;
+		}
+		&__list {
+			margin-bottom: 20px;
+		}
+		&__catalog {
+			max-width: 314px;
+		}
+		&__tel {
+			margin-top: 20px;
+			font-size: 26px;
+			line-height: 34px;
+		}
+	}
+}
+
+@media screen and(min-width: 1440px) {
+	.nav {
+		&__inner {
+			padding-top: 73px;
+		}
+		&__list {
+			margin-bottom: 60px;
+		}
+		&__tel {
+			margin-top: 2.5rem;
 		}
 	}
 }

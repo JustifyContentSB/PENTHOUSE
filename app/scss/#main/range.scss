@@ -1,0 +1,61 @@
+.range {
+	width: 100%;
+	height: 7px;
+	border: 1px solid #DADADA;
+	border-radius: 0;
+	background: #fff;
+	&.ui-slider {
+		width: calc(100% - 20px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ui-slider-handle {
+		display: inline-block;
+		top: -13px;
+		width: 17px;
+		height: 17px;
+		position: relative;
+		z-index: 3;
+		background: #fff;
+		border: 2px solid $formColor;
+		cursor: pointer;
+		outline: none;
+		border-radius: 0;
+	}
+	.ui-widget-header {
+		height: 7px;
+		position: relative;
+		top: -1px;
+		background: $formColor;
+		border: 1px solid $formColor;
+		border-radius: 0;
+	}
+	&__value {
+		&-wrapper {
+			margin-top: 14px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		width: 50%;
+		border: none;
+		font-weight: 350;
+		font-size: 11px;
+		&:nth-child(2) {
+			text-align: right;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.range {
+		&__value {
+			font-size: 13px;
+			line-height: 17px;
+		}
+		&.ui-slider {
+			width: 100%;
+		}
+	}
+}

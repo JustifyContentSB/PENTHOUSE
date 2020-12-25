@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Каталог пентхаусов</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/catalog/style.min.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header class="header">
+			<h1 class="visually-hidden">Пентхаусы Москва</h1>
+			<div class="header__inner">
+				<div class="nav__burger nav__burger-tel">
+					<a class="nav__toggle" href="#">
+						<span class="nav__toggle-icon"></span>
+					</a>
+				</div>
+				<a class="header__logo" href="#">
+					<span class="header__logo-penthouse">Penthouse</span>
+					<span>.moscow</span>
+				</a>
+				<div class="header__manage">
+					<form class="header__form" action="#">
+						<label class="header__search">
+							<span class="header__search-icon"><img src="images/icons/search.svg" alt="search" width="17" height="17"></span>
+							<input type="text" placeholder="Найти пентхаус">
+						</label>
+					</form>
+					<a href="tel:+74951201100" class="header__tel tel">+7 495 120-11-00</a> 
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="nav__wrapper">
+				<div class="nav__burger nav__burger-dekstop">
+					<a class="nav__toggle" href="#">
+						<span class="nav__toggle-icon"></span>
+					</a>
+				</div>
+				<nav class="nav">
+					<div class="nav__inner">
+						<ul class="nav__list">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Что такое пентхаус</a></li>
+							<li><a href="#">Каталог пентхаусов</a></li>
+							<li><a href="#">Покупателям</a></li>
+							<li><a href="#">Собственникам</a></li>
+							<li><a href="#">Застройщикам</a></li>
+							<li><a href="#">Партнерам</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<a class="nav__catalog" href="#">Скачать каталог</a>
+						<div class="nav__contact">
+							<a class="nav__tel" href="#">+7 495 120-11-00</a>
+							<a class="nav__order" href="#">Заказать звонок</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="breadcrumbs breadcrumbs-article">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link--active" href="#">Каталог пентхаусов</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="mansion">
+				<h1 class="mansion__chapter main-title">Каталог пентхаусов</h1>
+				<div class="mansion__inner">
+					<form class="mansion__choose choose" action="post">
+						<div class="choose__manage">
+							<a class="choose__listing-btn" href="#">Списком</a>
+							<a class="choose__map" href="#">На карте</a>
+							<a class="choose__parameter" href="#">Параметры объектов</a>
+							<button class="choose__reset" type="reset">
+								<span class="visually-hidden">Сбросить параметры</span>
+							</button>
+						</div>
+						<div class="choose__list">
+							<div class="choose__price">
+								<div class="choose__price-header">
+									<p class="choose__title">Цена</p>     
+									<div class="choose__price-list">
+										<a class="choose__price-currency active" href="#">руб</a>
+										<a class="choose__price-currency" href="#">usd</a>
+										<a class="choose__price-currency" href="#">eur</a>
+									</div>
+								</div>
+								<div class="choose__price-range__wrapper">
+									<div class="choose__price-range range" id="penthousePrice"></div>
+									<p class="range__value-wrapper">
+									  <input class="range__value" type="text" id="penthouseAmount" readonly>
+									  <input class="range__value" type="text" id="penthouseAmount2" readonly>
+									</p>
+								</div>
+							</div>
+							<div class="choose__bedroom">
+							<p class="choose__title">Количество спален:</p>
+							<div class="choose__bedroom-inner">
+								<label>
+									<input type="radio" name="bedroomNum" value="1">
+									<span class="choose__bedroom-radio">1</span>
+								</label>
+								<label>
+									<input type="radio" name="bedroomNum" value="2">
+									<span class="choose__bedroom-radio">2</span>
+								</label>
+								<label>
+									<input type="radio" name="bedroomNum" value="3">
+									<span class="choose__bedroom-radio">3</span>
+								</label>
+								<label>
+									<input type="radio" name="bedroomNum" value="4">
+									<span class="choose__bedroom-radio">4</span>
+								</label>
+								<label>
+									<input type="radio" name="bedroomNum" value="5+">
+									<span class="choose__bedroom-radio">5+</span>
+								</label>
+							</div>
+							</div>	
+							<div class="choose__style">
+								<label class="choose__style-label">
+									<input type="radio" name="chooseStyle" value="С отделкой">
+									<span class="choose__style-checkbox"></span>
+									<p>С отделкой</p>
+								</label>
+								<label class="choose__style-label">
+									<input type="radio" name="chooseStyle" value="Без отделки">
+									<span class="choose__style-checkbox"></span>
+									<p>Без отделки</p>
+								</label>
+								<label class="choose__style-label">
+									<input type="radio" name="chooseStyle" value="Whitebox">
+									<span class="choose__style-checkbox"></span>
+									<p>Whitebox</p>
+								</label>
+								<label class="choose__style-label">
+									<input type="radio" name="chooseStyle" value="С мебелью">
+									<span class="choose__style-checkbox"></span>
+									<p>С мебелью</p>
+								</label>
+							</div>		
+							<div class="choose__size">
+								<p class="choose__title">Площадь пентхауса:</p>     
+								<div class="choose__size-range__wrapper">
+									<div class="choose__size-range range" id="sizeRange"></div>
+									<p class="range__value-wrapper">
+									  <input class="range__value" type="text" id="sizeAmount" readonly>
+									  <input class="range__value" type="text" id="sizeAmount2" readonly>
+									</p>
+								</div>
+							</div>
+							<div class="choose__terrace">
+								<p class="choose__title">Площадь террасы:</p>     
+								<div class="choose__terrace-range__wrapper">
+									<div class="choose__terrace-range range" id="terraceRange"></div>
+									<p class="range__value-wrapper">
+									  <input class="range__value" type="text" id="terraceAmount" readonly>
+									  <input class="range__value" type="text" id="terraceAmount2" readonly>
+									</p>
+								</div>
+								<div class="choose__terrace-without">
+									<label class="checkbox">
+										<input type="checkbox">
+										<span class="checkbox__check"></span>
+										<p class="checkbox__text">Без терассы</p>
+									</label>
+								</div>
+							</div>
+							<div class="choose__about">
+								<a class="choose__about-btn" href="#">Расположение</a>
+								<a class="choose__about-btn" href="#">Жилые комплексы</a>
+							</div>
+							<button class="choose__reset-btn" type="reset">Очистить</button>
+						</div>
+						
+					</form>
+					<div class="mansion__page">
+						<header class="mansion__header">
+							<div class="mansion__sort">
+								<p class="mansion__sort-num">Пентхаусов найдено: <span>67</span></p>
+								<p class="mansion__sort-type">
+									Сортировать по: <a class="mansion__sort-type__btn" href="#">Цене, сначала дешевле</a>
+								</p>
+							</div>
+						</header>
+						<ul class="mansion__kind">
+							<li class="mansion__kind-item"><a class="mansion__kind-btn" href="#">С камином</a></li>
+							<li class="mansion__kind-item"><a class="mansion__kind-btn active" href="#">Москва-Сити</a></li>
+							<li class="mansion__kind-item"><a class="mansion__kind-btn" href="#">Солнце утром</a></li>
+							<li class="mansion__kind-item"><a class="mansion__kind-btn" href="#">Вид на парк</a></li>
+						</ul>
+						<div class="mansion__house-wrapper">
+							<div class="mansion__house">
+								<div class="mansion__img"><img src="images/mansion/mansion-1.png" alt="пентхаус"></div>
+								<div class="mansion__info">
+									<div class="mansion__info-top">
+										<h2 class="mansion__title">Двухуровневый пентхаус с открытой террасой в ЖК White</h2>
+										<p class="mansion__street">ул. Новый Арбат, 45</p>
+										<ul class="mansion__content">
+											<li>2 <span>спальни</span></li> 
+											<li>Отделка <span>Whitebox</span></li>
+										</ul>
+										<ul class="mansion__features">
+											<li>С камином</li>
+											<li>Москва-Сити</li>
+											<li>Вид на парк</li>
+										</ul>
+									</div>
+									<div class="mansion__info-bottom">
+										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+										<p class="mansion__price">122 000 000 &#8381</p>
+										<div class="mansion__info-about">
+											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
+											<div class="mansion__more"><a href="#">Подробнее</a></div>
+										</div>
+									</div>
+									<a class="mansion__link" href="#">Назначить осмотр</a>
+								</div>
+							</div>
+							<div class="mansion__house">
+								<div class="mansion__img"><img src="images/mansion/mansion-2.png" alt="пентхаус"></div>
+								<div class="mansion__info">
+									<div class="mansion__info-top">
+										<h2 class="mansion__title">Двухуровневый ПЕНТХАУС В ЖК "ТРИЛОГИЯ"</h2>
+										<p class="mansion__street">ул. Новый Арбат, 45</p>
+										<ul class="mansion__content">
+											<li>2 <span>спальни</span></li> 
+											<li>Отделка <span>Whitebox</span></li>
+										</ul>
+										<ul class="mansion__features">
+											<li>С камином</li>
+											<li>Москва-Сити</li>
+											<li>Вид на парк</li>
+										</ul>
+									</div>
+									<div class="mansion__info-bottom">
+										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+										<p class="mansion__price">45 000 000 &#8381</p>
+										<div class="mansion__info-about">
+											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
+											<div class="mansion__more"><a href="#">Подробнее</a></div>
+										</div>
+									</div>
+									<a class="mansion__link" href="#">Назначить осмотр</a>
+								</div>
+							</div>
+							<div class="mansion__house">
+								<div class="mansion__img"><img src="images/mansion/mansion-3.png" alt="пентхаус"></div>
+								<div class="mansion__info">
+									<div class="mansion__info-top">
+										<h2 class="mansion__title">Двухуровневый пентхаус с открытой террасой в ЖК White</h2>
+										<p class="mansion__street">ул. Новый Арбат, 45</p>
+										<ul class="mansion__content">
+											<li>2 <span>спальни</span></li> 
+											<li>Отделка <span>Whitebox</span></li>
+										</ul>
+										<ul class="mansion__features">
+											<li>С камином</li>
+											<li>Москва-Сити</li>
+											<li>Вид на парк</li>
+										</ul>
+									</div>
+									<div class="mansion__info-bottom">
+										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+										<p class="mansion__price">122 000 000 &#8381</p>
+										<div class="mansion__info-about">
+											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
+											<div class="mansion__more"><a href="#">Подробнее</a></div>
+										</div>
+									</div>
+									<a class="mansion__link" href="#">Назначить осмотр</a>
+								</div>
+							</div>
+							<div class="mansion__house">
+								<div class="mansion__img"><img src="images/mansion/mansion-4.png" alt="пентхаус"></div>
+								<div class="mansion__info">
+									<div class="mansion__info-top">
+										<h2 class="mansion__title">ПЕНТХАУС ЖК "РЕЗИДЕНЦИЯ НА ВСЕВОЛОЖСКОМ"</h2>
+										<p class="mansion__street">ул. Новый Арбат, 45</p>
+										<ul class="mansion__content">
+											<li>2 <span>спальни</span></li> 
+											<li>Отделка <span>Whitebox</span></li>
+										</ul>
+										<ul class="mansion__features">
+											<li>С камином</li>
+											<li>Москва-Сити</li>
+											<li>Вид на парк</li>
+										</ul>
+									</div>
+									<div class="mansion__info-bottom">
+										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+										<p class="mansion__price">492 000 000 &#8381</p>
+										<div class="mansion__info-about">
+											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
+											<div class="mansion__more"><a href="#">Подробнее</a></div>
+										</div>
+									</div>
+									<a class="mansion__link" href="#">Назначить осмотр</a>
+								</div>
+							</div>
+							<div class="mansion__house">
+								<div class="mansion__img"><img src="images/mansion/mansion-5.png" alt="пентхаус"></div>
+								<div class="mansion__info">
+									<div class="mansion__info-top">
+										<h2 class="mansion__title">Двухуровневый ПЕНТХАУС ЖК "ПЛОТНИКОВ"</h2>
+										<p class="mansion__street">ул. Новый Арбат, 45</p>
+										<ul class="mansion__content">
+											<li>2 <span>спальни</span></li> 
+											<li>Отделка <span>Whitebox</span></li>
+										</ul>
+										<ul class="mansion__features">
+											<li>С камином</li>
+											<li>Москва-Сити</li>
+											<li>Вид на парк</li>
+										</ul>
+									</div>
+									<div class="mansion__info-bottom">
+										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+										<p class="mansion__price">890 000 000 &#8381</p>
+										<div class="mansion__info-about">
+											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
+											<div class="mansion__more"><a href="#">Подробнее</a></div>
+										</div>
+									</div>
+									<a class="mansion__link" href="#">Назначить осмотр</a>
+								</div>
+							</div>
+						</div>
+						<div class="mansion__map" id="map">
+						</div>
+					</div>
+				</div>
+			</section>	
+
+			<section class="catalog sec">
+				<div class="container">
+					<div class="catalog__inner">
+						<div class="catalog__img">
+							<img src="images/catalog/catalog.png" alt="catalog" width="201" height="191">
+						</div>
+						<div class="catalog__info">
+							<h2 class="catalog__title">Каталог пентхаусов</h2>
+							<div class="catalog__text text">
+								<p>
+									Есть две версии того, как возникли дома пентхаусы. Первая связана с военными действиями Англии в эпоху абсолютизма (16 век) и объясняет жилые помещения на крышах городских домов дефицитом площади для размещения солдат.
+								</p>
+								<p>
+									Вторая значительно романтичнее и отсылает к любителям закрытых, но роскошных пати. Такие вечеринки устраивали на крышах домов представители городской богемы Нью-Йорка в 20 годы прошлого столетия. Специально для удобства и разнообразия развлечений и возникло эксклюзивное жилье.
+								</p>
+							</div>
+							<a class="catalog__link" href="#">Скачать каталог</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="features sec">
+				<ul class="features__list">
+					<li>
+						<h2 class="features__title">Сэкономим время</h2>
+						<p>Найдём лучшие варианты и обо всём договоримся за вас</p>
+					</li>
+					<li>
+						<h2 class="features__title">Поможем разобраться</h2>
+						<p>Экспертиза, знание рынка, внимание к клиенту</p>
+					</li>
+					<li>
+						<h2 class="features__title">Эксклюзивные предложения</h2>
+						<p>Клубные дома и закрытые продажи</p>
+					</li>
+					<li>
+						<h2 class="features__title">Лучшие условия</h2>
+						<p>Договоримся о скидке, добьёмся наилучших условий</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="pro sec">
+				<div class="container">
+					<div class="pro__inner">
+						<div class="pro__profile">
+							<div class="pro__img"><img src="images/pro/Григорий Ашихмин.png" alt="Григорий Ашихмин" width="145" height="188"></div>
+							<div class="pro__info">
+								<p class="pro__name"><span>Ашихмин</span> Григорий</p>
+								<div class="pro__contact">
+									<a class="pro__tel" href="tel:+74951201100">+7 495 120 11 00</a>
+									<p class="pro__email">E-mail: <a href="mailto:ga@aandp.ru">ga@aandp.ru</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="pro__about">
+							<h2 class="pro__title">Обратитесь к профессионалам</h2>
+							<div class="pro__text text">
+								<p>Несмотря на то, что в настоящее время слово «пентхаус» обозначает роскошные и дорогие апартаменты, откуда открывается панорамный вид, исторически пентхаус был всего лишь пристройкой с односкатной крышей, навесом или другим небольшим строением, которое пристраивалось к сравнительно большому зданию. </p>
+								<p>В средневековые времена пентхаус являлся важным элементом искусства осады, поскольку был временным сооружением, которое защищало осаждающие войска в то время, когда они готовились к наступлению на врага.</p>	
+								<p class="attention">Ищете пентхаус в Москве? Мы поможем!</p>
+							</div>
+							<a class="pro__link" href="#">Заказать подбор пентхауса</a> 
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Что такое пентхаус</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Покупателям</a></li>
+					<li><a href="#">Собственникам</a></li>
+					<li><a href="#">Застройщикам</a></li>
+					<li><a href="#">Партнерам</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="footer__menu">
+				<li><a href="#">Пентхаусы с терассами</a></li> 
+				<li><a href="#">Пентхаусы для многодетных</a></li> 
+				<li><a href="#">Пентхаусы для тех к кого есть животные</a></li> 
+			</ul>
+			<p class="footer__slogan">Быть особенным - быть собой.</p>
+			<div class="footer__tel"><a href="tel:+74951201100">+7 495 120 11 00</a></div>
+			<div class="footer__info">
+				<div class="footer__logo"><a href="#"><img src="images/icons/logo.svg" alt="Логотип компании"></a></div>
+				<p class="footer__copy">2020 © Агентство элитной недвижимости «Ашихмин и партнёры»</p>
+			</div>
+			<a class="phone" href="tel:+74951201100"><img src="images/icons/tel.svg" alt="Позвонить в компанию" width="23" height="23"></a>
+		</footer>
+		<div class="overlay"></div>
+	</div>
+
+	<script src="js/libs/jquery-3.5.1.min.js"></script>
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+	
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/libs/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/range.js"></script>
+    <script src="js/choose.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
+   	
+
+</body>
+</html>
