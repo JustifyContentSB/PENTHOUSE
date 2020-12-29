@@ -1,0 +1,157 @@
+.order {
+	padding: 0 10px;
+	font-size: 10px;
+	line-height: 20px;
+	letter-spacing: 0.07rem;
+	&__show {
+		padding: 9px 16px 18px;
+		background: #F9F9F9;;
+	}
+	&__address {
+		font-size: 11px;
+		font-weight: 500;
+	}
+	&__link {
+		@extend %catalogLink;
+		margin-top: 10px;
+		font-size: 11px;
+		line-height: 14px;
+		padding: 7px;
+	}
+	&__info {
+		margin-top: 15px;
+	}
+	&__inspection {
+		@extend %brownLink;
+	}
+	&__list {
+		margin-top: 22px;
+		position: relative;
+	}
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__class {
+		width: 130px;
+		font-weight: 300;
+		overflow: hidden;
+	}
+	&__type {
+		font-weight: 500;
+	}
+	&__present {
+		margin-bottom: 14px;
+		padding: 23px;
+		padding-bottom: 26px;
+		background: #fff;
+		border: 1.24167px solid #000000;
+		box-shadow: 0px 3.10417px 9.3125px rgba(0, 0, 0, 0.15);
+		&-size {
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0.07rem;
+			font-weight: 400;
+		}
+		&-price {
+			margin-top: 9px;
+			font-weight: 700;
+			font-size: 26px;
+			line-height: 34px;
+			letter-spacing: 0.1rem;
+		}
+		&-metre {
+			margin-top: 12px;
+			font-weight: 350;
+			font-size: 11px;
+			line-height: 9px;
+			color: #8D8D8D;
+			letter-spacing: 0.1rem;
+		}
+		&-inspection {
+			@extend %brownLink;
+			margin-top: 18px;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.order {
+		width: 450px;
+		font-size: 14px;
+		line-height: 28px;
+		padding: 0;
+		&__address {
+			font-size: 14px;
+			line-height: 32px;
+		}
+		&__link {
+			padding: 15px 10px;
+			font-size: 14px;
+			line-height: 22px;
+		}
+		&__inspection {
+			font-size: 14px;
+			line-height: 22px;
+		}
+		&__list {
+			padding-top: 55px;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				height: 10px;
+				background: #EFEFEF;;
+			}
+		}
+		&__class {
+			width: 200px;
+		}
+		&__present {
+			&-size {
+				font-size: 14px;
+				line-height: 120%;
+			}
+			&-metre {
+				font-size: 13px;
+				line-height: 120%;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.order {
+		width: 480px;
+		font-size: 15px;
+		line-height: 40px;
+		letter-spacing: 0.1rem;
+		&__show {
+			padding: 25px 46px 39px;
+		}
+		&__address {
+			font-size: 16px;
+			line-height: 40px;
+		}
+		&__link {
+			font-size: 15px;
+			line-height: 19px;
+		}
+		&__info {
+			margin-top: 25px;
+		}
+		&__inspection {
+			padding: 12px;
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&__list {
+			margin-top: 35px;
+		}
+		&__class {
+			width: 235px;
+		}
+	}
+}

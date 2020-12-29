@@ -4,12 +4,12 @@
 		justify-content: center;
 	}
 	&__img {
-		display: flex;
 		width: 50%;
 		max-width: 300px;
 		img {
 			width: 100%;
 			height: auto;
+			display: block;
 		}
 	}
 	&__info {

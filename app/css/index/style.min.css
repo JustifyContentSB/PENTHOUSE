@@ -1010,7 +1010,6 @@ button.swiper-pagination-bullet {
 
 .nav__catalog, .catalog__link, .explain__link {
   display: block;
-  min-width: 314px;
   text-align: center;
   font-size: 0.813rem;
   line-height: 1.063rem;
@@ -1021,6 +1020,7 @@ button.swiper-pagination-bullet {
 @media screen and (min-width: 1366px) {
   .nav__catalog, .catalog__link, .explain__link {
     padding: 15px;
+    min-width: 314px;
     font-size: 15px;
     line-height: 19px;
   }
@@ -1028,7 +1028,6 @@ button.swiper-pagination-bullet {
 
 .pro__link {
   display: block;
-  min-width: 320px;
   padding: 0.725rem;
   font-size: 0.813rem;
   line-height: 1.063rem;
@@ -1042,6 +1041,7 @@ button.swiper-pagination-bullet {
     padding: 15px;
     font-size: 15px;
     line-height: 19px;
+    min-width: 320px;
   }
 }
 
@@ -1099,7 +1099,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Stem';
-  src: url("../fonts/stem/Stem-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/stem/Stem-Light.woff2") format("woff2"), url("../fonts/stem/Stem-Light.woff") format("woff"), url("../fonts/stem/Stem-Light.ttf") format("truetype"), url("../fonts/stem/Stem-Light.svg") format("svg");
+  src: url("../../fonts/stem/Stem-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/stem/Stem-Light.woff2") format("woff2"), url("../../fonts/stem/Stem-Light.woff") format("woff"), url("../../fonts/stem/Stem-Light.ttf") format("truetype"), url("../../fonts/stem/Stem-Light.svg") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -1107,7 +1107,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Stem';
-  src: url("../fonts/stem/Stem-SemiLight.eot?#iefix") format("embedded-opentype"), url("../fonts/stem/Stem-SemiLight.woff2") format("woff2"), url("../fonts/stem/Stem-SemiLight.woff") format("woff"), url("../fonts/stem/Stem-SemiLight.ttf") format("truetype"), url("../fonts/stem/Stem-SemiLight.svg") format("svg");
+  src: url("../../fonts/stem/Stem-SemiLight.eot?#iefix") format("embedded-opentype"), url("../../fonts/stem/Stem-SemiLight.woff2") format("woff2"), url("../../fonts/stem/Stem-SemiLight.woff") format("woff"), url("../../fonts/stem/Stem-SemiLight.ttf") format("truetype"), url("../../fonts/stem/Stem-SemiLight.svg") format("svg");
   font-weight: 350;
   font-style: normal;
   font-display: swap;
@@ -1115,7 +1115,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Stem';
-  src: url("../fonts/stem/Stem-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/stem/Stem-Regular.woff2") format("woff2"), url("../fonts/stem/Stem-Regular.woff") format("woff"), url("../fonts/stem/Stem-Regular.ttf") format("truetype"), url("../fonts/stem/Stem-Regular.svg") format("svg");
+  src: url("../../fonts/stem/Stem-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/stem/Stem-Regular.woff2") format("woff2"), url("../../fonts/stem/Stem-Regular.woff") format("woff"), url("../../fonts/stem/Stem-Regular.ttf") format("truetype"), url("../../fonts/stem/Stem-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -1123,7 +1123,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Stem';
-  src: url("../fonts/stem/Stem-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/stem/Stem-Medium.woff2") format("woff2"), url("../fonts/stem/Stem-Medium.woff") format("woff"), url("../fonts/stem/Stem-Medium.ttf") format("truetype"), url("../fonts/stem/Stem-Medium.svg") format("svg");
+  src: url("../../fonts/stem/Stem-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/stem/Stem-Medium.woff2") format("woff2"), url("../../fonts/stem/Stem-Medium.woff") format("woff"), url("../../fonts/stem/Stem-Medium.ttf") format("truetype"), url("../../fonts/stem/Stem-Medium.svg") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1131,7 +1131,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: 'Stem';
-  src: url("../fonts/stem/Stem-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/stem/Stem-Bold.woff2") format("woff2"), url("../fonts/stem/Stem-Bold.woff") format("woff"), url("../fonts/stem/Stem-Bold.ttf") format("truetype"), url("../fonts/stem/Stem-Bold.svg") format("svg");
+  src: url("../../fonts/stem/Stem-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/stem/Stem-Bold.woff2") format("woff2"), url("../../fonts/stem/Stem-Bold.woff") format("woff"), url("../../fonts/stem/Stem-Bold.ttf") format("truetype"), url("../../fonts/stem/Stem-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -1195,6 +1195,66 @@ html .no-scroll, body .no-scroll {
 @media screen and (min-width: 1920px) {
   .sec {
     margin-top: 150px;
+  }
+}
+
+.swiper-button-prev {
+  width: 56px;
+  height: 56px;
+  background: #fff url("../../images/icons/swiper-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: auto;
+}
+
+.swiper-button-next {
+  width: 56px;
+  height: 56px;
+  background: #fff url("../../images/icons/swiper-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: auto;
+}
+
+.house .swiper-button-prev {
+  left: 0;
+}
+
+.house .swiper-button-next {
+  right: 0;
+}
+
+.gallery .swiper-button-prev {
+  left: 0;
+}
+
+.gallery .swiper-button-next {
+  right: 75px;
+}
+
+@media screen and (min-width: 1366px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: block;
   }
 }
 
@@ -1369,10 +1429,20 @@ html .no-scroll, body .no-scroll {
 
 @media screen and (min-width: 1366px) {
   .header {
-    position: static;
+    padding: 40px 75px 55px 0;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 40px 75px 45px 0;
+    position: relative;
+    z-index: 0;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+    left: 0;
+    height: 10px;
+    background: #EFEFEF;
   }
   .header__logo {
     font-size: 24px;
@@ -1600,18 +1670,31 @@ html .no-scroll, body .no-scroll {
     left: calc(-100% + 90px);
     height: 100vh;
     width: 594px;
-    padding-top: 73px;
+    padding-top: 35px;
     padding-left: 165px;
   }
   .nav__list {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   .nav__catalog {
     max-width: 314px;
   }
   .nav__tel {
+    margin-top: 20px;
     font-size: 26px;
     line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav__inner {
+    padding-top: 73px;
+  }
+  .nav__list {
+    margin-bottom: 60px;
+  }
+  .nav__tel {
+    margin-top: 2.5rem;
   }
 }
 
@@ -1843,12 +1926,15 @@ html .no-scroll, body .no-scroll {
     overflow-x: visible;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .features__list li {
-    min-width: 24%;
+    width: auto;
   }
   .features__list p {
-    width: 270px;
+    width: 280px;
     font-size: 16px;
     line-height: 21px;
   }
@@ -1891,10 +1977,11 @@ html .no-scroll, body .no-scroll {
   position: absolute;
   right: 0;
   top: 0.125rem;
-  background: url("../images/icons/slick-right.svg");
+  background: url("../../images/icons/swiper-right.svg");
   width: 1.063rem;
   height: 0.688rem;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .house__list {
@@ -1931,7 +2018,7 @@ html .no-scroll, body .no-scroll {
 }
 
 .house__info {
-  min-height: 4.9rem;
+  min-height: 97.47px;
   padding: 0.893rem 1.188rem 0.6rem 0.625rem;
   letter-spacing: 0.06rem;
   background: #F1F1F1;
@@ -2047,7 +2134,7 @@ html .no-scroll, body .no-scroll {
   .house__all {
     font-size: 16px;
     line-height: 21px;
-    margin-left: 100px;
+    margin-left: 85px;
     padding-right: 40px;
     letter-spacing: 0.1rem;
   }
@@ -2182,16 +2269,8 @@ html .no-scroll, body .no-scroll {
   margin-top: 1.563rem;
 }
 
-.explain__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .explain__img img {
+  display: block;
   width: 100%;
   min-width: 18.75rem;
   max-width: 54.063rem;
@@ -2288,9 +2367,6 @@ html .no-scroll, body .no-scroll {
 }
 
 .pro__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 50%;
   max-width: 300px;
 }
@@ -2298,6 +2374,7 @@ html .no-scroll, body .no-scroll {
 .pro__img img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .pro__info {
@@ -2496,7 +2573,7 @@ html .no-scroll, body .no-scroll {
 
 .footer__list {
   max-width: 280px;
-  height: 140px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2592,6 +2669,7 @@ html .no-scroll, body .no-scroll {
     margin-top: 62px;
     padding-left: 0;
     padding-right: 75px;
+    padding-bottom: 30px;
   }
   .footer::before {
     left: 0;
@@ -2644,6 +2722,20 @@ html .no-scroll, body .no-scroll {
     line-height: 30px;
     letter-spacing: 0.1rem;
   }
+  .footer__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__list li {
+    margin-right: 57px;
+  }
+  .footer__list li:nth-child(2n) {
+    margin-right: 57px;
+  }
+  .footer__list li:last-child {
+    margin-right: 0;
+  }
   .footer__menu {
     margin-top: 45px;
     font-size: 16px;
@@ -2662,5 +2754,14 @@ html .no-scroll, body .no-scroll {
   }
   .footer__logo img {
     width: 385px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .header {
+    padding-bottom: 45px;
+  }
+  .header::after {
+    display: none;
   }
 }

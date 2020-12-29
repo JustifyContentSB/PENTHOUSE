@@ -364,7 +364,6 @@ template {
 
 .nav__catalog {
   display: block;
-  min-width: 314px;
   text-align: center;
   font-size: 0.813rem;
   line-height: 1.063rem;
@@ -375,6 +374,7 @@ template {
 @media screen and (min-width: 1366px) {
   .nav__catalog {
     padding: 15px;
+    min-width: 314px;
     font-size: 15px;
     line-height: 19px;
   }
@@ -382,7 +382,6 @@ template {
 
 .pro__link, .main-form__btn {
   display: block;
-  min-width: 320px;
   padding: 0.725rem;
   font-size: 0.813rem;
   line-height: 1.063rem;
@@ -396,6 +395,7 @@ template {
     padding: 15px;
     font-size: 15px;
     line-height: 19px;
+    min-width: 320px;
   }
 }
 
@@ -711,6 +711,7 @@ html .no-scroll, body .no-scroll {
     -webkit-box-shadow: none;
             box-shadow: none;
     position: relative;
+    z-index: 0;
   }
   .header::after {
     content: '';
@@ -764,6 +765,7 @@ html .no-scroll, body .no-scroll {
 }
 
 .breadcrumbs {
+  margin-top: 57px;
   font-size: 10px;
   line-height: 10px;
   letter-spacing: 0.1rem;
@@ -778,14 +780,21 @@ html .no-scroll, body .no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+.breadcrumbs__list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .breadcrumbs__item {
   padding-right: 14px;
   margin-right: 14px;
   position: relative;
+  white-space: nowrap;
 }
 
 .breadcrumbs__item::after {
@@ -1071,9 +1080,6 @@ html .no-scroll, body .no-scroll {
 }
 
 .pro__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 50%;
   max-width: 300px;
 }
@@ -1081,6 +1087,7 @@ html .no-scroll, body .no-scroll {
 .pro__img img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .pro__info {
@@ -1283,6 +1290,10 @@ html .no-scroll, body .no-scroll {
   margin-top: 7px;
 }
 
+.article__text-hidden {
+  display: none;
+}
+
 .article__item {
   padding-left: 16px;
   margin-bottom: 15px;
@@ -1337,8 +1348,14 @@ html .no-scroll, body .no-scroll {
     margin-top: 20px;
     letter-spacing: 0.125rem;
   }
+  .article__text-hidden {
+    display: block;
+  }
   .article__form {
     margin-top: 150px;
+  }
+  .article__list {
+    letter-spacing: 0.125rem;
   }
 }
 
@@ -1513,6 +1530,7 @@ html .no-scroll, body .no-scroll {
 }
 
 .main-form__agree-text {
+  margin-top: 3px;
   width: calc(100% - 35px);
   font-weight: 350;
   font-size: 10px;
@@ -1680,12 +1698,15 @@ html .no-scroll, body .no-scroll {
     overflow-x: visible;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .features__list li {
-    min-width: 24%;
+    width: auto;
   }
   .features__list p {
-    width: 270px;
+    width: 280px;
     font-size: 16px;
     line-height: 21px;
   }
@@ -1716,7 +1737,7 @@ html .no-scroll, body .no-scroll {
 
 .footer__list {
   max-width: 280px;
-  height: 140px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1812,6 +1833,7 @@ html .no-scroll, body .no-scroll {
     margin-top: 62px;
     padding-left: 0;
     padding-right: 75px;
+    padding-bottom: 30px;
   }
   .footer::before {
     left: 0;
@@ -1863,6 +1885,20 @@ html .no-scroll, body .no-scroll {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.1rem;
+  }
+  .footer__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__list li {
+    margin-right: 57px;
+  }
+  .footer__list li:nth-child(2n) {
+    margin-right: 57px;
+  }
+  .footer__list li:last-child {
+    margin-right: 0;
   }
   .footer__menu {
     margin-top: 45px;

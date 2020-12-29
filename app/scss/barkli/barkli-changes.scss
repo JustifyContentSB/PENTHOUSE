@@ -1,0 +1,49 @@
+@media screen and(min-width: 1366px) {
+	.house {
+		margin-top: 40px;
+		padding-top: 90px;
+		padding-bottom: 160px;
+		position: relative;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			right: 75px;
+			left: 0;
+			height: 10px;
+			background: #EFEFEF;;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		&__chapter {
+			padding: 10px 41px 10px 0;
+			background: #F2F2F2;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -165px;
+				width: 165px;
+				height: 100%;
+				background: #F2F2F2;
+			}
+		}
+		&__all {
+			margin-left: 40px;
+		}
+		&__list {
+			margin-top: 45px;
+		}
+	}
+	.features {
+		margin-top: 222px;
+	}
+	.footer {
+		margin-top: 105px;
+	}
+}

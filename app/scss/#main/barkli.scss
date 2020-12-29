@@ -1,0 +1,168 @@
+.barkli {
+	margin-top: 15px;
+	&__page {
+		margin-top: 27px;
+	}
+	&__title {
+		margin-top: 27px;
+		margin-bottom: 15px;
+	}
+	&__text {
+		font-size: 11px;
+		line-height: 13px;
+	}
+	&__info {
+		padding: 0 10px;
+		letter-spacing: 0.07rem;
+	}
+}
+
+@media screen and(min-width: 700px) {
+	.barkli {
+		&__page {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.barkli {
+		&__house {
+			display: flex;
+			align-items: flex-start;
+		}
+		.mansion {
+			&__img {
+				min-width: 430px;
+				width: 430px;
+			}
+			&__info {
+				width: calc(100% - 430px);
+				min-height: 307px;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1200px) {
+	.barkli {
+		.mansion {
+			&__img {
+				min-width: 600px;
+				width: 600px;
+			}
+			&__info {
+				width: calc(100% - 600px);
+				min-height: 428.56px;
+				padding: 30px;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.barkli {
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-right: 75px;
+		&__info {
+			padding: 0;
+		}
+		&__title {
+			margin-top: 50px;
+			margin-bottom: 30px;
+			padding: 0;
+			letter-spacing: 0.19rem;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		&__page {
+			width: calc(100% - 500px);
+			margin-top: 0;
+		}
+		&__house {
+			flex-direction: column;
+			margin-bottom: 20px;
+		}
+		.mansion {
+			&__kind {
+				margin-top: 35px;
+			}
+			&__info {
+				width: 100%;
+				min-height: 350px;
+			}
+			&__link {
+				width: 314px;
+				min-width: 314px;
+			}
+			&__img {
+				width: 100%;
+				max-width: 100%;
+			}
+			&__house {
+				&-wrapper {
+					margin-top: 45px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1600px) {
+	.barkli {
+		&__house {
+			flex-direction: row;
+		}
+		.mansion {
+			&__img {
+				min-width: 500px;
+				width: 500px;
+			}
+			&__info {
+				width: calc(100% - 500px);
+				min-height: 357.14px;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.barkli {
+		&__title {
+			font-size: 30px;
+			line-height: 39px;
+		}
+		&__page {
+			width: calc(100% - 580px);
+		}
+		&__text {
+			font-size: 18px;
+			line-height: 26px;
+			letter-spacing: 0.12rem;
+		}
+		.mansion {
+			&__img {
+				min-width: 600px;
+				width: 600px;
+				height: 428.56px;
+			}
+			&__info {
+				width: calc(100% - 600px);
+				min-height: 428.56px;
+				height: 428.56px;
+				padding: 45px 26px 32px 43px;
+			}
+			&__price {
+				margin-top: 6px; 
+			}
+			&__link {
+				display: none;
+			}
+		}
+	}
+}

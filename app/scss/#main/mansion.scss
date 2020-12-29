@@ -26,8 +26,16 @@
 		&-type {
 			&__btn {
 				padding-right: 19px;
-				text-decoration: underline;
 				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 19px;
+					height: 1px;
+					background: #000;
+				}
 				&::after {
 					content: '';
 					position: absolute;
@@ -103,11 +111,11 @@
 		width: 100%;
 		max-width: 700px;
 		margin: 0 auto;
-		display: flex;
 		overflow: hidden;
 		img {
 			width: 100%;
 			height: auto;
+			display: block;
 		}
 	}
 	&__info {
@@ -182,7 +190,16 @@
 		letter-spacing: 0.1rem;
 		color: #000000;
 		a {
-			text-decoration-line: underline;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 1px;
+				background: #000;
+			}
 		}
 	}
 	&__link {
@@ -273,11 +290,19 @@
 			&-num {
 				margin-bottom: 0;
 			}
+			&-type {
+				&__btn {
+					&::after {
+						top: 5px;
+					}
+				}
+			}
 		}
 		&__kind {
 			margin-top: 25px;
 			padding: 0;
 			overflow-x: visible;
+			flex-wrap: wrap;
 			font-size: 12px;
 			line-height: 15px;
 			letter-spacing: 0.1rem;
@@ -287,9 +312,7 @@
 			}
 			&-btn {
 				padding: 7px 21px;
-				&.active {
-					border-width: 2px;
-				}
+				border-width: 2px;
 			}
 		}
 		&__img {

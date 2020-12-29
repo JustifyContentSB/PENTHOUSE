@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	//NAV 
 	$(document).ready(function(){
 		$('.nav__toggle').on('click', function(event){
 			event.preventDefault();
@@ -15,19 +14,4 @@ $(document).ready(function(){
 			$('body').toggleClass('no-scroll');
 		});
 	})
-
-	//SWIPER
-	const penthouse = document.querySelector('.penthouse');
-	let penthouseSwiper = new Swiper(penthouse, {
-      slidesPerView: 'auto',
-      spaceBetween: 2
-    });
-
-    const house = document.querySelectorAll('.house__list');
-    for(let i = 0; i < house.length; i++) {
-    	let houseSwiper = new Swiper(house[i], {
-	      slidesPerView: 'auto',
-	      spaceBetween: 2
-	    });
-    }
 });

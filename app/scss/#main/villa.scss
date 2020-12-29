@@ -1,0 +1,66 @@
+.villa {
+	margin-top: 46px;
+	letter-spacing: 0.07rem;
+	&__header {
+		padding: 0 10px;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 21px;
+	}
+	&__text {
+		margin-top: 12px;
+		font-weight: 300;
+		font-size: 11px;
+		line-height: 13px;
+	}
+	&__list {
+		margin-top: 20px;
+	}
+	&__item {
+		width: 306px;
+		height: 124px;
+		overflow: hidden;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__order {
+		&-list {
+			margin-top: 18px;
+		}
+	}
+	&__links {
+		margin-top: 22px;
+		padding: 0 10px;
+		&-map {
+			@extend %catalogLink;
+		}
+		&-order {
+			@extend %brownLink;
+			margin-top: 10px;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.villa {
+		&__title {
+			font-size: 30px;
+    		line-height: 120%;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		&__header {
+			padding: 0;
+		}
+		&__links {
+			padding: 0;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.swiper {
+	&-button {
+		&-prev {
+			width: 56px;
+			height: 56px;
+			background: #fff url('../../images/icons/swiper-left.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			outline: none;
+			display: none;
+			&::after {
+				display: none;
+			}
+			&.swiper-button-disabled {
+				opacity: 0.5;
+				pointer-events: auto;
+			}
+		}
+		&-next {
+			width: 56px;
+			height: 56px;
+			background: #fff url('../../images/icons/swiper-right.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			outline: none;
+			display: none;
+			&::after {
+				display: none;
+			}
+			&.swiper-button-disabled {
+				opacity: 0.5;
+				pointer-events: auto;
+			}
+		}
+	}
+}
+
+.house {
+	.swiper {
+		&-button {
+			&-prev {
+				left: 0;
+			}
+			&-next {
+				right: 0;
+			}
+		}
+	}
+}
+
+.gallery {
+	.swiper {
+		&-button {
+			&-prev {
+				left: 0;
+			}
+			&-next {
+				right: 75px;
+			}
+		}
+	}
+}
+
+.flat {
+	.swiper {
+		&-button {
+			&-prev {
+				left: 0;
+			}
+			&-next {
+				right: 0;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.swiper {
+		&-button {
+			&-prev,
+			&-next {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+@media screen and(min-width: 1366px) {
+	.header {
+		padding-bottom: 45px;
+		&::after {
+			display: none;
+		}
+	}
+}
+

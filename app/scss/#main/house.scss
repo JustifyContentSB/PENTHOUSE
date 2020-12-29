@@ -31,10 +31,11 @@
 			position: absolute;
 			right: 0;
 			top: 0.125rem;
-			background: url('../images/icons/slick-right.svg');
+			background: url('../../images/icons/swiper-right.svg');
 			width: 1.063rem;
 			height: 0.688rem;
 			background-size: contain;
+			background-repeat: no-repeat;
 		}
 	}
 	&__list {
@@ -59,7 +60,7 @@
 		outline: none;
 	}
 	&__info {
-		min-height: 4.9rem;
+		min-height: 97.47px;
 		padding: 0.893rem 1.188rem 0.6rem 0.625rem;
 		letter-spacing: 0.06rem;
 		background: #F1F1F1;
@@ -168,7 +169,7 @@
 		&__all { 
 			font-size: 16px;
 			line-height: 21px; 
-			margin-left: 100px;
+			margin-left: 85px;
 			padding-right: 40px;
 			letter-spacing: 0.1rem;
 			&::before {

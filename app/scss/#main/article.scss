@@ -20,6 +20,9 @@
 	}
 	&__text {
 		margin-top: 7px;
+		&-hidden {
+			display: none;
+		}
 	}
 	&__item {
 		padding-left: 16px;
@@ -66,9 +69,15 @@
 		&__text {
 			margin-top: 20px;
 			letter-spacing: 0.125rem;
+			&-hidden {
+				display: block;
+			}
 		}
 		&__form {
 			margin-top: 150px;
+		}
+		&__list {
+			letter-spacing: 0.125rem;
 		}
 	}
 }

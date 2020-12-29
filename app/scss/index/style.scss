@@ -1,5 +1,5 @@
 @import '../../../node_modules/normalize.css/normalize';
-@import '../../js/libs/swiper-bundle.min';
+@import '../../js/libs/swiper/swiper-bundle.min';
 
 @import '../#base/vars.scss';
 @import '../#base/base.scss';
@@ -8,6 +8,7 @@
 @import '../#main/wrapper.scss';
 @import '../#main/container.scss';
 @import '../#main/sec.scss';
+@import '../#main/swiper.scss';
 @import '../#main/overlay.scss';
 @import '../#main/phone.scss';
 @import '../#main/text.scss';
@@ -21,3 +22,4 @@
 @import '../#main/explain.scss';
 @import '../#main/pro.scss';
 @import '../#main/footer.scss';
+@import 'index-changes.scss';

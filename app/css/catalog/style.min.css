@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(../../js/libs/jquery-range/jquery-ui.min.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -636,8 +637,17 @@ html .no-scroll, body .no-scroll {
 
 .mansion__sort-type__btn {
   padding-right: 19px;
-  text-decoration: underline;
   position: relative;
+}
+
+.mansion__sort-type__btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 19px;
+  height: 1px;
+  background: #000;
 }
 
 .mansion__sort-type__btn::after {
@@ -824,8 +834,17 @@ html .no-scroll, body .no-scroll {
 }
 
 .mansion__more a {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  position: relative;
+}
+
+.mansion__more a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #000;
 }
 
 .mansion__link {
@@ -935,6 +954,9 @@ html .no-scroll, body .no-scroll {
   .mansion__sort-num {
     margin-bottom: 0;
   }
+  .mansion__sort-type__btn::after {
+    top: 5px;
+  }
   .mansion__kind {
     margin-top: 25px;
     padding: 0;
@@ -949,8 +971,6 @@ html .no-scroll, body .no-scroll {
   }
   .mansion__kind-btn {
     padding: 7px 21px;
-  }
-  .mansion__kind-btn.active {
     border-width: 2px;
   }
   .mansion__img {
@@ -2156,12 +2176,15 @@ html .no-scroll, body .no-scroll {
     overflow-x: visible;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .features__list li {
-    min-width: 24%;
+    width: auto;
   }
   .features__list p {
-    width: 270px;
+    width: 280px;
     font-size: 16px;
     line-height: 21px;
   }
@@ -2487,7 +2510,7 @@ html .no-scroll, body .no-scroll {
 
 .footer__list {
   max-width: 280px;
-  height: 140px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2583,6 +2606,7 @@ html .no-scroll, body .no-scroll {
     margin-top: 62px;
     padding-left: 0;
     padding-right: 75px;
+    padding-bottom: 30px;
   }
   .footer::before {
     left: 0;

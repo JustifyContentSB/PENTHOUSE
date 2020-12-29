@@ -1,0 +1,64 @@
+.plan {
+	margin-top: 20px;  
+	padding: 0 10px;
+	&__img {
+		width: 100%;
+		max-width: 693px;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__info {
+		margin-top: 18px;
+		letter-spacing: 0.07rem;
+		font-size: 12px;
+		line-height: 15px;
+		&-about {
+			font-weight: 300;
+		}
+		&-size {
+			margin-top: 8px;
+			font-weight: 500;
+		}
+		&-download {
+			@extend %catalogLink;
+			margin-top: 19px;
+		}
+		&-order {
+			@extend %brownLink;
+			margin-top: 10px;
+		}
+		&-partner {
+			font-weight: 350;
+			font-size: 14px;
+			text-align: center;
+			color: #636363;
+			a {
+				display: inline-block;
+				padding: 12px 0;
+				position: relative;
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 12px;
+					height: 1px;
+					background: #636363;
+				}
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.plan {
+		padding: 0; 
+		&__info {
+			font-size: 13px;
+			line-height: 17px;
+		}
+	}
+}

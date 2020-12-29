@@ -1,4 +1,5 @@
 .breadcrumbs {
+	margin-top: 57px;
 	font-size: 10px;
 	line-height: 10px;
 	letter-spacing: 0.1rem;
@@ -8,12 +9,18 @@
 	}
 	&__list {
 		display: flex;
-		flex-wrap: wrap;
+		overflow-x: scroll;
+		-ms-overflow-style: none;
+		overflow: -moz-scrollbars-none;
+		&::-webkit-scrollbar { 
+			width: 0; height: 0; 
+		}
 	}
 	&__item {
 		padding-right: 14px;
 		margin-right: 14px;
 		position: relative;
+		white-space: nowrap;
 		&::after {
 			content: '/';
 			position: absolute;

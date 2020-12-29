@@ -1,0 +1,11 @@
+.sec-title {
+	@extend %title;
+	padding: 0 10px;
+	letter-spacing: 0.08rem;
+}
+
+@media screen and(min-width: 1366px) {
+	.sec-title {
+		padding: 0;
+	}
+}
