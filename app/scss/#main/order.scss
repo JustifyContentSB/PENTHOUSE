@@ -20,6 +20,27 @@
 	}
 	&__info {
 		margin-top: 15px;
+		&-link {
+			display: none;
+			margin-top: 40px;
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 110%;
+			position: relative;
+			&:hover::after,
+			&:focus::after {
+				display: none;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 1px;
+				background: #000;
+			}
+		}
 	}
 	&__inspection {
 		@extend %brownLink;
@@ -36,6 +57,7 @@
 		width: 130px;
 		font-weight: 300;
 		overflow: hidden;
+		white-space: nowrap;
 	}
 	&__type {
 		font-weight: 500;
@@ -119,6 +141,21 @@
 				line-height: 120%;
 			}
 		}
+		&__info {
+			&-link {
+				margin-left: 10px;
+				display: inline-block;
+			}
+		}
+		&__present {
+			&-inspection {
+				padding: 12px;
+				margin-top: 34px;
+				font-size: 18px;
+				line-height: 24px;
+				letter-spacing: 0.1em;
+			}
+		}
 	}
 }
 
@@ -152,6 +189,32 @@
 		}
 		&__class {
 			width: 235px;
+		}
+		&__present {
+			padding: 40px 45px 52px 46px;
+			border-width: 2px;
+			letter-spacing: 0.1rem;
+			&-size {
+				font-size: 18px;
+				line-height: 23px;
+				letter-spacing: 0.12rem;
+			}
+			&-price {
+				margin-top: 34px;
+				font-size: 38px;
+				line-height: 49px;
+				letter-spacing: 0.25rem;
+			}
+			&-metre {
+				margin-top: 5px;
+				font-size: 14px;
+				line-height: 15px;
+			}
+			&-inspection {
+				font-size: 20px;
+				line-height: 26px;
+				letter-spacing: 0.1em;
+			}
 		}
 	}
 }

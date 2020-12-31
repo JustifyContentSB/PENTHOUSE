@@ -1,5 +1,7 @@
 $brown: #A79078;
 $formColor: #636363;
+$transition: all .3s ease;
+$linkTransition: all .2s ease;
 
 %title {
 	font-weight: bold;
@@ -23,6 +25,15 @@ $formColor: #636363;
 	line-height: 1.063rem;
 	border: 0.063rem solid #000000;
 	padding: 0.625rem;
+	transition: $linkTransition;
+	&:hover,
+	&:focus {
+		color: #fff;
+		background: #000;
+	}
+	&:active {
+		opacity: .5;
+	}
 	@media screen and(min-width: 1366px) {
 		padding: 15px;
 		min-width: 314px;
@@ -38,11 +49,24 @@ $formColor: #636363;
 	line-height: 1.063rem;
 	text-align: center;
 	color: #fff;
+	transition: $linkTransition;
 	background: $brown;
+	&:hover,
+	&:focus {
+		background: #6B5C4D;
+	}
+	&:active {
+		opacity: .5;
+	}
 	@media screen and(min-width: 1366px) {
 		padding: 15px;
 		font-size: 15px;
 		line-height: 19px;
 		min-width: 320px;
 	}
+}
+
+%hoverBlack {
+	transition: $linkTransition;
+	color: #000;
 }

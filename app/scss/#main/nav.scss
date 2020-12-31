@@ -141,6 +141,26 @@
 		}
 		&__list {
 			margin-bottom: 20px;
+			a {
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					width: 0;
+					bottom: 0;
+					left: auto;
+					right: 0;
+					height: 1px;
+					background: #000;
+					transition: all 0.5s ease;
+				}
+				&:hover::before,
+				&:focus::before {
+					width: 100%;
+					left: 0;
+					right: auto;
+				}
+			}
 		}
 		&__catalog {
 			max-width: 314px;

@@ -48,6 +48,10 @@
 					height: 1px;
 					background: #636363;
 				}
+				&:hover,
+				&:focus {
+					@extend %hoverBlack;
+				}
 			}
 		}
 	}
@@ -55,10 +59,43 @@
 
 @media screen and(min-width: 1366px) {
 	.plan {
+		margin-top: 60px;
 		padding: 0; 
 		&__info {
 			font-size: 13px;
 			line-height: 17px;
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.plan {
+		display: flex;
+		flex-wrap: wrap;
+		&__info {
+			width: calc(100% - 746px);
+			max-width: 354px;
+			margin-left: 53px;
+			margin-top: 0;
+			&-about {
+				letter-spacing: 0.07rem;
+			}
+			&-size {
+				margin-top: 20px;
+				font-size: 15px;
+				line-height: 19px;
+				letter-spacing: 0.1rem;
+			}
+			&-download {
+				margin-top: 30px;
+			}
+			&-order {
+				margin-top: 25px;
+			}
+			&-partner {
+				margin-top: 30px;
+				letter-spacing: 0.1rem;
+			}
 		}
 	}
 }

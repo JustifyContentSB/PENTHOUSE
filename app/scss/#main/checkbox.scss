@@ -4,31 +4,35 @@
 	align-items: center;
 	color: $formColor;
 	cursor: pointer;
+	letter-spacing: 0.07rem;
+	font-size: 11px;
+	line-height: 13px;
 	&__check {
 		display: inline-block;
-		min-width: 23px;
-		height: 23px;
-		margin-right: 16px;
+		min-width: 16px;
+		height: 16px;
+		margin-right: 10px;
 	    border: 1px solid #DADADA;
 	    background: #fff;
 	    position: relative;
 	}
 	&__text {
-	    font-size: 11px;
-	    line-height: 13px;
+		width: calc(100% - 26px);
 	}
 	input {
 		display: none;
 		&:checked ~ .checkbox__check {
 			background: $formColor;
+			border-color: $formColor;
 			&::after {
 			    content: '';
 			    position: absolute;
-			    top: 7px;
-			    left: 5px;
-			    width: 11px;
-			    height: 8px;
+			    top: 5px;
+			    left: 4px;
+			    width: 8px;
+			    height: 5px;
 			    background: url(../../images/icons/check.svg);
+			    background-size: contain;
 			    background-repeat: no-repeat;
 			}
 		}
@@ -37,9 +41,25 @@
 
 @media screen and(min-width: 1366px) {
 	.checkbox {
+		font-size: 13px;
+		line-height: 17px;
+		&__check {
+			min-width: 23px;
+			height: 23px;
+			margin-right: 16px; 
+		}
 		&__text {
-			font-size: 13px;
-			line-height: 17px;
+			width: calc(100% - 39px);
+		}
+		input {
+			&:checked ~ .checkbox__check {
+				&::after {
+				    top: 7px;
+				    left: 5px;
+				    width: 11px;
+				    height: 8px;
+				}
+			}
 		}
 	}
 }

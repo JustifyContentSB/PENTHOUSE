@@ -36,12 +36,64 @@
 			height: 2.5rem;
 			cursor: pointer;
 		}
-		input {
-			display: none;
+		&-input {
+			width: calc(100% - 80px);
+			padding-left: 13px;
+			padding-right: 13px;
+			font-size: 11px;
+			line-height: 14px;
+			letter-spacing: 0.1rem;
+			font-weight: 300;
 			outline: none;
-			font-weight: 350;
+			border: none;
 			&::placeholder {
 				letter-spacing: 0.1rem;
+			}
+		}
+		&-inner {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			position: absolute;
+			top: -110%;
+			right: 0;
+			z-index: 10;
+			background: #fff;
+			transition: $transition; 
+			&.active {
+				top: 0;
+			}
+		}
+		&-delete {
+			display: inline-block;
+			width: 20px;
+			height: 14px;
+			margin-left: auto;
+			img {
+				display: block;
+			}
+		}
+		&-toggle {
+			display: block;
+			width: 40px;
+			height: 40px;
+			margin-left: 9px;
+			position: relative;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				top: 19px;
+				right: 9px;
+				width: 21px;
+				height: 1px;
+				background: #000;
+			}
+			&::before {
+				transform: rotate(45deg);
+			}
+			&::after {
+				transform: rotate(-45deg);
 			}
 		}
 	}
@@ -83,10 +135,19 @@
 			border-bottom: 1px solid #E7E7E7;
 			width: 438px;
 			padding-bottom: 13px;
-			input {
-				display: block;
-				border: none;
+			&-inner {
+				position: static;
 				width: calc(100% - 47px);
+			}
+			&-input {
+				display: block;
+				width: 100%;
+				font-weight: 350;
+				font-size: 16px;
+			}
+			&-delete,
+			&-toggle {
+				display: none;
 			}
 			&-icon {
 				width: auto;

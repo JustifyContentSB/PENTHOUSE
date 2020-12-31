@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Penthouse Moscow</title>
+	<title>Двухуровневый пентхаус с открытой террасой в ЖК “БАРКЛИ ГАЛЕРИ”</title>
 	<link rel="stylesheet" href="css/gallery/style.min.css">
 </head>
 <body>
@@ -26,7 +26,14 @@
 					<form class="header__form" action="#">
 						<label class="header__search">
 							<span class="header__search-icon"><img src="images/icons/search.svg" alt="search" width="17" height="17"></span>
-							<input type="text" placeholder="Найти пентхаус">
+							<span class="header__search-inner">
+								<input class="header__search-input" type="text" placeholder="Найти пентхаус">
+								<span class="header__search-delete">
+									<span class="visually-hidden">Очистить кнопку поиска</span>
+									<img src="images/icons/header__search-delete.svg" alt="очистить форму поиска" width="20" height="14">
+								</span>
+								<span class="header__search-toggle"><span class="visually-hidden">Закрыть форму поиска</span></span>
+							</span>
 						</label>
 					</form>
 					<a href="tel:+74951201100" class="header__tel tel">+7 495 120-11-00</a> 
@@ -56,7 +63,7 @@
 						</ul>
 						<a class="nav__catalog" href="#">Скачать каталог</a>
 						<div class="nav__contact">
-							<a class="nav__tel" href="#">+7 495 120-11-00</a>
+							<a class="nav__tel" href="tel:+74951201100">+7 495 120-11-00</a>
 							<a class="nav__order" href="#">Заказать звонок</a>
 						</div>
 					</div>
@@ -66,9 +73,9 @@
 			<div class="breadcrumbs">
 				<div class="container">
 					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item"><a href="#">Главная</a></li>
-						<li class="breadcrumbs__item"><a href="#">Каталог пентхаусов</a></li>
-						<li class="breadcrumbs__item"><a href="#">ЖК "БАРКЛИ ГАЛЕРИ"</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог пентхаусов</a></li>
+						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">ЖК "БАРКЛИ ГАЛЕРИ"</a></li>
 						<li class="breadcrumbs__item"><a class="breadcrumbs__link--active" href="#">Двухуровневый пентхаус с открытой террасой в ЖК “БАРКЛИ ГАЛЕРИ” </a></li>
 					</ul>
 				</div>
@@ -115,16 +122,16 @@
 						<div class="order">
 							<div class="order__present">
 								<p class="order__present-size">425 м<sup>2</sup> + терраса 120 м<sup>2</sup></p>
-								<p class="order__present-price">122 000 000 &#8381</p>
+								<p class="order__present-price">122 000 000 &#8381;</p>
 								<p class="order__present-metre">328 000 р./м<sup>2</sup></p>
-								<a class="order__present-inspection" href="#">Заказать осмотр</a>
+								<a class="order__present-inspection form-toggle" href="#">Заказать осмотр</a>
 							</div>
-							<div class="order__show">
+							<div class="order__show flat__show">
 								<p class="order__address">Москва, ул. Новый Арбат, 46</p>
 								<a class="order__link" href="#">Показать на карте</a>
 							</div>
 							<div class="order__info">
-								<ul class="order__list">
+								<ul class="order__list flat__order-list">
 									<li class="order__item">
 										<span class="order__class">Район</span>
 										<span class="order__type">Замоскоречье</span>
@@ -170,7 +177,22 @@
 										<span class="order__type">734874647632</span>
 									</li>
 								</ul>
+								<a class="order__info-link" href="#">Все характеристики</a>
 							</div>
+							<div class="order__show flat__present">
+								<p class="order__address">Презентация объекта, pdf</p>
+								<a class="order__link" href="#">Скачать презентацию</a>
+							</div>
+							<section class="profile">
+								<div class="profile__img">
+									<img src="images/profile/profile.png" alt="Марина Афанасенкова">
+								</div>
+								<h2 class="profile__title"><span>Марина</span>Афанасенкова</h2>
+								<p class="profile__about">Риэлтор, эксперт в области элитной коммерческой недвижимости</p>
+								<a class="profile__order form-toggle" href="#">Заказать осмотр</a>
+								<div class="profile__phone"><a href="tel:+74951201100">+7 495 120 11 00</a></div>
+								<div class="profile__email"><a href="mailto:rieltor@penthouse.moscow">rieltor@penthouse.moscow</a></div>
+							</section>
 						</div>
 					</aside>
 					<div class="flat__right">
@@ -209,19 +231,19 @@
 								</div>
 								<div class="flat__list-dekstop flat__list-thumbs swiper-container gallery-thumbs">
 									<div class="swiper-wrapper">
-										<div class="flat__item-thumbs swiper-slide" href="#">
+										<div class="flat__item-thumbs swiper-slide">
 											<img src="images/flat/flat-dekstop.jpg" alt="пентхаус">
 										</div>
-										<div class="flat__item-thumbs swiper-slide" href="#">
+										<div class="flat__item-thumbs swiper-slide">
 											<img src="images/flat/flat-dekstop.jpg" alt="пентхаус">
 										</div>
-										<div class="flat__item-thumbs swiper-slide" href="#">
+										<div class="flat__item-thumbs swiper-slide">
 											<img src="images/flat/flat-dekstop.jpg" alt="пентхаус">
 										</div>
-										<div class="flat__item-thumbs swiper-slide" href="#">
+										<div class="flat__item-thumbs swiper-slide">
 											<img src="images/flat/flat-dekstop.jpg" alt="пентхаус">
 										</div>
-										<div class="flat__item-thumbs swiper-slide" href="#">
+										<div class="flat__item-thumbs swiper-slide">
 											<img src="images/flat/flat-dekstop.jpg" alt="пентхаус">
 										</div>
 									</div>
@@ -235,6 +257,7 @@
 							</p>	
 						</section>
 						<section class="plan">
+							<h2 class="visually-hidden">Планировка Пентхауса</h2>
 							<div class="plan__img">
 								<img src="images/plan/plan.png" alt="планировка пентхауса">
 							</div>
@@ -242,7 +265,7 @@
 								<p class="plan__info-about">Скачайте презентацию пентхауса и описание ЖК “БАРКЛИ ГАЛЕРИ”</p>
 								<p class="plan__info-size">Размер — 16.21 MB</p>
 								<a class="plan__info-download" href="#">Скачать презентацию</a>
-								<a class="plan__info-order" href="#">Заказать осмотр</a>
+								<a class="plan__info-order form-toggle" href="#">Заказать осмотр</a>
 								<div class="plan__info-partner"><a href="#">Презентация для партнера</a></div>
 							</div>
 						</section>
@@ -252,21 +275,28 @@
 								<p class="villa__text">Morbi risus neque, fringilla eget odio et, convallis aliquam nunc. Sed ornare risus sit amet neque convallis, non elementum odio venenatis. Donec felis elit, sodales et viverra nec, efficitur ac orci. In suscipit justo ac sapien dapibus, vitae iaculis purus accumsan. Sed nec purusMorbi risus neque, fringilla eget odio et, convallis aliquam nunc. Sed ornare risus sit amet neque convallis, non elementum odio venenatis.</p>
 							</header>
 							<div class="villa__list swiper-container">
+								<button class="swiper-button-prev"></button>
+								<button class="swiper-button-next"></button>
 								<div class="swiper-wrapper">
 									<a class="villa__item swiper-slide" href="#">
-										<img src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-tel" src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-dekstop" src="images/villa/villa-dekstop-1.png" alt="пентхаус">
 									</a>
 									<a class="villa__item swiper-slide" href="#">
-										<img src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-tel" src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-dekstop" src="images/villa/villa-dekstop-2.png" alt="пентхаус">
 									</a>
 									<a class="villa__item swiper-slide" href="#">
-										<img src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-tel" src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-dekstop" src="images/villa/villa-dekstop-1.png" alt="пентхаус">
 									</a>
 									<a class="villa__item swiper-slide" href="#">
-										<img src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-tel" src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-dekstop" src="images/villa/villa-dekstop-2.png" alt="пентхаус">
 									</a>
 									<a class="villa__item swiper-slide" href="#">
-										<img src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-tel" src="images/barkli/barkli-1-tel.png" alt="пентхаус">
+										<img class="villa__img-dekstop" src="images/villa/villa-dekstop-1.png" alt="пентхаус">
 									</a>
 								</div>
 							</div>
@@ -301,82 +331,82 @@
 								</div>		
 								<div class="villa__links">
 									<a class="villa__links-map" href="#">Показать на карте</a>
-									<a class="villa__links-order" href="#">Заказать осмотр ЖК</a>
+									<a class="villa__links-order form-toggle" href="#">Заказать осмотр ЖК</a>
 								</div>
 							</div>
 						</section>
-					</div>
-				</div>
-				<div class="flat__page">
-					<h2 class="sec-title">Пентхаусы в этом ЖК:</h2>
-					<header class="mansion__header">
-						<div class="mansion__sort">
-							<p class="mansion__sort-num">Пентхаусов найдено: <span>67</span></p>
-							<p class="mansion__sort-type">
-								Сортировать по: <a class="mansion__sort-type__btn" href="#">Цене, сначала дешевле</a>
-							</p>
-						</div>
-					</header>
-					<div class="mansion__house-wrapper">
-						<div class="mansion__house">
-							<div class="mansion__img"><img src="images/mansion/mansion-1.png" alt="пентхаус"></div>
-							<div class="mansion__info">
-								<div class="mansion__info-top">
-									<h2 class="mansion__title">Двухуровневый пентхаус с открытой террасой в ЖК White</h2>
-									<p class="mansion__street">ул. Новый Арбат, 45</p>
-									<ul class="mansion__content">
-										<li>2 <span>спальни</span></li> 
-										<li>Отделка <span>Whitebox</span></li>
-									</ul>
-									<ul class="mansion__features">
-										<li>С камином</li>
-										<li>Москва-Сити</li>
-										<li>Вид на парк</li>
-									</ul>
+						<div class="flat__page mansion">
+							<h2 class="sec-title">Пентхаусы в этом ЖК:</h2>
+							<header class="mansion__header">
+								<div class="mansion__sort">
+									<p class="mansion__sort-num">Пентхаусов найдено: <span>67</span></p>
+									<p class="mansion__sort-type">
+										Сортировать по: <a class="mansion__sort-type__btn" href="#">Цене, сначала дешевле</a>
+									</p>
 								</div>
-								<div class="mansion__info-bottom">
-									<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
-									<p class="mansion__price">122 000 000 &#8381</p>
-									<div class="mansion__info-about">
-										<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
-										<div class="mansion__more"><a href="#">Подробнее</a></div>
+							</header>
+							<div class="mansion__house-wrapper">
+								<div class="mansion__house">
+									<div class="mansion__img"><img src="images/mansion/mansion-1.png" alt="пентхаус"></div>
+									<div class="mansion__info">
+										<div class="mansion__info-top">
+											<h2 class="mansion__title">Двухуровневый пентхаус с открытой террасой в ЖК White</h2>
+											<p class="mansion__street">ул. Новый Арбат, 45</p>
+											<ul class="mansion__content">
+												<li>2 <span>спальни</span></li> 
+												<li>Отделка <span>Whitebox</span></li>
+											</ul>
+											<ul class="mansion__features">
+												<li>С камином</li>
+												<li>Москва-Сити</li>
+												<li>Вид на парк</li>
+											</ul>
+										</div>
+										<div class="mansion__info-bottom">
+											<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+											<p class="mansion__price">122 000 000 &#8381;</p>
+											<div class="mansion__info-about">
+												<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
+												<div class="mansion__more"><a href="#">Подробнее</a></div>
+											</div>
+										</div>
+										<a class="mansion__link" href="#">Назначить осмотр</a>
 									</div>
 								</div>
-								<a class="mansion__link" href="#">Назначить осмотр</a>
-							</div>
-						</div>
-						<div class="mansion__house">
-							<div class="mansion__img"><img src="images/mansion/mansion-4.png" alt="пентхаус"></div>
-							<div class="mansion__info">
-								<div class="mansion__info-top">
-									<h2 class="mansion__title">Двухуровневый ПЕНТХАУС В ЖК "ТРИЛОГИЯ"</h2>
-									<p class="mansion__street">ул. Новый Арбат, 45</p>
-									<ul class="mansion__content">
-										<li>2 <span>спальни</span></li> 
-										<li>Отделка <span>Whitebox</span></li>
-									</ul>
-									<ul class="mansion__features">
-										<li>С камином</li>
-										<li>Москва-Сити</li>
-										<li>Вид на парк</li>
-									</ul>
-								</div>
-								<div class="mansion__info-bottom">
-									<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
-									<p class="mansion__price">492 000 000 &#8381</p>
-									<div class="mansion__info-about">
-										<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
-										<div class="mansion__more"><a href="#">Подробнее</a></div>
+								<div class="mansion__house">
+									<div class="mansion__img"><img src="images/mansion/mansion-4.png" alt="пентхаус"></div>
+									<div class="mansion__info">
+										<div class="mansion__info-top">
+											<h2 class="mansion__title">Двухуровневый ПЕНТХАУС В ЖК "ТРИЛОГИЯ"</h2>
+											<p class="mansion__street">ул. Новый Арбат, 45</p>
+											<ul class="mansion__content">
+												<li>2 <span>спальни</span></li> 
+												<li>Отделка <span>Whitebox</span></li>
+											</ul>
+											<ul class="mansion__features">
+												<li>С камином</li>
+												<li>Москва-Сити</li>
+												<li>Вид на парк</li>
+											</ul>
+										</div>
+										<div class="mansion__info-bottom">
+											<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+											<p class="mansion__price">492 000 000 &#8381;</p>
+											<div class="mansion__info-about">
+												<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
+												<div class="mansion__more"><a href="#">Подробнее</a></div>
+											</div>
+										</div>
+										<a class="mansion__link" href="#">Назначить осмотр</a>
 									</div>
 								</div>
-								<a class="mansion__link" href="#">Назначить осмотр</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<section class="house sec">
+			<section class="house house--line sec">
 				<div class="house__inner">
 					<header class="house__header">
 						<h2 class="house__chapter">Похожие пентхаусы</h2>
@@ -394,7 +424,7 @@
 									<h3 class="house__title">Пентхаус в ЖК <br> "ГРАН ПРИ"</h3>
 									<div class="house__about">
 										<p class="house__area">665 м<sup>2</sup> + терраса 60 м<sup>2</sup></p>
-										<p class="house__price">648 000 000 &#8381</p>
+										<p class="house__price">648 000 000 &#8381;</p>
 									</div>
 								</div>
 							</a>
@@ -406,7 +436,7 @@
 									<h3 class="house__title">Пентхаус ЖК <br> "АНДРЕЕВСКИЙ"</h3>
 									<div class="house__about">
 										<p class="house__area">85 м<sup>2</sup> + терраса 90 м<sup>2</sup></p>
-										<p class="house__price">675 000 000 &#8381</p>
+										<p class="house__price">675 000 000 &#8381;</p>
 									</div>
 								</div>
 							</a>
@@ -418,7 +448,7 @@
 									<h3 class="house__title">Пентхаус В ЖК <br> "ДОМ СО ЛЬВАМИ"</h3>
 									<div class="house__about">
 										<p class="house__area">165 м<sup>2</sup> + терраса 120 м<sup>2</sup></p>
-										<p class="house__price">90 000 000 &#8381</p>
+										<p class="house__price">90 000 000 &#8381;</p>
 									</div>
 								</div>
 							</a>
@@ -430,7 +460,7 @@
 									<h3 class="house__title">Пентхаус В ЖК <br> "BOLSHEVIK"</h3>
 									<div class="house__about">
 										<p class="house__area">112 м<sup>2</sup> + терраса 40 м<sup>2</sup></p>
-										<p class="house__price">874 000 000 &#8381</p>
+										<p class="house__price">874 000 000 &#8381;</p>
 									</div>
 								</div>
 							</a>
@@ -442,7 +472,7 @@
 									<h3 class="house__title">Пентхаус В ЖК <br> "КУТУЗОВСКИЙ, 12"</h3>
 									<div class="house__about">
 										<p class="house__area">450 м<sup>2</sup> + терраса 10 м<sup>2</sup></p>
-										<p class="house__price">761 000 000 &#8381</p>
+										<p class="house__price">761 000 000 &#8381;</p>
 									</div>
 								</div>
 							</a>
@@ -498,7 +528,7 @@
 				<div class="container">
 					<div class="pro__inner">
 						<div class="pro__profile">
-							<div class="pro__img"><img src="images/pro/Григорий Ашихмин.png" alt="Григорий Ашихмин" width="145" height="188"></div>
+							<div class="pro__img"><img src="images/pro/ГригорийАшихмин.png" alt="Григорий Ашихмин" width="145" height="188"></div>
 							<div class="pro__info">
 								<p class="pro__name"><span>Ашихмин</span> Григорий</p>
 								<div class="pro__contact">
@@ -514,7 +544,7 @@
 								<p>В средневековые времена пентхаус являлся важным элементом искусства осады, поскольку был временным сооружением, которое защищало осаждающие войска в то время, когда они готовились к наступлению на врага.</p>	
 								<p class="attention">Ищете пентхаус в Москве? Мы поможем!</p>
 							</div>
-							<a class="pro__link" href="#">Заказать подбор пентхауса</a> 
+							<a class="pro__link form-toggle" href="#">Заказать подбор пентхауса</a> 
 						</div>
 					</div>
 				</div>
@@ -546,17 +576,84 @@
 				<div class="footer__logo"><a href="#"><img src="images/icons/logo.svg" alt="Логотип компании"></a></div>
 				<p class="footer__copy">2020 © Агентство элитной недвижимости «Ашихмин и партнёры»</p>
 			</div>
-			<a class="phone" href="tel:+74951201100"><img src="images/icons/tel.svg" alt="Позвонить в компанию" width="23" height="23"></a>
+			<div class="phone__wrapper">
+				<a class="phone" href="tel:+74951201100"><img src="images/icons/tel.svg" alt="Позвонить в компанию" width="23" height="23"></a>
+				<div class="phone__modal modal">
+					<button class="phone__modal-close">
+						<span class="visually-hidden">Закрыть модальное окно</span>
+					</button>
+					<a class="phone__modal-phone phone__modal-link" href="tel:+74951201100">Позвонить нам +7 495 120 11 10</a>
+					<a class="phone__modal-mail phone__modal-link" href="mailto:ga@aandp.ru">Написать на почту</a>
+					<a class="phone__modal-whatsapp phone__modal-link" href="whatsapp://send?text=Hello&phone=+74951201100&abid=+74951201100">Написать в WhatsApp</a>
+				</div>
+			</div>
 		</footer>
-		<div class="overlay"></div>
-	</div>
 
+		<div class="mansion-swiper__wrapper">
+			<div class="mansion-swiper swiper-container">
+				<button class="mansion-swiper__close"><span class="visually-hidden">Закрыть слайдер</span></button>
+				<h2 class="mansion-swiper__title">Пентхаус ЖК "Баркли Галери"</h2>
+				<button class="swiper-button-prev"></button>
+				<button class="swiper-button-next"></button>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-1.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-2.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-3.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-4.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-1.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-2.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-3.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<form class="main-form main-form--modal" action="#">
+			<button class="main-form__close"><span class="visually-hidden">Закрыть модальное окно</span></button>
+			<div class="main-form--modal__wrapper">
+				<h2 class="main-form__title main-form__title--modal">Заявка на осмотр</h2>
+				<div class="main-form__inner">
+					<input class="main-form__input" type="text" placeholder="Ваше имя">
+					<input class="main-form__input" type="tel" placeholder="Номер телефона">
+					<input class="main-form__input" type="email" placeholder="E-mail">
+					<textarea class="main-form__textarea" name="textarea" cols="30" rows="10" placeholder="Комментарий к заявке. Здесь вы можете указать желаемое время звонки или другую важную информацию."></textarea>
+					<button class="main-form__btn">Отправить</button>
+					<div class="main-form__agree">
+						<label class="main-form__agree-label">
+							<input type="checkbox">
+							<span class="main-form__agree-check"></span>
+							<span class="main-form__agree-text">Соглашаюсь с политикой конфиденциальности.</span> 
+						</label>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="overlay"></div>
+		<div class="overlay-modal"></div>
+	</div>
 	
 	<script src="js/gallery/script.min.js"></script>
-	<script src="js/flat.js"></script>
-	<script src="js/#main/orderDots.js"></script>
-	<script src="js/swiperVilla.js"></script>
-
 
 </body>
 </html>

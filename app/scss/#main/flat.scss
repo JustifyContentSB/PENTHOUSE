@@ -75,6 +75,9 @@
 			display: none;
 		}
 	}
+	&__present {
+		display: none;
+	}
 }
 
 @media screen and(min-width: 700px) {
@@ -100,20 +103,27 @@
 
 @media screen and(min-width: 1366px) {
 	.flat {
+		margin-top: 15px; 
 		padding-right: 75px;
+		&__inner {
+			margin-top: 26px;
+		}
 		&__title {
 			padding: 0;
 		}
 		&__kind {
-			padding-left: 0;
-			padding-right: 0;
+			padding: 0;
+			padding-top: 10px;	
+			padding-bottom: 17px;		
 			font-size: 12px;
 		    line-height: 15px;
 		    letter-spacing: 0.1rem;
 		    font-weight: 400;
+		    flex-wrap: wrap;
 		    &-item {
+		    	margin-right: 10px;
 		    	a {
-		    		padding: 7px 21px;
+		    		padding: 7px 18px;
     				border-width: 2px;
 		    	}
 		    }
@@ -121,14 +131,19 @@
 		&__info {
 			padding: 0;
 			&-title {
+				margin-top: 25px;
 				font-weight: 500;
 				font-size: 30px;
 				line-height: 39px;
+				letter-spacing: 0.2rem;
 			}
 			&-text {
 			    font-size: 14px;
 				line-height: 20px;
 			}
+		}
+		&__show {
+			margin-top: 25px;
 		}
 		&__list {
 			display: none;
@@ -156,6 +171,7 @@
 			&-thumbs {
 				width: 99px;
 				border: 2px solid #fff;
+				cursor: pointer;
 				&.swiper-slide {
 					opacity: 0.5;
 				}
@@ -176,18 +192,82 @@
 			width: calc(100% - 500px);
 		}
 		&__page {
+			margin-top: 55px;
+			padding-right: 0;
 			.mansion {
+				&__header {
+					margin-top: 35px;
+				}
+				&__house {
+					flex-direction: column;
+				}
 				&__img {
-					min-width: 601px;
-					width: 601px;
+					width: 100%;
+					max-width: 100%;
 				}
 				&__info {
 					padding: 45px 26px 32px 43px; 
-					width: calc(100% - 601px);
-					min-height: 430px;
+					width: 100%;
 				}
 				&__link {
 					display: none;
+				}
+			}
+			.sec-title {
+				font-size: 30px;
+				line-height: 39px;
+				letter-spacing: 0.17rem;
+			}
+		}
+		&__present {
+			margin-left: 10px;
+			padding: 20px 40px 40px 55px;
+			display: block; 
+			margin-top: 40px;
+			.order__address {
+				margin-bottom: 15px;
+				font-size: 18px;
+				letter-spacing: 0.12rem;
+			}
+		}
+		&__order {
+			&-list {
+				padding-left: 10px;
+				padding-top: 0;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.flat {
+		&__right {
+			width: calc(100% - 580px);
+		}
+		&__info {
+			&-text {
+				margin-top: 20px;
+				font-weight: 350;
+				font-size: 17px;
+				line-height: 27px;
+				letter-spacing: 0.13rem;
+			}
+		}
+		&__page {
+			.mansion {
+				&__house {
+					flex-direction: row;
+					align-items: flex-start;
+				}
+				&__img {
+					min-width: 601px;
+					width: 601px;
+					height: 430px;
+				}
+				&__info {
+					width: calc(100% - 601px);
+					min-height: 430px;
+					height: auto;
 				}
 			}
 		}

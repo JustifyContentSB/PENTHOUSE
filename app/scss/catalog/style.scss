@@ -1,4 +1,6 @@
 @import '../../../node_modules/normalize.css/normalize';
+@import '../../js/libs/jquery-range/jquery-ui.min';
+@import '../../js/libs/swiper/swiper-bundle.min';
 
 @import '../#base/vars.scss';
 @import '../#base/base.scss';
@@ -7,12 +9,13 @@
 @import '../#main/wrapper.scss';
 @import '../#main/container.scss';
 @import '../#main/breadcrumbs.scss';
+@import '../#main/swiper.scss';
 @import '../#main/main-title.scss';
 @import '../#main/mansion.scss';
-@import '../../js/libs/jquery-range/jquery-ui.min.css';
+@import '../#main/main-form.scss';
 @import '../#main/range.scss';
-@import '../#main/choose.scss';
 @import '../#main/checkbox.scss';
+@import '../#main/choose.scss';
 @import '../#main/sec.scss';
 @import '../#main/overlay.scss';
 @import '../#main/phone.scss';

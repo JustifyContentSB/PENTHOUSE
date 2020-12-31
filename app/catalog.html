@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Каталог пентхаусов</title>
 	<link rel="stylesheet" href="css/catalog/style.min.css">
-</head>
+</head> 
 <body>
 	
 	<div class="wrapper">
@@ -26,7 +26,14 @@
 					<form class="header__form" action="#">
 						<label class="header__search">
 							<span class="header__search-icon"><img src="images/icons/search.svg" alt="search" width="17" height="17"></span>
-							<input type="text" placeholder="Найти пентхаус">
+							<span class="header__search-inner">
+								<input class="header__search-input" type="text" placeholder="Найти пентхаус">
+								<span class="header__search-delete">
+									<span class="visually-hidden">Очистить кнопку поиска</span>
+									<img src="images/icons/header__search-delete.svg" alt="очистить форму поиска" width="20" height="14">
+								</span>
+								<span class="header__search-toggle"><span class="visually-hidden">Закрыть форму поиска</span></span>
+							</span>
 						</label>
 					</form>
 					<a href="tel:+74951201100" class="header__tel tel">+7 495 120-11-00</a> 
@@ -56,14 +63,14 @@
 						</ul>
 						<a class="nav__catalog" href="#">Скачать каталог</a>
 						<div class="nav__contact">
-							<a class="nav__tel" href="#">+7 495 120-11-00</a>
+							<a class="nav__tel" href="tel:+74951201100">+7 495 120-11-00</a>
 							<a class="nav__order" href="#">Заказать звонок</a>
 						</div>
 					</div>
 				</nav>
 			</div>
 
-			<div class="breadcrumbs breadcrumbs-article">
+			<div class="breadcrumbs">
 				<div class="container">
 					<ul class="breadcrumbs__list">
 						<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
@@ -72,7 +79,7 @@
 				</div>
 			</div>
 
-			<section class="mansion">
+			<div class="mansion">
 				<h1 class="mansion__chapter main-title">Каталог пентхаусов</h1>
 				<div class="mansion__inner">
 					<form class="mansion__choose choose" action="post">
@@ -128,25 +135,25 @@
 							</div>
 							</div>	
 							<div class="choose__style">
-								<label class="choose__style-label">
+								<label class="choose__style-label checkbox">
 									<input type="radio" name="chooseStyle" value="С отделкой">
-									<span class="choose__style-checkbox"></span>
-									<p>С отделкой</p>
+									<span class="checkbox__check"></span>
+									<span class="checkbox__text">С отделкой</span>
 								</label>
-								<label class="choose__style-label">
+								<label class="choose__style-label checkbox">
 									<input type="radio" name="chooseStyle" value="Без отделки">
-									<span class="choose__style-checkbox"></span>
-									<p>Без отделки</p>
+									<span class="checkbox__check"></span>
+									<span class="checkbox__text">Без отделки</span>
 								</label>
-								<label class="choose__style-label">
+								<label class="choose__style-label checkbox">
 									<input type="radio" name="chooseStyle" value="Whitebox">
-									<span class="choose__style-checkbox"></span>
-									<p>Whitebox</p>
+									<span class="checkbox__check"></span>
+									<span class="checkbox__text">Whitebox</span>
 								</label>
-								<label class="choose__style-label">
+								<label class="choose__style-label checkbox">
 									<input type="radio" name="chooseStyle" value="С мебелью">
-									<span class="choose__style-checkbox"></span>
-									<p>С мебелью</p>
+									<span class="checkbox__check"></span>
+									<span class="checkbox__text">С мебелью</span>
 								</label>
 							</div>		
 							<div class="choose__size">
@@ -172,13 +179,56 @@
 									<label class="checkbox">
 										<input type="checkbox">
 										<span class="checkbox__check"></span>
-										<p class="checkbox__text">Без терассы</p>
+										<span class="checkbox__text">Без терассы</span>
 									</label>
 								</div>
 							</div>
 							<div class="choose__about">
-								<a class="choose__about-btn" href="#">Расположение</a>
-								<a class="choose__about-btn" href="#">Жилые комплексы</a>
+								<div class="choose__about-inner">
+									<a class="choose__about-btn" href="#">Расположение</a>
+									<ul class="choose__about-list">
+										<li class="choose__about-item">
+											<label class="choose__about-checkbox checkbox">
+												<input type="checkbox">
+												<span class="checkbox__check"></span>
+												<span class="choose__about-text checkbox__text">Полянка 44<span class="choose__about-num"> - 11</span></span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="choose__about-inner">
+									<a class="choose__about-btn" href="#">Жилые комплексы</a>
+									<ul class="choose__about-list">
+										<li class="choose__about-item">
+											<label class="choose__about-checkbox checkbox">
+												<input type="checkbox">
+												<span class="checkbox__check"></span>
+												<span class="choose__about-text checkbox__text">Полянка 44<span class="choose__about-num"> - 11</span></span>
+											</label>
+										</li>
+										<li class="choose__about-item">
+											<label class="choose__about-checkbox checkbox">
+												<input type="checkbox">
+												<span class="checkbox__check"></span>
+												<span class="choose__about-text checkbox__text">Life Кутузовский<span class="choose__about-num"> - 45</span></span>
+											</label>
+										</li>
+										<li class="choose__about-item">
+											<label class="choose__about-checkbox checkbox">
+												<input type="checkbox">
+												<span class="checkbox__check"></span>
+												<span class="choose__about-text checkbox__text">Jazz<span class="choose__about-num"> - 21</span></span>
+											</label>
+										</li>
+										<li class="choose__about-item">
+											<label class="choose__about-checkbox checkbox">
+												<input type="checkbox">
+												<span class="checkbox__check"></span>
+												<span class="choose__about-text checkbox__text">A-Residence<span class="choose__about-num"> - 21</span></span>
+											</label>
+										</li>
+									</ul>
+								</div>
 							</div>
 							<button class="choose__reset-btn" type="reset">Очистить</button>
 						</div>
@@ -200,7 +250,7 @@
 							<li class="mansion__kind-item"><a class="mansion__kind-btn" href="#">Вид на парк</a></li>
 						</ul>
 						<div class="mansion__house-wrapper">
-							<div class="mansion__house">
+							<div class="mansion__house mansion__house--catalog">
 								<div class="mansion__img"><img src="images/mansion/mansion-1.png" alt="пентхаус"></div>
 								<div class="mansion__info">
 									<div class="mansion__info-top">
@@ -218,7 +268,7 @@
 									</div>
 									<div class="mansion__info-bottom">
 										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
-										<p class="mansion__price">122 000 000 &#8381</p>
+										<p class="mansion__price">122 000 000 &#8381;</p>
 										<div class="mansion__info-about">
 											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
 											<div class="mansion__more"><a href="#">Подробнее</a></div>
@@ -227,7 +277,7 @@
 									<a class="mansion__link" href="#">Назначить осмотр</a>
 								</div>
 							</div>
-							<div class="mansion__house">
+							<div class="mansion__house mansion__house--catalog">
 								<div class="mansion__img"><img src="images/mansion/mansion-2.png" alt="пентхаус"></div>
 								<div class="mansion__info">
 									<div class="mansion__info-top">
@@ -245,7 +295,7 @@
 									</div>
 									<div class="mansion__info-bottom">
 										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
-										<p class="mansion__price">45 000 000 &#8381</p>
+										<p class="mansion__price">45 000 000 &#8381;</p>
 										<div class="mansion__info-about">
 											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
 											<div class="mansion__more"><a href="#">Подробнее</a></div>
@@ -254,7 +304,7 @@
 									<a class="mansion__link" href="#">Назначить осмотр</a>
 								</div>
 							</div>
-							<div class="mansion__house">
+							<div class="mansion__house mansion__house--catalog">
 								<div class="mansion__img"><img src="images/mansion/mansion-3.png" alt="пентхаус"></div>
 								<div class="mansion__info">
 									<div class="mansion__info-top">
@@ -272,7 +322,7 @@
 									</div>
 									<div class="mansion__info-bottom">
 										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
-										<p class="mansion__price">122 000 000 &#8381</p>
+										<p class="mansion__price">122 000 000 &#8381;</p>
 										<div class="mansion__info-about">
 											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
 											<div class="mansion__more"><a href="#">Подробнее</a></div>
@@ -281,7 +331,7 @@
 									<a class="mansion__link" href="#">Назначить осмотр</a>
 								</div>
 							</div>
-							<div class="mansion__house">
+							<div class="mansion__house mansion__house--catalog">
 								<div class="mansion__img"><img src="images/mansion/mansion-4.png" alt="пентхаус"></div>
 								<div class="mansion__info">
 									<div class="mansion__info-top">
@@ -299,7 +349,7 @@
 									</div>
 									<div class="mansion__info-bottom">
 										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
-										<p class="mansion__price">492 000 000 &#8381</p>
+										<p class="mansion__price">492 000 000 &#8381;</p>
 										<div class="mansion__info-about">
 											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
 											<div class="mansion__more"><a href="#">Подробнее</a></div>
@@ -308,7 +358,7 @@
 									<a class="mansion__link" href="#">Назначить осмотр</a>
 								</div>
 							</div>
-							<div class="mansion__house">
+							<div class="mansion__house mansion__house--catalog">
 								<div class="mansion__img"><img src="images/mansion/mansion-5.png" alt="пентхаус"></div>
 								<div class="mansion__info">
 									<div class="mansion__info-top">
@@ -326,7 +376,7 @@
 									</div>
 									<div class="mansion__info-bottom">
 										<p class="mansion__size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
-										<p class="mansion__price">890 000 000 &#8381</p>
+										<p class="mansion__price">890 000 000 &#8381;</p>
 										<div class="mansion__info-about">
 											<p class="mansion__metre">328 000 р./м<sup>2</sup></p>
 											<div class="mansion__more"><a href="#">Подробнее</a></div>
@@ -340,7 +390,7 @@
 						</div>
 					</div>
 				</div>
-			</section>	
+			</div>	
 
 			<section class="catalog sec">
 				<div class="container">
@@ -389,7 +439,7 @@
 				<div class="container">
 					<div class="pro__inner">
 						<div class="pro__profile">
-							<div class="pro__img"><img src="images/pro/Григорий Ашихмин.png" alt="Григорий Ашихмин" width="145" height="188"></div>
+							<div class="pro__img"><img src="images/pro/ГригорийАшихмин.png" alt="Григорий Ашихмин" width="145" height="188"></div>
 							<div class="pro__info">
 								<p class="pro__name"><span>Ашихмин</span> Григорий</p>
 								<div class="pro__contact">
@@ -405,7 +455,7 @@
 								<p>В средневековые времена пентхаус являлся важным элементом искусства осады, поскольку был временным сооружением, которое защищало осаждающие войска в то время, когда они готовились к наступлению на врага.</p>	
 								<p class="attention">Ищете пентхаус в Москве? Мы поможем!</p>
 							</div>
-							<a class="pro__link" href="#">Заказать подбор пентхауса</a> 
+							<a class="pro__link form-toggle" href="#">Заказать подбор пентхауса</a> 
 						</div>
 					</div>
 				</div>
@@ -437,13 +487,85 @@
 				<div class="footer__logo"><a href="index.html"><img src="images/icons/logo.svg" alt="Логотип компании"></a></div>
 				<p class="footer__copy">2020 © Агентство элитной недвижимости «Ашихмин и партнёры»</p>
 			</div>
-			<a class="phone" href="tel:+74951201100"><img src="images/icons/tel.svg" alt="Позвонить в компанию" width="23" height="23"></a>
+			<div class="phone__wrapper">
+				<a class="phone" href="tel:+74951201100"><img src="images/icons/tel.svg" alt="Позвонить в компанию" width="23" height="23"></a>
+				<div class="phone__modal modal">
+					<button class="phone__modal-close">
+						<span class="visually-hidden">Закрыть модальное окно</span>
+					</button>
+					<a class="phone__modal-phone phone__modal-link" href="tel:+74951201100">Позвонить нам +7 495 120 11 10</a>
+					<a class="phone__modal-mail phone__modal-link" href="mailto:ga@aandp.ru">Написать на почту</a>
+					<a class="phone__modal-whatsapp phone__modal-link" href="whatsapp://send?text=Hello&phone=+74951201100&abid=+74951201100">Написать в WhatsApp</a>
+				</div>
+			</div>
 		</footer>
+		<div class="mansion-swiper__wrapper">
+			<div class="mansion-swiper swiper-container">
+				<button class="mansion-swiper__close"><span class="visually-hidden">Закрыть слайдер</span></button>
+				<h2 class="mansion-swiper__title">Пентхаус ЖК "Баркли Галери"</h2>
+				<button class="swiper-button-prev"></button>
+				<button class="swiper-button-next"></button>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-1.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-2.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-3.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-4.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-1.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-2.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+					<div class="swiper-slide">
+						<img class="mansion-swiper__tel" src="images/mansion/mansion-swiper-3.png" alt="пентхаус">
+						<img class="mansion-swiper__dekstop" src="images/mansion/mansion-swiper-dekstop.png" alt="пентхаус">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<form class="main-form main-form--modal" action="#">
+			<button class="main-form__close"><span class="visually-hidden">Закрыть модальное окно</span></button>
+			<div class="main-form--modal__wrapper">
+				<h2 class="main-form__title main-form__title--modal">Заявка на осмотр</h2>
+				<div class="main-form__inner">
+					<input class="main-form__input" type="text" placeholder="Ваше имя">
+					<input class="main-form__input" type="tel" placeholder="Номер телефона">
+					<input class="main-form__input" type="email" placeholder="E-mail">
+					<textarea class="main-form__textarea" name="textarea" cols="30" rows="10" placeholder="Комментарий к заявке. Здесь вы можете указать желаемое время звонки или другую важную информацию."></textarea>
+					<button class="main-form__btn">Отправить</button>
+					<div class="main-form__agree">
+						<label class="main-form__agree-label">
+							<input type="checkbox">
+							<span class="main-form__agree-check"></span>
+							<span class="main-form__agree-text">Соглашаюсь с политикой конфиденциальности.</span> 
+						</label>
+					</div>
+				</div>
+			</div>
+		</form>
 		<div class="overlay"></div>
+		<div class="overlay-modal"></div>
 	</div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
    	<script src="js/catalog/script.min.js"></script>
+   	<script src="js/choose.js"></script>
+   	<script src="js/map.js"></script>
 
 </body>
 </html>

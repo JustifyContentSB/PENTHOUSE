@@ -112,6 +112,7 @@
 		max-width: 700px;
 		margin: 0 auto;
 		overflow: hidden;
+		cursor: pointer;
 		img {
 			width: 100%;
 			height: auto;
@@ -200,6 +201,10 @@
 				height: 1px;
 				background: #000;
 			}
+			&:hover::before,
+			&:focus::before {
+				display: none;
+			}
 		}
 	}
 	&__link {
@@ -207,6 +212,82 @@
 		margin-top: 16px;
 		font-weight: 500;
 		letter-spacing: 0.07rem;
+	}
+	&-swiper {
+		position: fixed;
+		padding-top: 40px;
+		padding-bottom: 25px; 
+		z-index: -10;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		width: 100%;
+		visibility: hidden;
+		opacity: 0;
+		&.visible {
+			visibility: visible;
+			opacity: 1;
+			z-index: 300;
+		}
+		&__close {
+			position: absolute;
+			top: 0;
+			right: 10px;
+			width: 30px;
+			height: 30px;
+			background: transparent;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 30px;
+				height: 2px;
+				background: #fff;
+			}
+			&::before {
+				transform: rotate(45deg);
+			}
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+		.swiper {
+			&-slide {
+				width: 282px;
+				height: 264px;
+				overflow: hidden;
+				img {
+					width: 100%;
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			&-pagination {
+				&-bullet {
+					width: 17px;
+					height: 2px;
+					background: rgba(#fff, 0.3);
+					border-radius: 0;
+					opacity: 1;
+					&-active {
+						background: #fff;
+					}
+				}
+			}
+		}
+		&__dekstop {
+			display: none;
+		}
+		&__title {
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 21px;
+			letter-spacing: 0.1rem;
+			color: #fff;
+			text-align: center;
+			display: none;
+		}
 	}
 }
 
@@ -235,6 +316,23 @@
 		&__house {
 			display: flex;
 			align-items: flex-start;
+			&--catalog {
+				flex-direction: column;
+				.mansion__img,
+				.mansion__info {
+					width: 100%;
+					max-width: 100%;
+				}
+				.mansion__img {
+					img {
+						width: 100%;
+					}
+				}
+				.mansion__link {
+					min-width: 314px;
+					width: 314px;
+				}
+			}
 		}
 		&__img {
 			margin: 0;
@@ -368,6 +466,42 @@
 				height: 670px;
 			}
 		}
+		&-swiper {
+			width: 90%;
+			max-width: 2000px;
+			padding-top: 40px;
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-bottom: 35px;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			&__tel {
+				display: none;
+			}
+			&__dekstop {
+				display: block;
+			}
+			.swiper {
+				&-slide {
+					width: 100%;
+					height: 510px;
+				}
+				&-pagination {
+					&-bullet {
+						margin: 0 10px;
+						width: 50px;
+					}
+				}
+			}
+			&__title {
+				display: block;
+				width: calc(100% - 30px);
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
 	}
 }
 
@@ -385,6 +519,16 @@
 		}
 		&__house {
 			margin-bottom: 20px;
+			&--catalog {
+				flex-direction: row;
+				.mansion__img {
+					width: 700px;
+					min-width: 700px;
+				}
+				.mansion__info {
+					width: calc(100% - 700px);
+				}
+			}
 		}
 		&__img {
 			width: 700px;
@@ -398,9 +542,6 @@
 			padding: 52px 62px 53px 67px;
 			width: calc(100% - 700px);
 			height: 500px;
-			&-about {
-
-			}
 		}
 		&__price {
 			margin-top: 18px;
@@ -423,6 +564,31 @@
 			li {
 				padding: 7px 21px;
 				margin-right: 10px;
+			}
+		}
+		&-swiper {
+			width: calc(100% - 113px);
+			max-width: 1807px;
+			.swiper {
+				&-slide {
+					width: 100%;
+					height: 804px;
+					img {
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 2560px) {
+	.mansion {
+		&-swiper {
+			.swiper {
+				&-slide {
+					height: 904px;
+				}
 			}
 		}
 	}

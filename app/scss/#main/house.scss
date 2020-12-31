@@ -1,6 +1,6 @@
 .house {
 	&__header {
-		padding-left: 0.625rem;
+		padding-left: 0.625rem; 
 	}
 	&__chapter {
 		font-weight: bold;
@@ -17,6 +17,10 @@
 		line-height: 0.938rem;
 		letter-spacing: 0.07rem;  
 		position: relative;
+		&:hover::before,
+		&:focus::before {
+			display: none;
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -155,6 +159,47 @@
 			line-height: 26px;
 			letter-spacing: 0.15rem;
 		}
+		&--line {
+			margin-top: 40px;
+			padding-top: 80px;
+			padding-bottom: 160px;
+			position: relative;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				right: 75px;
+				left: 0;
+				height: 10px;
+				background: #EFEFEF;;
+			}
+			&::before {
+				top: 0;
+			}
+			&::after {
+				bottom: 0;
+			}
+			.house__chapter {
+				padding: 10px 41px 10px 0;
+				background: #F2F2F2;
+				position: relative;
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -165px;
+					width: 165px;
+					height: 100%;
+					background: #F2F2F2;
+				}
+			}
+			.house__all {
+				margin-left: 40px;
+			}
+			.house__list {
+				margin-top: 45px;
+			}
+		}
 	}
 }
 
@@ -187,6 +232,9 @@
 		}
 		&.twostorey {
 			margin-top: 160px;
+		}
+		&--line {
+			margin-top: 90px;
 		}
 	}
 }

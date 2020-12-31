@@ -17,11 +17,11 @@ gulp.task('script', function() {
 })
 
 gulp.task('scss', function() {
-    return gulp.src('app/scss/gallery/style.scss')
+    return gulp.src('app/scss/catalog/style.scss')
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('app/css/gallery'))
+    .pipe(gulp.dest('app/css/catalog'))
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -29,27 +29,22 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: "app",
-            index: 'gallery.html'
+            index: 'catalog.html'
         }
     });
 });
 
 // INDEX
-// gulp.task('libs', function() {
-//     return gulp.src(['app/js/libs/jquery/jquery-3.5.1.min.js', 
-//         'app/js/libs/swiper/swiper-bundle.min.js'])
-//     .pipe(concat('libs.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('app/js/index'))
-//     .pipe(browserSync.reload({stream: true}))
-// });
-
 // gulp.task('js', function() {
 //     return gulp.src([
-//         'app/js/index/libs.min.js', 
+//         'app/js/libs/jquery/jquery-3.5.1.min.js', 
+//         'app/js/libs/swiper/swiper-bundle.min.js',
 //         'app/js/#main/nav.js',
 //         'app/js/#main/swiperHouse.js',
 //         'app/js/#main/swiperPenthouse.js',
+//         'app/js/#main/searchForm.js',
+//         'app/js/#main/phoneModal.js',
+//         'app/js/#main/formModal.js',
 //         ])
 //     .pipe(concat('script.min.js'))
 //     .pipe(uglify())
@@ -59,68 +54,58 @@ gulp.task('browserSync', function() {
 
 
 //GALLERY
-gulp.task('libs', function() {
-    return gulp.src(['app/js/libs/jquery/jquery-3.5.1.min.js', 
-        'app/js/libs/swiper/swiper-bundle.min.js'])
-    .pipe(concat('libs.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js/gallery'))
-    .pipe(browserSync.reload({stream: true}))
-});
-
-gulp.task('js', function() {
-    return gulp.src([
-        'app/js/gallery/libs.min.js', 
-        'app/js/#main/nav.js',
-        'app/js/#main/swiperHouse.js',
-        ])
-    .pipe(concat('script.min.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('app/js/gallery'))
-    .pipe(browserSync.reload({stream: true}))
-});
-
-
-// CATALOG
-// gulp.task('libs', function() {
-//     return gulp.src(['app/js/libs/jquery/jquery-3.5.1.min.js', 
-//         'app/js/libs/jquery-range/jquery-ui.min.js',
-//         'app/js/libs/jquery-range/jquery.ui.touch-punch.min.js'])
-//     .pipe(concat('libs.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('app/js/catalog'))
-//     .pipe(browserSync.reload({stream: true}))
-// });
-
 // gulp.task('js', function() {
 //     return gulp.src([
-//         'app/js/catalog/libs.min.js', 
-//         'app/js/#main/nav.js', 
-//         'app/js/#main/nav.js', 
-//         'app/js/#main/range.js',
-//         'app/js/#main/choose.js',
-//         'app/js/#main/map.js'
+//         'app/js/libs/jquery/jquery-3.5.1.min.js', 
+//         'app/js/libs/swiper/swiper-bundle.min.js',
+//         'app/js/#main/nav.js',
+//         'app/js/#main/swiperHouse.js',
+//         'app/js/#main/orderDots.js',
+//         'app/js/#main/flat.js',
+//         'app/js/#main/swiperVilla.js',
+//         'app/js/#main/searchForm.js',
+//         'app/js/#main/phoneModal.js',
+//         'app/js/#main/formModal.js',
+//         'app/js/#main/swiperMansion.js',
 //         ])
 //     .pipe(concat('script.min.js'))
 //     .pipe(uglify())
-//     .pipe(gulp.dest('app/js/catalog'))
+//     .pipe(gulp.dest('app/js/gallery'))
 //     .pipe(browserSync.reload({stream: true}))
 // });
 
 
-//ARTICLE
-// gulp.task('libs', function() {
-//     return gulp.src(['app/js/libs/jquery/jquery-3.5.1.min.js'])
-//     .pipe(concat('libs.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('app/js/article'))
-//     .pipe(browserSync.reload({stream: true}))
-// });
+// CATALOG
+gulp.task('js', function() {
+    return gulp.src([
+        'app/js/libs/jquery/jquery-3.5.1.min.js', 
+        'app/js/libs/jquery-range/jquery-ui.min.js',
+        'app/js/libs/jquery-range/jquery.ui.touch-punch.min.js',
+        'app/js/libs/swiper/swiper-bundle.min.js',
+        'app/js/#main/nav.js', 
+        'app/js/#main/range.js',
+        // 'app/js/#main/choose.js',
+        // 'app/js/#main/map.js',
+        'app/js/#main/searchForm.js',
+        'app/js/#main/phoneModal.js',
+        'app/js/#main/formModal.js',
+        'app/js/#main/swiperMansion.js',
+        ])
+    .pipe(concat('script.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('app/js/catalog'))
+    .pipe(browserSync.reload({stream: true}))
+});
 
+
+// ARTICLE
 // gulp.task('js', function() {
 //     return gulp.src([
-//         'app/js/article/libs.min.js', 
-//         'app/js/#main/nav.js'
+//         'app/js/libs/jquery/jquery-3.5.1.min.js',
+//         'app/js/#main/searchForm.js',
+//         'app/js/#main/nav.js',
+//         'app/js/#main/phoneModal.js',
+//         'app/js/#main/formModal.js',
 //         ])
 //     .pipe(concat('script.min.js'))
 //     .pipe(uglify())
@@ -130,24 +115,18 @@ gulp.task('js', function() {
 
 
 //BARKLI
-// gulp.task('libs', function() {
-//     return gulp.src([
-//         'app/js/libs/jquery/jquery-3.5.1.min.js',
-//         'app/js/libs/swiper/swiper-bundle.min.js'
-//         ])
-//     .pipe(concat('libs.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('app/js/barkli'))
-//     .pipe(browserSync.reload({stream: true}))
-// });
-
 // gulp.task('js', function() {
 //     return gulp.src([
-//         'app/js/barkli/libs.min.js', 
-//         'app/js/#main/nav.js',
+//         'app/js/libs/jquery/jquery-3.5.1.min.js',
+//         'app/js/libs/swiper/swiper-bundle.min.js',
 //         'app/js/#main/swiperHouse.js',
 //         'app/js/#main/swiperGallery.js',
+//         'app/js/#main/nav.js',
 //         'app/js/#main/orderDots.js',
+//         'app/js/#main/searchForm.js',
+//         'app/js/#main/phoneModal.js',
+//         'app/js/#main/formModal.js',
+//         'app/js/#main/swiperMansion.js',
 //         ])
 //     .pipe(concat('script.min.js'))
 //     .pipe(uglify())
@@ -162,4 +141,4 @@ gulp.task('watch', function() {
     gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
 
-gulp.task('default', gulp.parallel('scss', 'libs', 'js', 'browserSync', 'watch'));
+gulp.task('default', gulp.parallel('scss', 'js', 'browserSync', 'watch'));
