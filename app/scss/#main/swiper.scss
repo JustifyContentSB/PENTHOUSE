@@ -1,8 +1,8 @@
 .swiper {
 	&-button {
 		&-prev {
-			width: 56px;
-			height: 56px;
+			width: size(56);
+			height: size(56);
 			background: #fff url('../../images/icons/swiper-left.svg');
 			background-repeat: no-repeat;
 			background-position: center;
@@ -17,8 +17,8 @@
 			}
 		}
 		&-next {
-			width: 56px;
-			height: 56px;
+			width: size(56);
+			height: size(56);
 			background: #fff url('../../images/icons/swiper-right.svg');
 			background-repeat: no-repeat;
 			background-position: center;
@@ -55,7 +55,7 @@
 				left: 0;
 			}
 			&-next {
-				right: 75px;
+				right: size(75);
 			}
 		}
 	}

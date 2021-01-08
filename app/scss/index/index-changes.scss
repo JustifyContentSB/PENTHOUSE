@@ -1,6 +1,6 @@
 @media screen and(min-width: 1366px) {
 	.header {
-		padding-bottom: 45px;
+		padding-bottom: size(45);
 		&::after {
 			display: none;
 		}

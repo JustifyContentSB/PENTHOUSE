@@ -1,0 +1,143 @@
+.map {
+	height: size(350);
+	background: url('../../images/map/map.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: none;
+	&.active {
+		display: block;
+	}
+	&__placemark {
+		width: size(43);
+		height: size(43);
+		cursor: pointer;
+		background: url('../../images/map/placemark.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		&--one {
+			bottom: size(150);
+			right: size(150);
+		}
+		&--two {
+			top: size(50);
+			left: size(150);
+		}
+	}
+	&__list {
+		&-wrapper {
+			width: size(280);
+			height: 100%;
+			position: fixed;
+			z-index: 300;
+			top: 0;
+			right: 0;
+			overflow-y: scroll;
+		}
+	}
+	&__item {
+		&-img {
+		width: 100%;
+		height: auto;
+			img {
+				display: block;
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&-info {
+			padding: size(10);
+			background: #F0F0F0;
+		}
+		&-title {
+			font-weight: 500;
+		    font-size: size(12);
+		    line-height: size(15);
+		    letter-spacing: 0.1rem;
+		    text-transform: uppercase;
+		}
+		&-address {
+			margin-top: size(6);
+		    font-size: size(11);
+		    line-height: size(14);
+		    letter-spacing: 0.1rem;
+		}
+		&-type {
+			margin-top: size(13);
+		    font-size: size(11);
+		    line-height: size(20);
+		    letter-spacing: 0.05rem;
+		    span {
+		    	color: #8D8D8D;
+		    }
+		}
+		&-size {
+			margin-top: size(12);
+		    font-size: size(11);
+		    line-height: size(14);
+		    letter-spacing: 0.1rem;
+		}
+		&-price {
+			margin-top: size(3);
+		    font-weight: bold;
+		    font-size: size(22);
+		    line-height: size(28);
+		    letter-spacing: 0.1rem;
+		}
+		&-metre {
+			margin-top: size(4);
+		    font-size: size(11);
+		    line-height: size(15);
+		    letter-spacing: 0.1rem;
+		    color: #8D8D8D;
+		}
+		&-more {
+			margin-top: size(10);
+		    font-size: size(11);
+		    line-height: size(14);
+		    letter-spacing: 0.1rem;
+		    color: #000000;
+		    a {
+		    	position: relative;
+		    	&::after {
+		    		content: '';
+				    position: absolute;
+				    bottom: 0;
+				    left: 0;
+				    right: 0;
+				    height: size(1);
+				    background: #000;
+		    	}
+		    }
+		}
+		&-link {
+			@extend %brownLink;
+			margin-top: size(16);
+		    font-weight: 500;
+		    letter-spacing: 0.07rem;
+		}
+	}
+}
+
+@media screen and(min-width: 1366px) {
+	.map {
+		margin-top: size(34);
+		height: size(870);
+		&__list {
+			&-wrapper {
+				width: size(353);
+				position: absolute;
+				right: auto;
+				left: 0;
+			}
+		}
+		&__item {
+			&-link {
+				min-width: 100%;
+				width: 100%;
+			}
+		}
+	}
+}

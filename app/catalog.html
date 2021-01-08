@@ -85,7 +85,8 @@
 					<form class="mansion__choose choose" action="post">
 						<div class="choose__manage">
 							<a class="choose__listing-btn active" href="#">Списком</a>
-							<a class="choose__map" href="#">На карте</a>
+							<a class="choose__map choose__map-tel" href="#">На карте</a>
+							<a class="choose__map choose__map-dekstop" href="#">На карте</a>
 							<a class="choose__parameter" href="#">Параметры объектов</a>
 							<button class="choose__reset" type="reset">
 								<span class="visually-hidden">Сбросить параметры</span>
@@ -232,7 +233,6 @@
 							</div>
 							<button class="choose__reset-btn" type="reset">Очистить</button>
 						</div>
-						
 					</form>
 					<div class="mansion__page">
 						<header class="mansion__header">
@@ -386,7 +386,61 @@
 								</div>
 							</div>
 						</div>
-						<div class="mansion__map" id="map">
+						<div class="mansion__map map">
+							<div class="map__placemark map__placemark--one"></div>
+							<div class="map__placemark map__placemark--two"></div>
+							<div class="map__list-wrapper">
+								<div class="map__list">
+									<div class="map__item">
+										<div class="map__item-img"><img src="images/map/map-img.png" alt="пентхаус"></div>
+										<div class="map__item-info">
+											<h2 class="map__item-title">Двухуровневый пентхаус с открытой террасой в ЖК White</h2>
+											<p class="map__item-address">ул. Новый Арбат, 45</p>
+											<ul class="map__item-type">
+												<li>2 <span>спальни</span></li>
+												<li><span>Отделка</span> Whitebox</li> 
+											</ul>
+											<p class="map__item-size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+											<p class="map__item-price">122 000 000 &#8381;</p>
+											<p class="map__item-metre">328 000 р./м<sup>2</sup></p>
+											<div class="map__item-more"><a href="#">Подробнее</a></div>
+											<a class="map__item-link" href="#">Назначить осмотр</a>
+										</div>
+									</div>
+									<div class="map__item">
+										<div class="map__item-img"><img src="images/map/map-img.png" alt="пентхаус"></div>
+										<div class="map__item-info">
+											<h2 class="map__item-title">Двухуровневый пентхаус с открытой террасой в ЖК White</h2>
+											<p class="map__item-address">ул. Новый Арбат, 45</p>
+											<ul class="map__item-type">
+												<li>2 <span>спальни</span></li>
+												<li><span>Отделка</span> Whitebox</li> 
+											</ul>
+											<p class="map__item-size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+											<p class="map__item-price">122 000 000 &#8381;</p>
+											<p class="map__item-metre">328 000 р./м<sup>2</sup></p>
+											<div class="map__item-more"><a href="#">Подробнее</a></div>
+											<a class="map__item-link" href="#">Назначить осмотр</a>
+										</div>
+									</div>
+									<div class="map__item">
+										<div class="map__item-img"><img src="images/map/map-img.png" alt="пентхаус"></div>
+										<div class="map__item-info">
+											<h2 class="map__item-title">Двухуровневый пентхаус с открытой террасой в ЖК White</h2>
+											<p class="map__item-address">ул. Новый Арбат, 45</p>
+											<ul class="map__item-type">
+												<li>2 <span>спальни</span></li>
+												<li><span>Отделка</span> Whitebox</li> 
+											</ul>
+											<p class="map__item-size">655 м<sup>2</sup> + терраса 30 м<sup>2</sup></p>
+											<p class="map__item-price">122 000 000 &#8381;</p>
+											<p class="map__item-metre">328 000 р./м<sup>2</sup></p>
+											<div class="map__item-more"><a href="#">Подробнее</a></div>
+											<a class="map__item-link" href="#">Назначить осмотр</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -562,10 +616,7 @@
 		<div class="overlay-modal"></div>
 	</div>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
    	<script src="js/catalog/script.min.js"></script>
-   	<script src="js/choose.js"></script>
-   	<script src="js/map.js"></script>
 
 </body>
 </html>

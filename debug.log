@@ -263,3 +263,5 @@
 [1226/210303.716:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
 [1226/210308.338:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
 [1226/210308.338:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[0101/144655.636:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[0101/161836.363:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)

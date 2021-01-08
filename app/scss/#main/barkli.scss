@@ -1,18 +1,18 @@
 .barkli {
-	margin-top: 15px;
+	margin-top: size(15);
 	&__page {
-		margin-top: 27px;
+		margin-top: size(27);
 	}
 	&__title {
-		margin-top: 27px;
-		margin-bottom: 15px;
+		margin-top: size(27);
+		margin-bottom: size(15);
 	}
 	&__text {
-		font-size: 11px;
-		line-height: 13px;
+		font-size: size(11);
+		line-height: size(13);
 	}
 	&__info {
-		padding: 0 10px;
+		padding: 0 size(10);
 		letter-spacing: 0.07rem;
 	}
 }
@@ -33,12 +33,12 @@
 		}
 		.mansion {
 			&__img {
-				min-width: 430px;
-				width: 430px;
+				min-width: size(430);
+				width: size(430);
 			}
 			&__info {
-				width: calc(100% - 430px);
-				min-height: 307px;
+				width: calc(100% - 26.875rem);
+				min-height: size(407);
 			}
 		}
 	}
@@ -48,13 +48,13 @@
 	.barkli {
 		.mansion {
 			&__img {
-				min-width: 600px;
-				width: 600px;
+				min-width: size(600);
+				width: size(600);
 			}
 			&__info {
-				width: calc(100% - 600px);
-				min-height: 428.56px;
-				padding: 30px;
+				width: calc(100% - 37.5rem);
+				min-height: size(429);
+				padding: size(30);
 			}
 		}
 	}
@@ -62,43 +62,43 @@
 
 @media screen and(min-width: 1366px) {
 	.barkli {
-		margin-top: 50px;
+		margin-top: size(50);
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding-right: 75px;
+		padding-right: size(75);
 		&__info {
 			padding: 0;
 		}
 		&__title {
-			margin-top: 50px;
-			margin-bottom: 30px;
+			margin-top: size(50);
+			margin-bottom: size(30);
 			padding: 0;
 			letter-spacing: 0.19rem;
 		}
 		&__text {
-			font-size: 14px;
-			line-height: 20px;
+			font-size: size(14);
+			line-height: size(20);
 		}
 		&__page {
-			width: calc(100% - 500px);
+			width: calc(100% - 31.25rem);
 			margin-top: 0;
 		}
 		&__house {
 			flex-direction: column;
-			margin-bottom: 20px;
+			margin-bottom: size(20);
 		}
 		.mansion {
 			&__kind {
-				margin-top: 35px;
+				margin-top: size(35);
 			}
 			&__info {
 				width: 100%;
-				min-height: 350px;
+				min-height: size(350);
 			}
 			&__link {
-				width: 314px;
-				min-width: 314px;
+				width: size(314);
+				min-width: size(314);
 			}
 			&__img {
 				width: 100%;
@@ -106,7 +106,7 @@
 			}
 			&__house {
 				&-wrapper {
-					margin-top: 45px;
+					margin-top: size(45);
 				}
 			}
 		}
@@ -120,12 +120,12 @@
 		}
 		.mansion {
 			&__img {
-				min-width: 500px;
-				width: 500px;
+				min-width: size(500);
+				width: size(500);
 			}
 			&__info {
-				width: calc(100% - 500px);
-				min-height: 357.14px;
+				width: calc(100% - 31.25rem);
+				min-height: size(357);
 			}
 		}
 	}
@@ -134,31 +134,31 @@
 @media screen and(min-width: 1920px) {
 	.barkli {
 		&__title {
-			font-size: 30px;
-			line-height: 39px;
+			font-size: size(30);
+			line-height: size(39);
 		}
 		&__page {
-			width: calc(100% - 580px);
+			width: calc(100% - 36.25rem);
 		}
 		&__text {
-			font-size: 18px;
-			line-height: 26px;
+			font-size: size(18);
+			line-height: size(26);
 			letter-spacing: 0.12rem;
 		}
 		.mansion {
 			&__img {
-				min-width: 600px;
-				width: 600px;
-				height: 428.56px;
+				min-width: size(600);
+				width: size(600);
+				height: size(429);
 			}
 			&__info {
-				width: calc(100% - 600px);
-				min-height: 428.56px;
-				height: 428.56px;
-				padding: 45px 26px 32px 43px;
+				width: calc(100% - 37.5rem);
+				min-height: size(429);
+				height: size(429);
+				padding: size(45) size(26) size(32) size(43);
 			}
 			&__price {
-				margin-top: 6px; 
+				margin-top: size(6); 
 			}
 			&__link {
 				display: none;

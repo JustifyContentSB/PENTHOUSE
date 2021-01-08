@@ -7,42 +7,41 @@
 		align-items: center;
 		flex-wrap: wrap;
 		font-weight: 350;
-		font-size: 10px;
-		line-height: 13px;
+		font-size: size(10);
+		line-height: size(13);
 	}
 	&__listing-btn {
 		width: 50%;
-		padding: 9px 6px;
-		border: 2px solid #DADADA;
+		padding: size(9) size(6);
+		border: size(2) solid #DADADA;
 		display: none;
 		&.active {
-			border: 2px solid #000;
+			border: size(2) solid #000;
 		}
 	}
 	&__map {
-		padding: 9px 6px 9px 27px;
-		margin-right: 7px;
+		padding: size(9) size(6) size(9) size(27);
+		margin-right: size(7);
 		border: 1px solid #E6E6E6;
 		letter-spacing: 0.1rem;
 		position: relative;
 		&::after {
 			content: '';
 			position: absolute;
-			left: 6px;
-			top: 7px;
-			width: 15px;
-			height: 15px;
+			left: size(6);
+			top: size(7);
+			width: size(15);
+			height: size(15);
 			background: url('../../images/icons/choose-map.svg');
 			background-repeat: no-repeat;
 		}
-		&.active {
-			background: #000;
-			color: #fff;
+		&-dekstop {
+			display: none;
 		}
 	}
 	&__parameter {
-		padding: 10px 11px 10px 34px;
-		margin-right: 7px;
+		padding: size(10) size(11) size(10) size(34);
+		margin-right: size(7);
 		font-weight: 400;
 		letter-spacing: 0.05rem;
 		color: #FFFFFF;
@@ -51,17 +50,17 @@
 		&::after {
 			content: '';
 			position: absolute;
-			top: 10px;
-			left: 10px;
-			width: 15px;
-			height: 14px;
+			top: size(10);
+			left: size(10);
+			width: size(15);
+			height: size(14);
 			background: url('../../images/icons/choose-parameter.svg');
 			background-repeat: no-repeat;
 		}
 	}
 	&__reset {
-		width: 34px;
-		height: 33px;
+		width: size(34);
+		height: size(33);
 		border: 1px solid #E6E6E6;
 		position: relative;
 		display: none;
@@ -72,23 +71,23 @@
 		&::after {
 			content: '';
 			position: absolute;
-			width: 17px;
-			height: 1px;
+			width: size(17);
+			height: size(1);
 			background: #000;
 		}
 		&::before {
 			transform: rotate(45deg);
-			left: 8px;
+			left: size(8);
 		}
 		&::after {
 			transform: rotate(-45deg);
-			left: 8px;
+			left: size(8);
 		}
 	}
 	&__list {
-		width: 255px;
+		width: size(255);
 		height: 100%;
-		padding: 18px 16px 20px 19px;  
+		padding: size(18) size(16) size(20) size(19);  
 		color: $formColor;
 		background: #fff;
 		position: fixed;
@@ -109,8 +108,8 @@
 	}
 	&__title {
 		font-weight: 500;
-		font-size: 11px;
-		line-height: 13px;
+		font-size: size(11);
+		line-height: size(13);
 		letter-spacing: 0.1rem; 
 		color: $formColor;
 	}
@@ -119,27 +118,27 @@
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
-			font-size: 11px;
-			line-height: 13px;
+			font-size: size(11);
+			line-height: size(13);
 			letter-spacing: 0.1rem;
 		}
 		&-list {
-			margin-left: 35px;
+			margin-left: size(35);
 		}
 		&-currency {
-			margin-right: 10px;
+			margin-right: size(10);
 			&.active {
 				font-weight: 400;
 			}
 		}
 		&-range {
-			margin-top: 15px;
+			margin-top: size(15);
 		}
 	}
 	&__bedroom {
-		margin-top: 30px;
+		margin-top: size(30);
 		&-inner {
-			margin-top: 10px;
+			margin-top: size(10);
 			display: flex;
 			flex-wrap: wrap;
 		}
@@ -152,104 +151,104 @@
 		}
 		label {
 			cursor: pointer;
-			margin-right: 7px;
+			margin-right: size(7);
 		}
 		&-radio {
 			display: inline-block;
-			width: 33px;
-			height: 33px;
-			border: 1px solid #DADADA;
+			width: size(33);
+			height: size(33);
+			border: size(1) solid #DADADA;
 			background: #fff;
 			font-weight: 350;
-			font-size: 11px;
-			line-height: 33px;
+			font-size: size(11);
+			line-height: size(33);
 			text-align: center;
 		}
 	}
 	&__style {
-		margin-top: 15px;
-		font-size: 11px;
+		margin-top: size(15);
+		font-size: size(11);
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		&-label {
-			margin-bottom: 10px;
+			margin-bottom: size(10);
 		}
 	}
 	&__size {
-		margin-top: 30px;
+		margin-top: size(30);
 		&-range {
-			margin-top: 15px;
+			margin-top: size(15);
 		}
 	}
 	&__terrace {
-		margin-top: 30px;
+		margin-top: size(30);
 		&-range {
-			margin-top: 15px;
+			margin-top: size(15);
 		}
 		&-without {
-			margin-top: 30px;
+			margin-top: size(30);
 		}
 	}
 	&__about {
-		margin-top: 30px;
-		font-size: 10px;
-		line-height: 13px;
+		margin-top: size(30);
+		font-size: size(10);
+		line-height: size(13);
 		letter-spacing: 0.07rem;
 		&-inner {
-			margin-bottom: 10px;
+			margin-bottom: size(10);
 		}
 		&-list {
 			height: 0;
 			overflow: hidden;
 			transition: $transition;
 			&.visible {
-				padding: 10px 0;
+				padding: size(10) 0;
 				height: auto;
 			}
 		}
 		&-item {
-			margin-bottom: 10px;
-			line-height: 10px;
+			margin-bottom: size(10);
+			line-height: size(10);
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 		&-num {
-			font-size: 10px;
-			margin-left: 5px;
+			font-size: size(10);
+			margin-left: size(5);
 			color: $formColor;
 		}
 		&-btn {
 			display: block;
-			border: 1px solid #DADADA;
+			border: size(1) solid #DADADA;
 			background: #fff;
-			padding: 9px 18px 9px 12px;
+			padding: size(9) size(18) size(9) size(12);
 			position: relative;
 			&::after {
 				content: '';
 				position: absolute;
-				width: 8px;
-				height: 12px;
-				top: 10px;
-				right: 17px;
+				width: size(8);
+				height: size(12);
+				top: size(10);
+				right: size(17);
 				background: url('../../images/icons/arrow-down.svg');
 				background-size: contain;
 			}
 		}
 		&-text {
-			font-size: 10px;
-			line-height: 13px;
+			font-size: size(10);
+			line-height: size(13);
 		}
 	}
 	&__reset-btn {
 		display: block;
 		width: 100%;
-		margin-top: 20px;
-		padding: 8px;
-		font-size: 11px;
+		margin-top: size(20);
+		padding: size(8);
+		font-size: size(11);
 		background: #FFFFFF;
-		border: 2px solid #636363;
+		border: size(2) solid #636363;
 	}
 }
 
@@ -261,17 +260,17 @@
 		}
 		&__map {
 			width: 50%;
-			padding: 9px 6px;
+			padding: size(9) size(6);
 			margin-right: 0;
 			text-align: center;
-			border-width: 2px;
+			border-width: size(2);
 			&::after {
 				display: none;
 			}
 			&.active {
 				background: #fff;
 				color: inherit;
-				border: 2px solid #000;
+				border: size(2) solid #000;
 			}
 		}
 		&__parameter,
@@ -279,12 +278,12 @@
 			display: none;
 		}
 		&__manage {
-			padding: 0 15px;
+			padding: 0 size(15);
 		}
 		&__list {
 			width: 100%;
 			height: 100%;
-			padding: 18px 15px 20px 15px;
+			padding: size(18) size(15) size(20) size(15);
 			position: static;
 		}
 	}
@@ -294,81 +293,87 @@
 	.choose {
 		&__manage {
 			padding: 0;
-			font-size: 14px;
-			line-height: 18px;
+			font-size: size(14);
+			line-height: size(18);
 		}
 		&__listing-btn,
 		&__map {
-			padding: 14px 6px;
+			padding: size(14) size(6);
 			letter-spacing: 0.09rem;
+			&-tel {
+				display: none;
+			}
+			&-dekstop {
+				display: block;
+			}
 		}
 		&__title {
-			font-size: 16px;
-			line-height: 21px;
+			font-size: size(16);
+			line-height: size(21);
 		}
 		&__price {
-			padding-top: 50px;
+			padding-top: size(50);
 			&-header {
-				font-size: 16px;
-				line-height: 21px;
+				font-size: size(16);
+				line-height: size(21);
 			}
 			&-range {
-				margin-top: 20px;
+				margin-top: size(20);
 			}
 		}
 		&__bedroom {
-			margin-top: 50px;
+			margin-top: size(50);
 			&-radio {
-				width: 48px;
-				height: 48px;
-				font-size: 14px;
-				line-height: 48px;
+				width: size(48);
+				height: size(48);
+				font-size: size(14);
+				line-height: size(48);
 			}
 			&-inner {
-				margin-top: 15px;
+				margin-top: size(15);
 			}
 		}
 		&__style {
-			margin-top: 50px;
-			font-size: 13px;
-			line-height: 17px;
+			margin-top: size(50);
+			font-size: size(13);
+			line-height: size(17);
 		}
 		&__size {
-			margin-top: 50px;
+			margin-top: size(50);
 		}
 		&__about {
-			margin-top: 40px;
+			margin-top: size(40);
 			letter-spacing: 0.07rem;
-			font-size: 14px;
-			line-height: 18px;
+			font-size: size(14);
+			line-height: size(18);
 			&-text {
-				font-size: 13px;
+				font-size: size(13);
 			}
 			&-num {
-				font-size: 13px;
+				font-size: size(13);
 			}
 			&-btn {
-				padding: 15px 35px 15px 27px;
+				padding: size(15) size(35) size(15) size(27);
 				&::after {
-					width: 12px;
-					height: 17px;
-					top: 15px;
-					right: 20px;
+					width: size(12);
+					height: size(17);
+					top: size(15);
+					right: size(20);
 				}
 			}
 		}
 		&__reset-btn {
-			padding: 13px 10px;
+			padding: size(13) size(10);
 			letter-spacing: 0.07rem;
-			font-size: 15px;
-			line-height: 19px;
+			font-size: size(15);
+			line-height: size(19);
 		}
 		&__terrace {
 			&-range {
-				margin-top: 25px;
+				margin-top: size(25);
 			}
 			&-without {
-				margin-top: 40px;
+				margin-top: size(40);
 				letter-spacing: 0.07rem;
 			}
 		}

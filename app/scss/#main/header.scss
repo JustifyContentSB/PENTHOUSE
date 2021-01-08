@@ -5,7 +5,7 @@
 	width: 100%;
 	z-index: 150;
 	background: #fff; 
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px size(20) rgba(0, 0, 0, 0.1);
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -13,16 +13,16 @@
 		flex-wrap: wrap;
 	}
 	&__logo {
-		font-size: 0.792rem;
-		line-height: 1rem;
+		font-size: size(13);
+		line-height: size(16);
 		color: #AFAFAF;
 		font-weight: 350;
 		&-penthouse {
 			display: inline-block;
-			margin-top: 0.063rem;
+			margin-top: size(1);
 			font-weight: bold;
-			font-size: 0.99rem;
-			line-height: 1.25rem;
+			font-size: size(16);
+			line-height: size(18);
 			color: #000;
 			text-transform: uppercase;
 		}
@@ -32,16 +32,16 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 2.5rem;
-			height: 2.5rem;
+			width: size(40);
+			height: size(40);
 			cursor: pointer;
 		}
 		&-input {
-			width: calc(100% - 80px);
-			padding-left: 13px;
-			padding-right: 13px;
-			font-size: 11px;
-			line-height: 14px;
+			width: calc(100% - 5rem);
+			padding-left: size(13);
+			padding-right: size(13);
+			font-size: size(11);
+			line-height: size(14);
 			letter-spacing: 0.1rem;
 			font-weight: 300;
 			outline: none;
@@ -66,8 +66,8 @@
 		}
 		&-delete {
 			display: inline-block;
-			width: 20px;
-			height: 14px;
+			width: size(20);
+			height: size(14);
 			margin-left: auto;
 			img {
 				display: block;
@@ -75,18 +75,18 @@
 		}
 		&-toggle {
 			display: block;
-			width: 40px;
-			height: 40px;
-			margin-left: 9px;
+			width: size(40);
+			height: size(40);
+			margin-left: size(9);
 			position: relative;
 			&::before,
 			&::after {
 				content: '';
 				position: absolute;
-				top: 19px;
-				right: 9px;
-				width: 21px;
-				height: 1px;
+				top: size(19);
+				right: size(9);
+				width: size(21);
+				height: size(1);
 				background: #000;
 			}
 			&::before {
@@ -104,7 +104,7 @@
 
 @media screen and(min-width: 1366px) {
 	.header {
-		padding: 40px 75px 55px 0;
+		padding: size(40) size(75) size(55) 0;
 		box-shadow: none;
 		position: relative;
 		z-index: 0;
@@ -112,38 +112,38 @@
 			content: '';
 			position: absolute;
 			bottom: 0;
-			right: 75px;
+			right: size(75);
 			left: 0;
-			height: 10px;
+			height: size(10);
 			background: #EFEFEF;
 		}
 		&__logo {
-			font-size: 24px;
-			line-height: 39px;
+			font-size: size(24);
+			line-height: size(39);
 			&-penthouse {
-				font-size: 30px;
+				font-size: size(30);
 			}
 		}
 		&__manage {
 			display: flex;
 			flex-wrap: wrap;
-			max-width: 675px;
+			max-width: size(675);
 		}
 		&__search {
 			display: flex;
 			align-items: center;
-			border-bottom: 1px solid #E7E7E7;
-			width: 438px;
-			padding-bottom: 13px;
+			border-bottom: size(1) solid #E7E7E7;
+			width: size(438);
+			padding-bottom: size(13);
 			&-inner {
 				position: static;
-				width: calc(100% - 47px);
+				width: calc(100% - 2.938rem);
 			}
 			&-input {
 				display: block;
 				width: 100%;
 				font-weight: 350;
-				font-size: 16px;
+				font-size: size(16);
 			}
 			&-delete,
 			&-toggle {
@@ -152,12 +152,12 @@
 			&-icon {
 				width: auto;
 				height: auto;  
-				margin-right: 30px;
+				margin-right: size(30);
 			}
 		}
 		&__tel {
 			display: block;
-			margin-left: 56px;
+			margin-left: size(56);
 		}
 	}
 }

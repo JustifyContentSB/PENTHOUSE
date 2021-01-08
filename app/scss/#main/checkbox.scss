@@ -1,23 +1,22 @@
 .checkbox {
 	display: inline-flex;
-	flex-wrap: wrap;
 	align-items: center;
 	color: $formColor;
 	cursor: pointer;
 	letter-spacing: 0.07rem;
-	font-size: 11px;
-	line-height: 13px;
+	font-size: size(11);
+	line-height: size(13);
 	&__check {
 		display: inline-block;
-		min-width: 16px;
-		height: 16px;
-		margin-right: 10px;
+		min-width: size(16);
+		height: size(16);
+		margin-right: size(10);
 	    border: 1px solid #DADADA;
 	    background: #fff;
 	    position: relative;
 	}
 	&__text {
-		width: calc(100% - 26px);
+		width: calc(100% - 1.5rem);
 	}
 	input {
 		display: none;
@@ -27,10 +26,10 @@
 			&::after {
 			    content: '';
 			    position: absolute;
-			    top: 5px;
-			    left: 4px;
-			    width: 8px;
-			    height: 5px;
+			    top: size(5);
+			    left: size(4);
+			    width: size(8);
+			    height: size(5);
 			    background: url(../../images/icons/check.svg);
 			    background-size: contain;
 			    background-repeat: no-repeat;
@@ -41,23 +40,23 @@
 
 @media screen and(min-width: 1366px) {
 	.checkbox {
-		font-size: 13px;
-		line-height: 17px;
+		font-size: size(13);
+		line-height: size(17);
 		&__check {
-			min-width: 23px;
-			height: 23px;
-			margin-right: 16px; 
+			min-width: size(23);
+			height: size(23);
+			margin-right: size(16); 
 		}
 		&__text {
-			width: calc(100% - 39px);
+			width: calc(100% - 2.438rem);
 		}
 		input {
 			&:checked ~ .checkbox__check {
 				&::after {
-				    top: 7px;
-				    left: 5px;
-				    width: 11px;
-				    height: 8px;
+				    top: size(7);
+				    left: size(5);
+				    width: size(11);
+				    height: size(8);
 				}
 			}
 		}

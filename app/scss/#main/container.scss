@@ -1,7 +1,7 @@
 .container {
-	padding: 0 .625rem;
+	padding: 0 size(10);
 	@media screen and(min-width: 1366px) {
 		padding: 0;
-		padding-right: 75px;
+		padding-right: size(75);
 	}
 }

@@ -1,18 +1,18 @@
 .flat {
 	&__title {
-		margin-top: 10px;
-		padding: 0 10px;
+		margin-top: size(10);
+		padding: 0 size(10);
 	}
 	&__list {
-		margin-top: 17px;
+		margin-top: size(17);
 		display: flex;
 		&-dekstop {
 			display: none;
 		}
 	}
 	&__item {
-		width: 299px;
-		height: 211px;
+		width: size(299);
+		height: size(211);
 		overflow: hidden;
 		img {
 			display: block;
@@ -22,11 +22,11 @@
 		}
 	}
 	&__kind {
-		padding: 13px 10px;
+		padding: size(13) size(10);
 		display: flex;
 		font-weight: 350;
-		font-size: 8.27586px;
-		line-height: 11px;
+		font-size: size(8);
+		line-height: size(11);
 		letter-spacing: 0.07rem;
 		overflow-x: scroll;
 		-ms-overflow-style: none;
@@ -36,38 +36,38 @@
 			height: 0; 
 		}
 		&-item {
-			margin-right: 5px;
+			margin-right: size(5);
 			a {
 				display: inline-block;
-				padding: 5px 14px;
-				border: 1px solid #E6E6E6;
+				padding: size(5) size(14);
+				border: size(1) solid #E6E6E6;
 			}
 		}
 	}
 	&__right {
-		margin-top: 10px;
+		margin-top: size(10);
 	}
 	&__info {
-		padding: 0 10px;
+		padding: 0 size(10);
 		&-title {
 			font-weight: 700;
-			font-size: 16px;
-			line-height: 21px;
+			font-size: size(16);
+			line-height: size(21);
 			letter-spacing: 0.07rem;
 		}
 		&-text {
-			margin-top: 10px;
+			margin-top: size(10);
 			font-weight: 300;
-			font-size: 11px;
-			line-height: 13px;
+			font-size: size(11);
+			line-height: size(13);
 			letter-spacing: 0.07rem;
 		}
 	}
 	&__page {
-		margin-top: 40px;
+		margin-top: size(40);
 		.mansion__header {
-			margin-top: 25px;
-			margin-bottom: 10px;
+			margin-top: size(25);
+			margin-bottom: size(10);
 		}
 	}
 	.order__list {
@@ -89,12 +89,12 @@
 					display: flex;
 				}
 				&__img {
-					min-width: 430px;
-					width: 430px;
+					min-width: size(430);
+					width: size(430);
 				}
 				&__info {
-					min-height: 307px;
-					width: calc(100% - 430px);
+					min-height: size(307);
+					width: calc(100% - 26.875rem);
 				}
 			}
 		}
@@ -103,74 +103,74 @@
 
 @media screen and(min-width: 1366px) {
 	.flat {
-		margin-top: 15px; 
-		padding-right: 75px;
+		margin-top: size(15); 
+		padding-right: size(75);
 		&__inner {
-			margin-top: 26px;
+			margin-top: size(26);
 		}
 		&__title {
 			padding: 0;
 		}
 		&__kind {
 			padding: 0;
-			padding-top: 10px;	
-			padding-bottom: 17px;		
-			font-size: 12px;
-		    line-height: 15px;
+			padding-top: size(10);	
+			padding-bottom: size(17);		
+			font-size: size(12);
+		    line-height: size(15);
 		    letter-spacing: 0.1rem;
 		    font-weight: 400;
 		    flex-wrap: wrap;
 		    &-item {
-		    	margin-right: 10px;
+		    	margin-right: size(10);
 		    	a {
-		    		padding: 7px 18px;
-    				border-width: 2px;
+		    		padding: size(7) size(18);
+    				border-width: size(2);
 		    	}
 		    }
 		}
 		&__info {
 			padding: 0;
 			&-title {
-				margin-top: 25px;
+				margin-top: size(25);
 				font-weight: 500;
-				font-size: 30px;
-				line-height: 39px;
+				font-size: size(30);
+				line-height: size(39);
 				letter-spacing: 0.2rem;
 			}
 			&-text {
-			    font-size: 14px;
-				line-height: 20px;
+			    font-size: size(14);
+				line-height: size(20);
 			}
 		}
 		&__show {
-			margin-top: 25px;
+			margin-top: size(25);
 		}
 		&__list {
 			display: none;
 			&-wrapper {
 				position: relative;
-				max-width: 1100px;
+				max-width: size(1100);
 			}
 			&-thumbs {
 				position: absolute;
-				bottom: 20px;
-				left: 20px;
+				bottom: size(20);
+				left: size(20);
 			}
 			&-dekstop {
 				display: block;
-				max-width: 1100px;
+				max-width: size(1100);
 			}
 		}
 		&__item {
 			width: 100%;
-			max-width: 1100px;
+			max-width: size(1100);
 			height: auto;
 			img {
-				max-width: 1100px;
+				max-width: size(1100);
 			}
 			&-thumbs {
-				width: 99px;
-				border: 2px solid #fff;
+				width: size(99);
+				border: size(2) solid #fff;
 				cursor: pointer;
 				&.swiper-slide {
 					opacity: 0.5;
@@ -189,14 +189,14 @@
 			justify-content: space-between;
 		}
 		&__right {
-			width: calc(100% - 500px);
+			width: calc(100% - 31.25rem);
 		}
 		&__page {
-			margin-top: 55px;
+			margin-top: size(55);
 			padding-right: 0;
 			.mansion {
 				&__header {
-					margin-top: 35px;
+					margin-top: size(35);
 				}
 				&__house {
 					flex-direction: column;
@@ -206,7 +206,7 @@
 					max-width: 100%;
 				}
 				&__info {
-					padding: 45px 26px 32px 43px; 
+					padding: size(45) size(26) size(32) size(43); 
 					width: 100%;
 				}
 				&__link {
@@ -214,25 +214,25 @@
 				}
 			}
 			.sec-title {
-				font-size: 30px;
-				line-height: 39px;
+				font-size: size(30);
+				line-height: size(39);
 				letter-spacing: 0.17rem;
 			}
 		}
 		&__present {
-			margin-left: 10px;
-			padding: 20px 40px 40px 55px;
+			margin-left: size(10);
+			padding: size(20) size(40) size(40) size(55);
 			display: block; 
-			margin-top: 40px;
+			margin-top: size(40);
 			.order__address {
-				margin-bottom: 15px;
-				font-size: 18px;
+				margin-bottom: size(15);
+				font-size: size(18);
 				letter-spacing: 0.12rem;
 			}
 		}
 		&__order {
 			&-list {
-				padding-left: 10px;
+				padding-left: size(10);
 				padding-top: 0;
 			}
 		}
@@ -242,14 +242,14 @@
 @media screen and(min-width: 1920px) {
 	.flat {
 		&__right {
-			width: calc(100% - 580px);
+			width: calc(100% - 36.25rem);
 		}
 		&__info {
 			&-text {
-				margin-top: 20px;
+				margin-top: size(20);
 				font-weight: 350;
-				font-size: 17px;
-				line-height: 27px;
+				font-size: size(17);
+				line-height: size(27);
 				letter-spacing: 0.13rem;
 			}
 		}
@@ -260,13 +260,13 @@
 					align-items: flex-start;
 				}
 				&__img {
-					min-width: 601px;
-					width: 601px;
-					height: 430px;
+					min-width: size(601);
+					width: size(601);
+					height: size(430);
 				}
 				&__info {
-					width: calc(100% - 601px);
-					min-height: 430px;
+					width: calc(100% - 37.563rem);
+					min-height: size(430);
 					height: auto;
 				}
 			}

@@ -1,43 +1,43 @@
 .article {
-	margin-top: 10px;
+	margin-top: size(10);
 	color: #000;
 	font-weight: 300;
-	font-size: 12px;
-	line-height: 15px;
+	font-size: size(12);
+	line-height: size(15);
 	&__main-title {
-		padding: 0 10px;
+		padding: 0 size(10);
 	}
 	&__about {
-		margin-top: 20px;
-		padding-top: 20px;
+		margin-top: size(20);
+		padding-top: size(20);
 		border-top: 1px solid #DEDEDE;
 	}
 	&__title {
 		font-weight: bold;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: size(14);
+		line-height: size(18);
 		letter-spacing: 0.1rem;
 	}
 	&__descr {
-		margin-bottom: 19px;
+		margin-bottom: size(19);
 	}
 	&__text {
-		margin-top: 7px;
+		margin-top: size(7);
 		&-hidden {
 			display: none;
 		}
 	}
 	&__item {
-		padding-left: 16px;
-		margin-bottom: 15px;
+		padding-left: size(16);
+		margin-bottom: size(15);
 		position: relative;
 		&::before {
 			content: '';
 			position: absolute;
 			left: 0;
-			top: 3px;
-			width: 7px;
-			height: 7px;
+			top: size(3);
+			width: size(7);
+			height: size(7);
 			border-radius: 50%;
 			background: #9B9B9B;
 		}
@@ -46,41 +46,41 @@
 
 @media screen and(min-width: 1366px) {
 	.article {
-		margin-top: 14px;
-		font-size: 16px;
-		line-height: 21px;
+		margin-top: size(14);
+		font-size: size(16);
+		line-height: size(21);
 		&__main-title {
 			padding: 0;
 		}
 		&__inner {
-			padding-bottom: 130px;
-			border-bottom: 10px solid #EFEFEF;
+			padding-bottom: size(130);
+			border-bottom: size(10) solid #EFEFEF;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: flex-start;
 		}
 		&__explain {
-			width: calc(100% - 530px);
+			width: calc(100% - 33.125rem);
 		}
 		&__title {
-			font-size: 26px;
-			line-height: 34px;
+			font-size: size(26);
+			line-height: size(34);
 		}
 		&__about {
 			padding-top: 0;
-			margin-top: 90px;
+			margin-top: size(90);
 			border-top: 0;
 		}
 		&__text {
-			margin-top: 20px;
+			margin-top: size(20);
 			letter-spacing: 0.125rem;
 			&-hidden {
 				display: block;
 			}
 		}
 		&__form {
-			margin-top: 150px;
+			margin-top: size(150);
 		}
 		&__list {
 			letter-spacing: 0.125rem;
@@ -91,7 +91,7 @@
 @media screen and(min-width: 1920px) {
 	.article {
 		&__explain {
-			width: calc(100% - 582px);
+			width: calc(100% - 36.375rem);
 		}
 	}
 }

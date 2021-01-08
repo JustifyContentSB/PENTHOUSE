@@ -1,26 +1,26 @@
 .villa {
-	margin-top: 46px;
+	margin-top: size(46);
 	letter-spacing: 0.07rem;
 	&__header {
-		padding: 0 10px;
+		padding: 0 size(10);
 	}
 	&__title {
 		font-weight: 700;
-		font-size: 16px;
-		line-height: 21px;
+		font-size: size(16);
+		line-height: size(21);
 	}
 	&__text {
-		margin-top: 12px;
+		margin-top: size(12);
 		font-weight: 300;
-		font-size: 11px;
-		line-height: 13px;
+		font-size: size(11);
+		line-height: size(13);
 	}
 	&__list {
-		margin-top: 20px;
+		margin-top: size(20);
 	}
 	&__item {
-		width: 306px;
-		height: 124px;
+		width: size(306);
+		height: size(124);
 		overflow: hidden;
 	}
 	&__img {
@@ -36,34 +36,34 @@
 	&__order {
 		&-list {
 			padding-top: 0;
-			margin-top: 40px;
+			margin-top: size(40);
 		}
 	}
 	&__links {
-		margin-top: 22px;
-		padding: 0 10px;
+		margin-top: size(22);
+		padding: 0 size(10);
 		&-map {
 			@extend %catalogLink;
 		}
 		&-order {
 			@extend %brownLink;
-			margin-top: 10px;
+			margin-top: size(10);
 		}
 	}
 }
 
 @media screen and(min-width: 1366px) {
 	.villa {
-		margin-top: 70px;
+		margin-top: size(70);
 		&__title {
-			font-size: 30px;
+			font-size: size(30);
     		line-height: 120%;
     		font-weight: 500;
     		letter-spacing: 0.2rem;
 		}
 		&__text {
-			font-size: 14px;
-			line-height: 20px;
+			font-size: size(14);
+			line-height: size(20);
 			font-weight: 350;
 		}
 		&__header {
@@ -73,10 +73,10 @@
 			padding: 0;
 		}
 		&__list {
-			margin-top: 50px;
+			margin-top: size(50);
 		}
 		&__item {
-			width: calc(50% - 10px);
+			width: calc(50% - 0.625rem);
 			height: auto;
 		}
 		&__img {
@@ -95,20 +95,20 @@
 @media screen and(min-width: 1920px) {
 	.villa {
 		&__text {
-			margin-top: 24px;
-			font-size: 17px;
-			line-height: 24px;
+			margin-top: size(24);
+			font-size: size(17);
+			line-height: size(24);
 			letter-spacing: 0.13rem;
 		}
 		&__info {
-			margin-top: 45px;
+			margin-top: size(45);
 			display: flex;
 			flex-wrap: wrap;
 		}
 		&__links {
-			width: 320px;
+			width: size(320);
 			margin-top: 0;
-			margin-left: 80px;
+			margin-left: size(80);
 		}
 		&__order {
 			&-list {

@@ -1,9 +1,9 @@
 .plan {
-	margin-top: 20px;  
-	padding: 0 10px;
+	margin-top: size(20);  
+	padding: 0 size(10);
 	&__img {
 		width: 100%;
-		max-width: 693px;
+		max-width: size(693);
 		img {
 			display: block;
 			width: 100%;
@@ -11,41 +11,41 @@
 		}
 	}
 	&__info {
-		margin-top: 18px;
+		margin-top: size(18);
 		letter-spacing: 0.07rem;
-		font-size: 12px;
-		line-height: 15px;
+		font-size: size(12);
+		line-height: size(15);
 		&-about {
 			font-weight: 300;
 		}
 		&-size {
-			margin-top: 8px;
+			margin-top: size(8);
 			font-weight: 500;
 		}
 		&-download {
 			@extend %catalogLink;
-			margin-top: 19px;
+			margin-top: size(19);
 		}
 		&-order {
 			@extend %brownLink;
-			margin-top: 10px;
+			margin-top: size(10);
 		}
 		&-partner {
 			font-weight: 350;
-			font-size: 14px;
+			font-size: size(14);
 			text-align: center;
 			color: #636363;
 			a {
 				display: inline-block;
-				padding: 12px 0;
+				padding: size(12) 0;
 				position: relative;
 				&::after {
 					content: '';
 					position: absolute;
 					left: 0;
 					right: 0;
-					bottom: 12px;
-					height: 1px;
+					bottom: size(12);
+					height: size(1);
 					background: #636363;
 				}
 				&:hover,
@@ -59,11 +59,11 @@
 
 @media screen and(min-width: 1366px) {
 	.plan {
-		margin-top: 60px;
+		margin-top: size(60);
 		padding: 0; 
 		&__info {
-			font-size: 13px;
-			line-height: 17px;
+			font-size: size(13);
+			line-height: size(17);
 		}
 	}
 }
@@ -73,27 +73,27 @@
 		display: flex;
 		flex-wrap: wrap;
 		&__info {
-			width: calc(100% - 746px);
-			max-width: 354px;
-			margin-left: 53px;
+			width: calc(100% - 46.625rem);
+			max-width: size(354);
+			margin-left: size(53);
 			margin-top: 0;
 			&-about {
 				letter-spacing: 0.07rem;
 			}
 			&-size {
-				margin-top: 20px;
-				font-size: 15px;
-				line-height: 19px;
+				margin-top: size(20);
+				font-size: size(15);
+				line-height: size(19);
 				letter-spacing: 0.1rem;
 			}
 			&-download {
-				margin-top: 30px;
+				margin-top: size(30);
 			}
 			&-order {
-				margin-top: 25px;
+				margin-top: size(25);
 			}
 			&-partner {
-				margin-top: 30px;
+				margin-top: size(30);
 				letter-spacing: 0.1rem;
 			}
 		}

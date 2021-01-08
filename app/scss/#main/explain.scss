@@ -2,24 +2,24 @@
 	letter-spacing: 0.09rem; 
 	&__title {
 		@extend %title;
-		margin-bottom: 1.125rem;
+		margin-bottom: size(18);
 	}
 	&__present {
-		margin-top: 1.563rem;
+		margin-top: size(25);
 	}
 	&__img {
 		img {
 			display: block;
 			width: 100%;
-			min-width: 18.75rem;
-			max-width: 54.063rem;
-			min-height: 6.5rem;
+			min-width: size(300);
+			max-width: size(865);
+			min-height: size(104);
 			height: auto;
 		}
 	}
 	&__link {
 		@extend %catalogLink;
-		margin-top: 0.992rem;
+		margin-top: size(16);
 	}
 }
 
@@ -31,7 +31,7 @@
 			justify-content: space-between;
 		}
 		&__info {
-			width: calc(100% - 480px);
+			width: calc(100% - 30rem);
 			display: flex;
 			flex-direction: column;
 			.attention {
@@ -40,7 +40,7 @@
 		}
 		&__present {
 			margin-top: 0; 
-			width: 460px;
+			width: size(460);
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
@@ -48,19 +48,16 @@
 		&__img {
 			margin-bottom: auto;
 		}
-		&__text {
-			
-		}
 	}
 }
 
 @media screen and(min-width: 1366px) {
 	.explain {
 		&__present {
-			width: 600px;
+			width: size(600);
 		}
 		&__info {
-			width: calc(100% - 640px);
+			width: calc(100% - 40rem);
 		}
 	}
 }
@@ -68,23 +65,23 @@
 @media screen and(min-width: 1920px) {
 	.explain {
 		&__title {
-			margin-bottom: 42px;
+			margin-bottom: size(42);
 		}
 		&__img {
-			margin-top: 30px;
+			margin-top: size(30);
 		}
 		&__present {
-			width: 865px;
+			width: size(865);
 		}
 		&__info {
-			width: calc(100% - 925px);
+			width: calc(100% - 57.813rem);
 			p {
-				width: 744px;
+				width: size(744);
 				letter-spacing: 0.1rem;
-				margin-bottom: 24px;
+				margin-bottom: size(24);
 			}
 			.attention {
-				margin-top: 35px;
+				margin-top: size(35);
 			}
 		}
 	}

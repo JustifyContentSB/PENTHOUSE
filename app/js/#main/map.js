@@ -1,42 +1,41 @@
-ymaps.ready(init);
-
-function init() {
-    let map = new ymaps.Map('map', {
-        center: [55.735573, 37.659792],
-        zoom: 12,
-        controls: ['zoomControl'],
-        behaviors: ['drag']
-    });
-
-    let placemark = new ymaps.Placemark([55.734930, 37.653529], {
-    },
-    {
-    	iconLayout: 'default#image',
-        iconImageHref: '../images/map/placemark.png',
-        iconImageSize: [58, 56],
-    });
-
-    map.geoObjects.add(placemark);
-}
-
-let mapBtn = document.querySelector('.choose__map');
+let mapBtnTel = document.querySelector('.choose__map-tel');
+let mapBtnDekstop = document.querySelector('.choose__map-dekstop');
 let chooseListing = document.querySelector('.choose__listing-btn');
 let mansionHouseWrapper = document.querySelector('.mansion__house-wrapper');
-let map = document.querySelector('#map');
+let map = document.querySelector('.map');
 
-mapBtn.addEventListener('click', function(e) {
+mapBtnTel.addEventListener('click', function(e) {
 	e.preventDefault();
 	mansionHouseWrapper.classList.toggle('none');
 	map.classList.toggle('active');
-	mapBtn.classList.toggle('active');
 	chooseListing.classList.remove('active');
+    body.classList.add('no-scroll');
+    overlayModal.classList.add('visible');
+});
+
+mapBtnDekstop.addEventListener('click', function(e) {
+    e.preventDefault();
+    mansionHouseWrapper.classList.toggle('none');
+    map.classList.toggle('active');
+    chooseListing.classList.remove('active');
+    this.classList.add('active');
 });
 
 chooseListing.addEventListener('click', function(e) {
 	e.preventDefault();
 	mansionHouseWrapper.classList.remove('none');
 	map.classList.remove('active');
-	mapBtn.classList.remove('active');
 	chooseListing.classList.toggle('active');
+    body.classList.remove('no-scroll');
+    mapBtnDekstop.classList.remove('active');
+});
+
+overlayModal.addEventListener('click', function() {
+    mansionHouseWrapper.classList.remove('none');
+    map.classList.remove('active');
+    chooseListing.classList.toggle('active');
+    body.classList.remove('no-scroll');
+    overlayModal.classList.remove('visible');
+    mapBtnDekstop.classList.remove('active');
 });
 

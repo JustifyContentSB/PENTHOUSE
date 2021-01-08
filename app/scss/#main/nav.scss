@@ -1,7 +1,7 @@
 .nav {
 	font-weight: 500;
-	font-size: 0.75rem;
-	line-height: 0.938rem;
+	font-size: size(12);
+	line-height: size(15);
 	background: #fff;
 	&__burger {
 		&-dekstop {
@@ -13,21 +13,21 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		width: 2.5rem;
-		height: 2.5rem;
-		padding: 0 0.563rem 0 0.625rem;
+		width: size(40);
+		height: size(40);
+		padding: 0 size(9) 0 size(10);
 		&-icon {
 			width: 100%;
-			height: 0.063rem;
+			height: size(1);
 			background: #000;
 			position: relative;
 			transition: all .5s ease;
 			&::after {
 				content: '';
 				position: absolute;
-				top: 0.200rem;
+				top: size(3);
 				width: 50%;
-				height: 0.063rem;
+				height: size(1);
 				background: #000;
 				transition: all .5s ease;
 			}
@@ -45,12 +45,12 @@
 		width: 100%;
 		height: calc(100vh - 2.5rem);
 		overflow-y: scroll;
-		padding: 2.5rem 1.875rem 2.5rem 2.125rem;
+		padding: size(40) size(30) size(40) size(34);
 		display: flex;
 		flex-direction: column;
 		position: fixed;
 		z-index: 100;
-		top: 2.5rem;
+		top: size(40);
 		left: -100%;
 		background: #fff;
 		transition: all .5s ease;
@@ -63,9 +63,9 @@
 		}
 	}
 	&__list {
-		margin-bottom: 2.938rem;
+		margin-bottom: size(47);
 		li {
-			margin-bottom: 1.188rem;
+			margin-bottom: size(19);
 		}
 	}
 	&__contact {
@@ -79,17 +79,17 @@
 		width: 100%;
 	}
 	&__tel {
-		margin-top: 2.5rem;
+		margin-top: size(40);
 		font-weight: 300;
-		font-size: 1.438rem;
-		line-height: 1.875rem;
+		font-size: size(23);
+		line-height: size(30);
 		text-transform: uppercase;
 	}
 	&__order {
 		display: inline-block;
-		margin-top: 1.375rem;
-		font-size: 0.938rem;
-		line-height: 1.188rem;
+		margin-top: size(22);
+		font-size: size(15);
+		line-height: size(18);
 		text-decoration: underline;
 		font-weight: 500;
 	}
@@ -97,19 +97,19 @@
 
 @media screen and(min-width: 1366px) {
 	.nav {
-		font-size: 15px;
-		line-height: 19px;
+		font-size: size(15);
+		line-height: size(19);
 		&__burger {
 			display: flex;
 			justify-content: center;
-			width: 90px;
+			width: size(90);
 			height: 100vh;
 			position: fixed;
 			z-index: 110;
 			left: 0;
 			top: 0;
 			background: #fff;
-			box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 0 size(50) rgba(0, 0, 0, 0.1);
 			&-dekstop {
 				display: flex;
 			}
@@ -118,29 +118,29 @@
 			}
 		}
 		&__toggle {
-			margin-top: 20px;
+			margin-top: size(20);
 			padding: 0;
-			width: 35px;
-			height: 15px;
+			width: size(35);
+			height: size(15);
 			&-icon {
-				height: 2px;
+				height: size(2);
 				&::after {
-					height: 2px;
+					height: size(2);
 					top: auto;
-					bottom: -7px;
+					bottom: size(-7);
 				}
 			}
 		}
 		&__inner {
 			top: 0;
-			left: calc(-100% + 90px);
+			left: calc(-100% + 5.625rem);
 			height: 100vh;
-			width: 594px;
-			padding-top: 35px;
-			padding-left: 165px;
+			width: size(594);
+			padding-top: size(35);
+			padding-left: size(165);
 		}
 		&__list {
-			margin-bottom: 20px;
+			margin-bottom: size(20);
 			a {
 				position: relative;
 				&::before {
@@ -150,7 +150,7 @@
 					bottom: 0;
 					left: auto;
 					right: 0;
-					height: 1px;
+					height: size(1);
 					background: #000;
 					transition: all 0.5s ease;
 				}
@@ -163,12 +163,12 @@
 			}
 		}
 		&__catalog {
-			max-width: 314px;
+			max-width: size(314);
 		}
 		&__tel {
-			margin-top: 20px;
-			font-size: 26px;
-			line-height: 34px;
+			margin-top: size(20);
+			font-size: size(26);
+			line-height: size(34);
 		}
 	}
 }
@@ -176,13 +176,13 @@
 @media screen and(min-width: 1440px) {
 	.nav {
 		&__inner {
-			padding-top: 73px;
+			padding-top: size(73);
 		}
 		&__list {
-			margin-bottom: 60px;
+			margin-bottom: size(60);
 		}
 		&__tel {
-			margin-top: 2.5rem;
+			margin-top: size(40);
 		}
 	}
 }

@@ -1,19 +1,19 @@
 .gallery {
-	margin-top: 10px;
+	margin-top: size(10);
 	&__title {
-		padding: 0 10px;
+		padding: 0 size(10);
 	}
 	&__list {
-		margin-top: 15px;
+		margin-top: size(15);
 	}
 	&__item {
-		width: 306px;
-		height: 124px;
+		width: size(306);
+		height: size(124);
 		overflow: hidden;
 	}
 	&__img {
 		&-tel {
-			width: 306px;
+			width: size(306);
 			height: auto;
 		}
 		&-dekstop {
@@ -24,15 +24,15 @@
 
 @media screen and(min-width: 1366px) {
 	.gallery {
-		margin-top: 15px;
+		margin-top: size(15);
 		&__title {
 			padding: 0;
 		}
 		&__list {
-			margin-top: 45px;
+			margin-top: size(45);
 		}
 		&__item {
-			width: 1000px;
+			width: size(1000);
 			height: auto;
 		}
 		&__img {
@@ -41,10 +41,10 @@
 			}
 			&-dekstop {
 				display: block;
-				width: 1000px;
+				width: size(1000);
 				height: auto; 
 				img {
-					width: 1000px;
+					width: size(1000);
 					height: auto; 
 				}
 			}
@@ -55,15 +55,15 @@
 @media screen and(min-width: 1440px) {
 	.gallery {
 		&__item {
-			width: 1205px;
-			height: 678px;
+			width: size(1205);
+			height: size(678);
 		}
 		&__img {
-			width: 1205px;
-			height: 678px;
+			width: size(1205);
+			height: size(678);
 			&-dekstop {
 				img {
-					width: 1205px;
+					width: size(1205);
 					height: auto;
 				}
 			}

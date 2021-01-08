@@ -1,51 +1,51 @@
 .catalog {
-	margin-top: 3.25rem;
+	margin-top: size(52);
 	letter-spacing: 0.08rem;
 	&__img {
-		height: 9.375rem;
+		height: size(150);
 		background: #F2F2F2;
 		position: relative;
 		img {
 			position: absolute;
-			top: -0.938rem;
+			top: size(-15);
 			left: 50%;
 			transform: translateX(-50%);
 		}
 	}
 	&__info {
-		margin-top: 1.375rem;
+		margin-top: size(45);
 	}
 	&__title {
 		@extend %title;
 	}
 	&__text {
-		margin-top: 1.125rem;
+		margin-top: size(18);
 	}
 	&__link {
 		@extend %catalogLink;
-		margin-top: 1.188rem;
+		margin-top: size(19);
 	}
 }
 
 @media screen and(min-width: 960px) {
 	.catalog {
-		margin-top: 100px;
+		margin-top: size(100);
 		&__inner {
 			display: flex; 
 			justify-content: space-between;
 		}
 		&__img {
-			min-width: 300px; 
-			width: 300px;
+			min-width: size(300); 
+			width: size(300);
 			height: auto;
-			min-height: 204px;
+			min-height: size(204);
 			img {
 				width: auto;
 				height: 120%;
 			}
 		}
 		&__info {
-			width: calc(100% - 320px);
+			width: calc(100% - 20rem);
 			margin-top: 0;
 			display: flex;
 			flex-direction: column;
@@ -60,31 +60,31 @@
 @media screen and(min-width: 1366px) {
 	.catalog {
 		&__img {
-			width: 544px;
-			min-height: 205px;
+			width: size(544);
+			min-height: size(205);
 		}
 		&__info {
-			width: calc(100% - 584px);
+			width: calc(100% - 36.5rem);
 		}
 	}
 }
 
 @media screen and(min-width: 1920px) {
 	.catalog {
-		margin-top: 166px;
+		margin-top: size(166);
 		&__img {
-			width: 744px;
-			min-height: 380px;
+			width: size(744);
+			min-height: size(380);
 			img {
-				width: 497px;
-				height: 473px;
+				width: size(497);
+				height: size(473);
 			}
 		}
 		&__info {
-			width: calc(100% - 814px);
+			width: calc(100% - 50.875rem);
 		}
 		&__text {
-			margin-top: 40px;
+			margin-top: size(40);
 		}
 	}
 }

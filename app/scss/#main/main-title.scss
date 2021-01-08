@@ -1,15 +1,15 @@
 .main-title {
 	font-weight: bold;
-	font-size: 16.7849px;
-	line-height: 22px;
+	font-size: size(16.7849);
+	line-height: size(22);
 	letter-spacing: 0.1rem;
 	color: #000000;
 }
 
 @media screen and(min-width: 1366px) {
 	.main-title {
-		font-size: 50px;
-		line-height: 64px;
+		font-size: size(50);
+		line-height: size(64);
 		letter-spacing: 0.31rem;
 	}
 }

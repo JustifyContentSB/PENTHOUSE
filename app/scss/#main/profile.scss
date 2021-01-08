@@ -1,18 +1,18 @@
 .profile {
-	padding-left: 10px;
+	padding-left: size(10);
 	display: none;
-	width: 338px;
-	margin-top: 40px;
+	width: size(338);
+	margin-top: size(40);
 	line-height: 120%;
 	position: relative;
 	&::after {
 		content: '';
 		position: absolute;
-		top: 95px;
+		top: size(95);
 		z-index: -1;
-		right: -48px;
-		left: -165px;
-		height: 504px;
+		right: size(-48);
+		left: size(-165);
+		height: size(504);
 		background: #F0F0F0; 
 
 	}
@@ -22,43 +22,43 @@
 		}
 	}
 	&__title {
-		margin-top: 15px;
+		margin-top: size(15);
 		font-weight: 400;
-		font-size: 22px;
-		line-height: 28px;
+		font-size: size(22);
+		line-height: size(28);
 		letter-spacing: 0.15rem;
 		color: #5F5F5F;
 		span {
 			display: block;
 			font-weight: 700;
-			font-size: 26px;
-			line-height: 34px;
+			font-size: size(26);
+			line-height: size(34);
 			letter-spacing: 0.15rem;
 			color: #000;
 			text-transform: uppercase;
 		}
 	}
 	&__about {
-		margin-top: 12px;
+		margin-top: size(12);
 		font-weight: 400;
-		font-size: 12px;
-		line-height: 15px;
+		font-size: size(12);
+		line-height: size(15);
 		letter-spacing: 0.07rem;
 		color: #5F5F5F;
 	}
 	&__order {
 		@extend %brownLink;
-		margin-top: 24px;
-		padding: 12px;
-		font-size: 18px;
-		line-height: 24px;
+		margin-top: size(24);
+		padding: size(12);
+		font-size: size(18);
+		line-height: size(24);
 		letter-spacing: 0.15rem;
 	}
 	&__phone {
-		margin-top: 83px;
+		margin-top: size(83);
 		font-weight: 300;
-		font-size: 28px;
-		line-height: 36px;
+		font-size: size(28);
+		line-height: size(36);
 		text-transform: uppercase;
 		letter-spacing: 0.01rem;
 		transition: $transition;
@@ -68,10 +68,10 @@
 		}
 	}
 	&__email {
-		margin-top: 7px;
+		margin-top: size(7);
 		font-weight: 400;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: size(14);
+		line-height: size(18);
 		color: #797979;
 		letter-spacing: 0rem;
 		a {
@@ -81,8 +81,8 @@
 				position: absolute;
 				left: 0;
 				right: 0;
-				bottom: -1px;
-				height: 1px;
+				bottom: size(-1);
+				height: size(1);
 				background: #797979;
 			}
 			&:hover,
@@ -102,8 +102,8 @@
 @media screen and(min-width: 1920px) {
 	.profile {
 		&__order {
-			font-size: 20px;
-			line-height: 26px;
+			font-size: size(20);
+			line-height: size(26);
 		}
 	}
 }

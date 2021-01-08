@@ -5,15 +5,15 @@ $linkTransition: all .2s ease;
 
 %title {
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: size(16);
 	line-height: 1.313rem;
 	@media screen and(min-width: 1366px) {
-		font-size: 30px;  
+		font-size: size(30);  
 		line-height: 120%;
 	}
 	@media screen and(min-width: 1920px) {
-		font-size: 40px;
-		line-height: 52px;
+		font-size: size(40);
+		line-height: size(52);
 		letter-spacing: 0.25rem;
 	}
 }
@@ -21,10 +21,10 @@ $linkTransition: all .2s ease;
 %catalogLink {
 	display: block;
 	text-align: center;
-	font-size: 0.813rem;
-	line-height: 1.063rem;
-	border: 0.063rem solid #000000;
-	padding: 0.625rem;
+	font-size: size(13);
+	line-height: size(17);
+	border: size(1) solid #000000;
+	padding: size(10);
 	transition: $linkTransition;
 	&:hover,
 	&:focus {
@@ -35,18 +35,18 @@ $linkTransition: all .2s ease;
 		opacity: .5;
 	}
 	@media screen and(min-width: 1366px) {
-		padding: 15px;
-		min-width: 314px;
-		font-size: 15px;
-		line-height: 19px;
+		padding: size(15);
+		min-width: size(314);
+		font-size: size(15);
+		line-height: size(19);
 	}
 }
 
 %brownLink {
 	display: block;
-	padding: 0.725rem;
-	font-size: 0.813rem;
-	line-height: 1.063rem;
+	padding: size(11);
+	font-size: size(13);
+	line-height: size(17);
 	text-align: center;
 	color: #fff;
 	transition: $linkTransition;
@@ -59,10 +59,10 @@ $linkTransition: all .2s ease;
 		opacity: .5;
 	}
 	@media screen and(min-width: 1366px) {
-		padding: 15px;
-		font-size: 15px;
-		line-height: 19px;
-		min-width: 320px;
+		padding: size(15);
+		font-size: size(15);
+		line-height: size(19);
+		min-width: size(320);
 	}
 }
 

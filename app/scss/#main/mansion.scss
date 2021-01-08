@@ -1,48 +1,48 @@
 .mansion {
-	margin-top: 10px;
+	margin-top: size(10);
 	font-weight: 350;
 	&__page {
-		margin-top: 12px; 
+		margin-top: size(12); 
 	}
 	&__choose {
-		margin-top: 16px;
+		margin-top: size(16);
 	}
 	&__chapter {
-		padding: 0 10px;
+		padding: 0 size(10);
 	}
 	&__choose {
-		padding: 0 10px;
+		padding: 0 size(10);
 	}
 	&__sort {
-		padding: 12px;
-		font-size: 11px;
-		line-height: 14.19px;
+		padding: size(12);
+		font-size: size(11);
+		line-height: size(14);
 		background: #F0F0F0;
 		font-weight: 400;
 		&-num {
 			font-weight: 500;
-			margin-bottom: 6px;
+			margin-bottom: size(6);
 		}
 		&-type {
 			&__btn {
-				padding-right: 19px;
+				padding-right: size(19);
 				position: relative;
 				&::before {
 					content: '';
 					position: absolute;
 					bottom: 0;
 					left: 0;
-					right: 19px;
-					height: 1px;
+					right: size(19);
+					height: size(1);
 					background: #000;
 				}
 				&::after {
 					content: '';
 					position: absolute;
 					right: 0;
-					top: 1px;
-					width: 9px;
-					height: 13px;
+					top: size(1);
+					width: size(9);
+					height: size(13);
 					background: url('../../images/icons/sort-arrow.svg');
 					background-repeat: no-repeat;
 					background-size: contain;
@@ -51,25 +51,25 @@
 		}
 	}
 	&__header {
-		padding: 0 10px;
+		padding: 0 size(10);
 	}
 	&__kind {
-		padding: 12px 10px;
+		padding: size(12) size(10);
 		display: flex;
 		overflow-x: scroll;
 		white-space: nowrap;
-		font-size: 10px;
-		line-height: 11px;
+		font-size: size(10);
+		line-height: size(11);
 		&-item {
-			margin-right: 5px;
+			margin-right: size(5);
 			position: relative;
 			&:last-child {
 				&::after {
 					content: '';
 					position: absolute;
-					right: -10px;
+					right: size(-10);
 					top: 0;
-					width: 10px;
+					width: size(10);
 					height: 100%;
 					background: transparent;
 				}
@@ -77,25 +77,11 @@
 		}
 		&-btn {
 			display: inline-block;
-			padding: 7px 21px;
-			border: 1px solid #E6E6E6;
+			padding: size(7) size(21);
+			border: size(1) solid #E6E6E6;
 			&.active {
 				border-color: #000;
 			}
-		}
-	}
-	&__map {
-		width: calc(100% - 20px);
-		margin: 0 auto;
-		height: 350px;
-		display: none;
-		position: relative;
-		&.active {
-			display: block;
-		}
-		#map {
-			width: 100%;
-			height: 350px;
 		}
 	}
 	&__house {
@@ -104,12 +90,12 @@
 				display: none;
 			}
 		}
-		padding: 0 10px;
-		margin-bottom: 10px;
+		padding: 0 size(10);
+		margin-bottom: size(10);
 	}
 	&__img {
 		width: 100%;
-		max-width: 700px;
+		max-width: size(700);
 		margin: 0 auto;
 		overflow: hidden;
 		cursor: pointer;
@@ -120,74 +106,74 @@
 		}
 	}
 	&__info {
-		padding: 17px 15px;
+		padding: size(17) size(15);
 		background: #F1F1F1;
 	}
 	&__title {
 		font-weight: 500;
-		font-size: 12px;
-		line-height: 15px;
+		font-size: size(12);
+		line-height: size(15);
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
 	}
 	&__street {
-		margin-top: 6px;
-		font-size: 11px;
-		line-height: 14px;
+		margin-top: size(6);
+		font-size: size(11);
+		line-height: size(14);
 		letter-spacing: 0.1rem;
 	}
 	&__content {
-		margin-top: 13px;
-		font-size: 11px;
-		line-height: 20px;
+		margin-top: size(13);
+		font-size: size(11);
+		line-height: size(20);
 		letter-spacing: 0.05rem;
 		display: flex;
 		flex-wrap: wrap;
 		li {
-			margin-right: 10px;
+			margin-right: size(10);
 		}
 		span {
 			font-weight: 500;
 		}
 	}
 	&__features {
-		margin-top: 8px;
-		font-size: 8.27586px;
-		line-height: 11px;
+		margin-top: size(8);
+		font-size: size(8);
+		line-height: size(11);
 		letter-spacing: 0.03rem;
 		display: flex;
 		flex-wrap: wrap;
 		li {
-			padding: 4.63px 14.68px;
+			padding: size(5) size(15);
 			background: #fff;
-			margin-right: 5px;
-			margin-bottom: 5px;
+			margin-right: size(5);
+			margin-bottom: size(5);
 		}
 	}
 	&__size {
-		margin-top: 12px;
-		font-size: 11px;
-		line-height: 14px;
+		margin-top: size(12);
+		font-size: size(11);
+		line-height: size(14);
 		letter-spacing: 0.1rem;
 	}
 	&__price {
-		margin-top: 3px;
+		margin-top: size(3);
 		font-weight: bold;
-		font-size: 22px;
-		line-height: 28px;
+		font-size: size(22);
+		line-height: size(28);
 		letter-spacing: 0.1rem;
 	}
 	&__metre {
-		margin-top: 4px;
-		font-size: 11px;
-		line-height: 15px;
+		margin-top: size(4);
+		font-size: size(11);
+		line-height: size(15);
 		letter-spacing: 0.1rem;
 		color: #8D8D8D;
 	}
 	&__more {
-		margin-top: 10px;
-		font-size: 11px;
-		line-height: 14px;
+		margin-top: size(10);
+		font-size: size(11);
+		line-height: size(14);
 		letter-spacing: 0.1rem;
 		color: #000000;
 		a {
@@ -198,7 +184,7 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-				height: 1px;
+				height: size(1);
 				background: #000;
 			}
 			&:hover::before,
@@ -209,14 +195,14 @@
 	}
 	&__link {
 		@extend %brownLink;
-		margin-top: 16px;
+		margin-top: size(16);
 		font-weight: 500;
 		letter-spacing: 0.07rem;
 	}
 	&-swiper {
 		position: fixed;
-		padding-top: 40px;
-		padding-bottom: 25px; 
+		padding-top: size(40);
+		padding-bottom: size(25); 
 		z-index: -10;
 		top: 50%;
 		transform: translateY(-50%);
@@ -232,17 +218,17 @@
 		&__close {
 			position: absolute;
 			top: 0;
-			right: 10px;
-			width: 30px;
-			height: 30px;
+			right: size(10);
+			width: size(30);
+			height: size(30);
 			background: transparent;
 			&::before,
 			&::after {
 				content: '';
 				position: absolute;
 				left: 0;
-				width: 30px;
-				height: 2px;
+				width: size(30);
+				height: size(2);
 				background: #fff;
 			}
 			&::before {
@@ -254,8 +240,8 @@
 		}
 		.swiper {
 			&-slide {
-				width: 282px;
-				height: 264px;
+				width: size(282);
+				height: size(264);
 				overflow: hidden;
 				img {
 					width: 100%;
@@ -265,8 +251,8 @@
 			}
 			&-pagination {
 				&-bullet {
-					width: 17px;
-					height: 2px;
+					width: size(17);
+					height: size(2);
 					background: rgba(#fff, 0.3);
 					border-radius: 0;
 					opacity: 1;
@@ -281,8 +267,8 @@
 		}
 		&__title {
 			font-weight: bold;
-			font-size: 16px;
-			line-height: 21px;
+			font-size: size(16);
+			line-height: size(21);
 			letter-spacing: 0.1rem;
 			color: #fff;
 			text-align: center;
@@ -294,18 +280,18 @@
 @media screen and(min-width: 700px) {
 	.mansion {
 		&__inner {
-			margin-top: 50px;
+			margin-top: size(50);
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
 		&__choose {
-			width: 314px;
+			width: size(314);
 			margin-top: 0;
 			padding: 0;
 		}
 		&__page {
-			width: calc(100% - 334px);
+			width: calc(100% - 20.875rem);
 			margin-top: 0;
 		}
 	}
@@ -329,19 +315,19 @@
 					}
 				}
 				.mansion__link {
-					min-width: 314px;
-					width: 314px;
+					min-width: size(314);
+					width: size(314);
 				}
 			}
 		}
 		&__img {
 			margin: 0;
-			width: 430px;
+			width: size(430);
 			height: auto;
 		}
 		&__info {
-			width: calc(100% - 430px);
-			min-height: 307.14px;
+			width: calc(100% - 26.875rem);
+			min-height: size(307);
 			display: flex;
 			flex-direction: column;
 			&-bottom {
@@ -357,8 +343,8 @@
 
 @media screen and(min-width: 1366px) {
 	.mansion {
-		margin-top: 15px;
-		padding-right: 75px;
+		margin-top: size(15);
+		padding-right: size(75);
 		&__header {
 			padding: 0;
 		}
@@ -366,21 +352,21 @@
 			padding: 0;
 		}
 		&__inner {
-			margin-top: 89px;
+			margin-top: size(89);
 		}
 		&__page {
-			width: calc(100% - 354px);
+			width: calc(100% - 22.125rem);
 		}
 		&__house {
 			padding: 0;
 			&-wrapper {
-				margin-top: 34px;
+				margin-top: size(34);
 			}
 		}
 		&__sort {
-			padding: 14px 25px;
-			font-size: 14px;
-			line-height: 18px;
+			padding: size(14) size(25);
+			font-size: size(14);
+			line-height: size(18);
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -391,36 +377,36 @@
 			&-type {
 				&__btn {
 					&::after {
-						top: 5px;
+						top: size(5);
 					}
 				}
 			}
 		}
 		&__kind {
-			margin-top: 25px;
+			margin-top: size(25);
 			padding: 0;
 			overflow-x: visible;
 			flex-wrap: wrap;
-			font-size: 12px;
-			line-height: 15px;
+			font-size: size(12);
+			line-height: size(15);
 			letter-spacing: 0.1rem;
 			font-weight: 400;
 			&-item {
-				margin-right: 10px;
+				margin-right: size(10);
 			}
 			&-btn {
-				padding: 7px 21px;
-				border-width: 2px;
+				padding: size(7) size(21);
+				border-width: size(2);
 			}
 		}
 		&__img {
-			width: 350px;
+			width: size(350);
 		}
 		&__info {
-			width: calc(100% - 350px);
-			height: 321.42px;
+			width: calc(100% - 21.875rem);
+			height: size(321);
 			&-about {
-				margin-top: 17px;
+				margin-top: size(17);
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -431,48 +417,40 @@
 			min-width: 100%;
 		}
 		&__street {
-			font-size: 14px;
-			line-height: 18px;
+			font-size: size(14);
+			line-height: size(18);
 		}
 		&__content {
-			font-size: 13px;
-			line-height: 20px;
+			font-size: size(13);
+			line-height: size(20);
 			letter-spacing: 0.1rem;
 		}
 		&__features {
-			font-size: 12px;
-			line-height: 15px;
+			font-size: size(12);
+			line-height: size(15);
 			letter-spacing: 0.07rem;
 		}
 		&__size {
-			font-size: 14px;
-			line-height: 18px;
+			font-size: size(14);
+			line-height: size(18);
 		}
 		&__metre {
 			margin-top: 0;
-			font-size: 14px;
-			line-height: 15px;
+			font-size: size(14);
+			line-height: size(15);
 		}
 		&__more {
 			margin-top: 0;
-			font-size: 14px;
-			line-height: 18px;
-		}
-		&__map {
-			width: 100%;
-			margin-top: 42px;
-			height: 670px;
-			#map {
-				height: 670px;
-			}
+			font-size: size(14);
+			line-height: size(18);
 		}
 		&-swiper {
 			width: 90%;
-			max-width: 2000px;
-			padding-top: 40px;
-			padding-left: 100px;
-			padding-right: 100px;
-			padding-bottom: 35px;
+			max-width: size(2000);
+			padding-top: size(40);
+			padding-left: size(100);
+			padding-right: size(100);
+			padding-bottom: size(35);
 			top: 50%;
 			left: 50%;
 			transform: translateY(-50%) translateX(-50%);
@@ -485,18 +463,18 @@
 			.swiper {
 				&-slide {
 					width: 100%;
-					height: 510px;
+					height: size(510);
 				}
 				&-pagination {
 					&-bullet {
-						margin: 0 10px;
-						width: 50px;
+						margin: 0 size(10);
+						width: size(50);
 					}
 				}
 			}
 			&__title {
 				display: block;
-				width: calc(100% - 30px);
+				width: calc(100% - 1.875rem);
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -508,71 +486,71 @@
 @media screen and(min-width: 1920px) {
 	.mansion {
 		&__sort {
-			font-size: 16px;
-			line-height: 21px;
+			font-size: size(16);
+			line-height: size(21);
 			&-num {
 				letter-spacing: 0.1rem;
 			}
 		}
 		&__page {
-			width: calc(100% - 406px);
+			width: calc(100% - 25.375rem);
 		}
 		&__house {
-			margin-bottom: 20px;
+			margin-bottom: size(20);
 			&--catalog {
 				flex-direction: row;
 				.mansion__img {
-					width: 700px;
-					min-width: 700px;
+					width: size(700);
+					min-width: size(700);
 				}
 				.mansion__info {
-					width: calc(100% - 700px);
+					width: calc(100% - 43.75rem);
 				}
 			}
 		}
 		&__img {
-			width: 700px;
-			height: 500px; 
+			width: size(700);
+			height: size(500); 
 		}
 		&__link {
-			width: 314px;
-			min-width: 314px; 
+			width: size(314);
+			min-width: size(314); 
 		}
 		&__info {
-			padding: 52px 62px 53px 67px;
-			width: calc(100% - 700px);
-			height: 500px;
+			padding: size(52) size(62) size(53) size(67);
+			width: calc(100% - 43.75rem);
+			height: size(500);
 		}
 		&__price {
-			margin-top: 18px;
-			font-size: 30px;
-			line-height: 39px;
+			margin-top: size(18);
+			font-size: size(30);
+			line-height: size(39);
 			letter-spacing: 0.19rem;
 		}
 		&__title {
-			font-size: 20px;
-			line-height: 26px;
+			font-size: size(20);
+			line-height: size(26);
 		}
 		&__street {
-			margin-top: 10px;
+			margin-top: size(10);
 		}
 		&__content {
 			flex-direction: column;
 		}
 		&__features {
-			margin-top: 18px;
+			margin-top: size(18);
 			li {
-				padding: 7px 21px;
-				margin-right: 10px;
+				padding: size(7) size(21);
+				margin-right: size(10);
 			}
 		}
 		&-swiper {
-			width: calc(100% - 113px);
-			max-width: 1807px;
+			width: calc(100% - 7.063rem);
+			max-width: size(1807);
 			.swiper {
 				&-slide {
 					width: 100%;
-					height: 804px;
+					height: size(804);
 					img {
 						margin: 0 auto;
 					}
@@ -587,7 +565,7 @@
 		&-swiper {
 			.swiper {
 				&-slide {
-					height: 904px;
+					height: size(904);
 				}
 			}
 		}

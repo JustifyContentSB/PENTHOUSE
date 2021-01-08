@@ -1,16 +1,16 @@
 @media screen and(min-width: 1366px) {
 	.house {
-		margin-top: 40px;
-		padding-top: 90px;
-		padding-bottom: 160px;
+		margin-top: size(40);
+		padding-top: size(90);
+		padding-bottom: size(160);
 		position: relative;
 		&::before,
 		&::after {
 			content: '';
 			position: absolute;
-			right: 75px;
+			right: size(75);
 			left: 0;
-			height: 10px;
+			height: size(10);
 			background: #EFEFEF;;
 		}
 		&::before {
@@ -20,30 +20,30 @@
 			bottom: 0;
 		}
 		&__chapter {
-			padding: 10px 41px 10px 0;
+			padding: size(10) size(41) size(10) 0;
 			background: #F2F2F2;
 			position: relative;
 			&::after {
 				content: '';
 				position: absolute;
 				top: 0;
-				left: -165px;
-				width: 165px;
+				left: size(-165);
+				width: size(165);
 				height: 100%;
 				background: #F2F2F2;
 			}
 		}
 		&__all {
-			margin-left: 40px;
+			margin-left: size(40);
 		}
 		&__list {
-			margin-top: 45px;
+			margin-top: size(45);
 		}
 	}
 	.features {
-		margin-top: 222px;
+		margin-top: size(222);
 	}
 	.footer {
-		margin-top: 105px;
+		margin-top: size(105);
 	}
 }

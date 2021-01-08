@@ -1,49 +1,49 @@
 .main-form {
-	padding: 25px 20px;
+	padding: size(25) size(20);
 	background: #FFFFFF;
-	border: 1px solid #E2E2E2;
+	border: size(1) solid #E2E2E2;
 	font-weight: 300;
-	font-size: 12px;
-	line-height: 15px;
+	font-size: size(12);
+	line-height: size(15);
 	&__title {
 		font-weight: bold;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: size(14);
+		line-height: size(18);
 		letter-spacing: 0.1rem;
 		&--modal {
 			text-transform: uppercase;
 		}
 	}
 	&__inner {
-		margin-top: 15px;
+		margin-top: size(15);
 		display: flex;
 		flex-direction: column;
 	}
 	&__input {
-		margin-bottom: 9px;
-		padding: 15px 12px 15px 18px;
+		margin-bottom: size(9);
+		padding: size(15) size(12) size(15) size(18);
 		background: #F7F7F7;
 		border: none;
 		outline: none;
 		letter-spacing: 0.1rem;
 		&::placeholder {
 			font-weight: 300;
-			font-size: 12px;
-			line-height: 15px;
+			font-size: size(12);
+			line-height: size(15);
 		}
 	}
 	&__textarea {
-		margin-top: 8px;
-		padding: 16px 14px 16px 18px;
-		height: 126px;
+		margin-top: size(8);
+		padding: size(16) size(14) size(16) size(18);
+		height: size(126);
 		background: #F7F7F7;
 		outline: none;
 		border: none;
 		resize: none;
 		&::placeholder {
 			font-weight: 300;
-			font-size: 11px;
-			line-height: 14px;
+			font-size: size(11);
+			line-height: size(14);
 			letter-spacing: 0.1rem;
 			color: #898989;
 		}
@@ -51,14 +51,14 @@
 	&__btn {
 		@extend %brownLink;
 		min-width: auto;
-		margin-top: 16px;
+		margin-top: size(16);
 		font-weight: 500;
-		font-size: 13px;
-		line-height: 17px;
+		font-size: size(13);
+		line-height: size(17);
 		letter-spacing: 0.1rem;
 	}
 	&__agree {
-		margin-top: 16px;
+		margin-top: size(16);
 		&-label {
 			display: inline-flex;
 			flex-wrap: wrap;
@@ -71,67 +71,67 @@
 					&::after {
 						content: '';
 						position: absolute;
-						top: 7px;
-						left: 5px;
-						width: 11px;
-						height: 8px;
+						top: size(7);
+						left: size(5);
+						width: size(11);
+						height: size(8);
 						background: url('../../images/icons/check.svg');
 					}
 				}
 			}
 		}
 		&-check {
-			width: 23px;
-			height: 23px;
-			margin-right: 12px;
-			border: 1px solid #DADADA;
+			width: size(23);
+			height: size(23);
+			margin-right: size(12);
+			border: size(1) solid #DADADA;
 			position: relative;
 		}
 		&-text {
 			display: block;
-			margin-top: 3px;
-			width: calc(100% - 35px);
+			margin-top: size(3);
+			width: calc(100% - 2.188rem);
 			font-weight: 350;
-			font-size: 10px;
-			line-height: 13px;
+			font-size: size(10);
+			line-height: size(13);
 			letter-spacing: 0.1rem;
 			color: #000000;
 		}
 	}
 	&__close {
 		display: block;
-	    width: 34px;
-	    height: 33px;
-	    margin-left: 9px;
+	    width: size(34);
+	    height: size(33);
+	    margin-left: size(9);
 	    position: absolute;
-	    right: 7px;
-	    top: 7px;
+	    right: size(7);
+	    top: size(7);
 	    background: #fff;
 	    outline: none;
 	    &::before,
 	    &::after {
 	    	content: '';
 	    	position: absolute;
-	    	width: 17px;
-	    	height: 1px;
+	    	width: size(17);
+	    	height: size(1);
 	    	background: #000;
 	    }
 	    &::before {
 	    	transform: rotate(45deg);
-	    	left: 9px;
+	    	left: size(9);
 	    }
 	    &::after {
 	    	transform: rotate(-45deg);
-	    	left: 9px; 
+	    	left: size(9); 
 	    }
 	}
 	&__wrapper {
 		position: relative;
 	}
 	&--modal {
-		width: calc(100% - 20px);
-		max-width: 500px;
-		padding-top: 16px;
+		width: calc(100% - 1.25rem);
+		max-width: size(500);
+		padding-top: size(16);
 		background: #fff;
 		border: none;
 		position: fixed;
@@ -158,10 +158,10 @@
 
 @media screen and(min-width: 1366px) {
 	.main-form {
-		width: 500px;
-		padding: 56px 44px 35px;
-		border: 1px solid #000000;
-		font-size: 16px;
+		width: size(500);
+		padding: size(56) size(44) size(35);
+		border: size(1) solid #000000;
+		font-size: size(16);
 		line-height: 120%;
 		&__title {
 			display: none;
@@ -170,34 +170,34 @@
 			margin-top: 0;
 		}
 		&__input {
-			padding: 20px 23px 19px;
-			margin-bottom: 20px;
+			padding: size(20) size(23) size(19);
+			margin-bottom: size(20);
 			&::placeholder {
-				font-size: 16px;
+				font-size: size(16);
 			}
 		}
 		&__textarea {
-			padding: 20px 23px;
+			padding: size(20) size(23);
 			margin-top: 0;
-			height: 160px;
+			height: size(160);
 			&::placeholder {
-				font-size: 16px;
-				line-height: 21px;
+				font-size: size(16);
+				line-height: size(21);
 			}
 		}
 		&__btn {
-			padding: 18px;
-			margin-top: 42px;
+			padding: size(18);
+			margin-top: size(42);
 			font-weight: 500;
-			font-size: 16px;
-			line-height: 21px;
+			font-size: size(16);
+			line-height: size(21);
 		}
 		&__agree {
-			margin-top: 30px;
+			margin-top: size(30);
 			&-text {
 				font-weight: 350;
-				font-size: 13px;
-				line-height: 17px;
+				font-size: size(13);
+				line-height: size(17);
 			}
 		}
 		&--modal {
@@ -209,18 +209,18 @@
 @media screen and(min-width: 1920px) {
 	.main-form {
 		&__close {
-			top: -50px;  
-			right: 5px;
-			width: 39px;
-			height: 39px;
+			top: size(-50);  
+			right: size(5);
+			width: size(39);
+			height: size(39);
 			margin-left: 0;
 			background: transparent;
 			&::before,
 			&::after {
-				right: 0px;
-				top: 15px;
-				width: 39px;
-				height: 2px;
+				right: size(0);
+				top: size(15);
+				width: size(39);
+				height: size(2);
 				background: #fff; 
 			}
 		}
